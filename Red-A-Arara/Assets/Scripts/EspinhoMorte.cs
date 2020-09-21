@@ -8,6 +8,7 @@ public class EspinhoMorte : MonoBehaviour
     void Start()
     {
         //red a arara
+        //sei la
     }
 
     // Update is called once per frame
