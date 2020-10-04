@@ -5,41 +5,76 @@ using UnityEngine;
 public class MacacoController : MonoBehaviour
 {
     [SerializeField]
-    private Transform groundCheck;
-    [SerializeField]
-    private Rigidbody2D macacoRb;
+    private Rigidbody2D macacoRigidbody;
 
-    private bool isGrounded;
-    public float jumpForce = 200.0f;
+    [SerializeField]
+    private Transform playerTransform;
+
+    private Collision2D collision2DCurrent;
+
+    [SerializeField]
+    private float jumpForce = 200f;
+
+    private bool isLookLeft = true;
+
+    private float distancia = 0f;
+
+    private float delayTime = 1f;
 
     // Start is called before the first frame update
     void Start()
     {
-        macacoRb.AddForce(new Vector2(0, jumpForce));
+        macacoRigidbody = GetComponent<Rigidbody2D>();
     }
 
     // Update is called once per frame
     void Update()
     {
-        //Input.GetButtonDown("Jump") &&
-        //if ( isGrounded)
-        //{
-        //    macacoRb.AddForce(new Vector2(0, jumpForce));
-            
+        distancia = gameObject.transform.position.x - playerTransform.position.x;
 
-        //}
+        if (distancia < 0 && isLookLeft)
+        {
+            Flip();
+        }
+        else if (distancia > 0 && !isLookLeft)
+        {
+            Flip();
+        }
 
-        PuloMacaco();
     }
 
-    private void FixedUpdate()
+    private void OnCollisionEnter2D(Collision2D collision2D)
     {
-        //cria um colisor de cicurlo, em baixo do colisor do protagonista, quando ele estiver no cao
-        isGrounded = Physics2D.OverlapCircle(groundCheck.position, 0.02f);
+        collision2DCurrent = collision2D;
+        Invoke("Pulo", delayTime);
     }
 
-    private void PuloMacaco()
+    private void Pulo()
     {
-
+        PuloMacaco(collision2DCurrent);
     }
+
+    private void PuloMacaco(Collision2D collision2D)
+    {
+        //Debug.Log("OnCollisionEnter2D TAG: " + collision2D.gameObject.tag);
+
+        if (collision2D.gameObject.CompareTag("chao"))
+        {
+            Delay();
+            macacoRigidbody.AddForce(new Vector2(isLookLeft ? - jumpForce : jumpForce, jumpForce));
+        }
+    }
+
+    private void Flip()
+    {
+        isLookLeft = !isLookLeft;
+        float x = transform.localScale.x * -1;
+        transform.localScale = new Vector3(x, transform.localScale.y, transform.localScale.y);
+    }
+
+    IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(5);
+    }
+
 }

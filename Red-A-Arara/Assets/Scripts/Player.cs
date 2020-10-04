@@ -16,8 +16,6 @@ public class Player : MonoBehaviour
     public float radiusCheck;
     public float radiusCheckHit;
 
-    
-
     private Rigidbody2D rb2D;
     private Animator anim;
 
