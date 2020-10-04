@@ -65,6 +65,7 @@ public class Player : MonoBehaviour
         PlayAnimations();
 
     }
+
     void FixedUpdate()
     {
         
@@ -91,6 +92,7 @@ public class Player : MonoBehaviour
 
         }
     }
+
     void PlayAnimations()
     {
         if (levelCompleted)
@@ -114,6 +116,7 @@ public class Player : MonoBehaviour
             anim.Play("JUMP");
         }
     }
+
     void Flip()
     {
         facingRight = !facingRight;
@@ -142,6 +145,7 @@ public class Player : MonoBehaviour
 
         
     }
+
     void PlayerDie ()
     {
         isAlive = false;

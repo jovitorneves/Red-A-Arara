@@ -20,7 +20,7 @@ public class CobraChefe : MonoBehaviour
     private Rigidbody2D rb2D;
     private Animator anim;
 
-    private bool facingRight = true;
+    private bool facingRight = false;
     private bool isVisible = false;
 
     public AudioClip fxCobraAttack;
@@ -53,7 +53,7 @@ public class CobraChefe : MonoBehaviour
     {
         if (isVisible)
         {
-            rb2D.velocity = new Vector2(speed, rb2D.velocity.y);
+            rb2D.velocity = new Vector2(-speed, rb2D.velocity.y);
         }
         else
         {
