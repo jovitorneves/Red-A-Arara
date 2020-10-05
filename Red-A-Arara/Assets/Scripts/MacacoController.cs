@@ -19,18 +19,35 @@ public class MacacoController : MonoBehaviour
 
     private float distancia = 0f;
 
+    private float distanciaMax = 5f;
+
+    private float distanciaMin = -5f;
+
     private float delayTime = 1f;
 
     // Start is called before the first frame update
     void Start()
     {
         macacoRigidbody = GetComponent<Rigidbody2D>();
+        distancia = gameObject.transform.position.x - playerTransform.position.x;
     }
 
     // Update is called once per frame
     void Update()
     {
-        distancia = gameObject.transform.position.x - playerTransform.position.x;
+        PuloRule();
+    }
+
+    private void OnCollisionEnter2D(Collision2D collision2D)
+    {
+        collision2DCurrent = collision2D;
+        if (distancia >= distanciaMin && distancia <= distanciaMax)
+            Invoke("Pulo", delayTime);
+    }
+
+    private void PuloRule()
+    {
+        if (distancia < distanciaMin || distancia > distanciaMax) return;
 
         if (distancia < 0 && isLookLeft)
         {
@@ -40,13 +57,6 @@ public class MacacoController : MonoBehaviour
         {
             Flip();
         }
-
-    }
-
-    private void OnCollisionEnter2D(Collision2D collision2D)
-    {
-        collision2DCurrent = collision2D;
-        Invoke("Pulo", delayTime);
     }
 
     private void Pulo()
