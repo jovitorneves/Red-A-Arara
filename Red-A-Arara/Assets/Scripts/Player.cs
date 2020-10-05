@@ -23,7 +23,7 @@ public class Player : MonoBehaviour
     public bool grounded;
     private bool jumping;
     private bool facingRight = true;
-    private bool isAlive = true;
+    public bool isAlive = true;
     private bool levelCompleted = false;
     private bool timeIsOver = false;
 

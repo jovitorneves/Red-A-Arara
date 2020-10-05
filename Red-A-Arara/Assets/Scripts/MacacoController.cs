@@ -8,9 +8,11 @@ public class MacacoController : MonoBehaviour
     private Rigidbody2D macacoRigidbody;
 
     [SerializeField]
-    private Transform playerTransform;
+    private GameObject player;
 
     private Collision2D collision2DCurrent;
+
+    private Player playerScript;
 
     [SerializeField]
     private float jumpForce = 200f;
@@ -29,25 +31,26 @@ public class MacacoController : MonoBehaviour
     void Start()
     {
         macacoRigidbody = GetComponent<Rigidbody2D>();
-        distancia = gameObject.transform.position.x - playerTransform.position.x;
+        playerScript = player.GetComponent<Player>();
     }
 
     // Update is called once per frame
     void Update()
     {
         PuloRule();
+        distancia = gameObject.transform.position.x - player.transform.position.x;
     }
 
     private void OnCollisionEnter2D(Collision2D collision2D)
     {
         collision2DCurrent = collision2D;
-        if (distancia >= distanciaMin && distancia <= distanciaMax)
+        if (distancia >= distanciaMin && distancia <= distanciaMax && playerScript.isAlive)
             Invoke("Pulo", delayTime);
     }
 
     private void PuloRule()
     {
-        if (distancia < distanciaMin || distancia > distanciaMax) return;
+        if ((distancia < distanciaMin || distancia > distanciaMax) && !playerScript.isAlive) return;
 
         if (distancia < 0 && isLookLeft)
         {
@@ -70,7 +73,6 @@ public class MacacoController : MonoBehaviour
 
         if (collision2D.gameObject.CompareTag("chao"))
         {
-            Delay();
             macacoRigidbody.AddForce(new Vector2(isLookLeft ? - jumpForce : jumpForce, jumpForce));
         }
     }
