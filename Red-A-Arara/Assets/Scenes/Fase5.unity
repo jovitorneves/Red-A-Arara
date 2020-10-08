@@ -628,7 +628,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   macacoRigidbody: {fileID: 185679513}
   player: {fileID: 1723140653}
-  jumpForce: 200
+  jumpForce: 300
 --- !u!61 &185679512
 BoxCollider2D:
   m_ObjectHideFlags: 0

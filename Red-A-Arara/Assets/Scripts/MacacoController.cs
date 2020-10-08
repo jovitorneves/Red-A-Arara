@@ -15,9 +15,11 @@ public class MacacoController : MonoBehaviour
     private Player playerScript;
 
     [SerializeField]
-    private float jumpForce = 200f;
+    private float jumpForce = 300f;
 
     private bool isLookLeft = true;
+
+    private bool isJump = false;
 
     private float distancia = 0f;
 
@@ -25,7 +27,7 @@ public class MacacoController : MonoBehaviour
 
     private float distanciaMin = -5f;
 
-    private float delayTime = 1f;
+    private float delayTime = 0.5f;
 
     // Start is called before the first frame update
     void Start()
@@ -44,8 +46,16 @@ public class MacacoController : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision2D)
     {
         collision2DCurrent = collision2D;
-        if (distancia >= distanciaMin && distancia <= distanciaMax && playerScript.isAlive)
+        if (distancia >= distanciaMin && distancia <= distanciaMax && playerScript.isAlive && !isJump)
             Invoke("Pulo", delayTime);
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag("chao"))
+        {
+            isJump = false;
+        }
     }
 
     private void PuloRule()
@@ -65,6 +75,7 @@ public class MacacoController : MonoBehaviour
     private void Pulo()
     {
         PuloMacaco(collision2DCurrent);
+        isJump = true;
     }
 
     private void PuloMacaco(Collision2D collision2D)
