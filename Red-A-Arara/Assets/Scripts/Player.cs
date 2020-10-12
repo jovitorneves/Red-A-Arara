@@ -123,6 +123,9 @@ public class Player : MonoBehaviour
 
     void OnCollisionEnter2D (Collision2D other)
     {
+
+        Debug.Log("DIRECAO PLAYER: " + UtilController.Instance.ReturnDirection(other.contacts));
+
         if (other.gameObject.CompareTag ("Enemy"))
         { 
             if (hitted)
@@ -140,8 +143,6 @@ public class Player : MonoBehaviour
         {
             PlayerDie();
         }
-
-        
     }
 
     public void PlayerDie ()

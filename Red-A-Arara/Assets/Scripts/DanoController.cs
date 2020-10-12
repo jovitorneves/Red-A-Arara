@@ -7,12 +7,13 @@ public class DanoController : MonoBehaviour
     {
         var macacoController = transform.parent.gameObject.GetComponent<MacacoController>();
 
-        if (collision2D.gameObject.CompareTag("Player"))
+        if (collision2D.gameObject.CompareTag(TagsConstants.Player))
         {
             if (!macacoController.isJump)
             {
                 Destroy(transform.parent.gameObject);
-            } else
+            }
+            else
             {
                 macacoController.playerScript.PlayerDie();
             }

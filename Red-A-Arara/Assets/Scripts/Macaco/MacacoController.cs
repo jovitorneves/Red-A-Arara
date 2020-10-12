@@ -1,5 +1,4 @@
 ﻿using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class MacacoController : MonoBehaviour
@@ -49,15 +48,18 @@ public class MacacoController : MonoBehaviour
     {
         CalculaDistanciaPlayer();
 
-        if ((distancia < distanciaMin ||
-            distancia > distanciaMax) &&
-            playerScript.isAlive)
+        if (playerScript.isAlive)
         {
-            gameObject.transform.position = moverMacacoController.MoverMacaco();
-            gameObject.transform.localScale = moverMacacoController.macacoGameObject.transform.localScale;
-        } else
-        {
-            PuloRule();
+            if (distancia < distanciaMin ||
+                distancia > distanciaMax)
+            {
+                gameObject.transform.position = moverMacacoController.MoverMacaco();
+                gameObject.transform.localScale = moverMacacoController.macacoGameObject.transform.localScale;
+            }
+            else
+            {
+                PuloRule();
+            }
         }
     }
 
@@ -71,16 +73,19 @@ public class MacacoController : MonoBehaviour
     {
         collision2DCurrent = collision2D;
 
+        Debug.Log("DIRECAO MACACO: " + UtilController.Instance.ReturnDirection(collision2D.contacts));
+
+        if (collision2D.gameObject.CompareTag("chao") && isJump)
+        {
+            isJump = false;
+        }
+
         if (distancia >= distanciaMin &&
             distancia <= distanciaMax &&
             playerScript.isAlive &&
             !isJump)
             Invoke("Pulo", delayTime);
 
-        if (collision2D.gameObject.CompareTag("chao") && isJump)
-        {
-            isJump = false;
-        }
     }
 
     private void CalculaDistanciaPlayer()
