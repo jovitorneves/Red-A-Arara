@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Player : MonoBehaviour
 {
@@ -44,7 +42,7 @@ public class Player : MonoBehaviour
         hitted = Physics2D.OverlapCircle(hitEnemy.position, radiusCheckHit, layerHit);
         grounded = Physics2D.OverlapCircle(groundCheck.position, radiusCheck, layerGround);
 
-        if (Input.GetButtonDown("Jump") && grounded)
+        if (Input.GetButtonDown(InputTagsConstants.Jump) && grounded)
         {
             jumping = true;
 
@@ -69,7 +67,7 @@ public class Player : MonoBehaviour
         
         if (isAlive && !levelCompleted) { 
 
-            float move = Input.GetAxis("Horizontal");
+            float move = Input.GetAxis(InputTagsConstants.Horizontal);
 
             rb2D.velocity = new Vector2(move * speed, rb2D.velocity.y);
 
@@ -95,23 +93,23 @@ public class Player : MonoBehaviour
     {
         if (levelCompleted)
         {
-            anim.Play("WINCELEBRATE");
+            anim.Play(AnimationTagsConstants.Celebrar);
         }
         else if (!isAlive)
         {
-            anim.Play("DEATH");
+            anim.Play(AnimationTagsConstants.Morte);
         }
         else if (grounded && rb2D.velocity.x != 0)
         {
-            anim.Play("WALK");
+            anim.Play(AnimationTagsConstants.Walk);
         }
         else if (grounded && rb2D.velocity.x == 0)
         {
-            anim.Play("IDLE");
+            anim.Play(AnimationTagsConstants.Idle);
         }
         else if (!grounded)
         {
-            anim.Play("JUMP");
+            anim.Play(AnimationTagsConstants.Jump);
         }
     }
 
@@ -126,7 +124,7 @@ public class Player : MonoBehaviour
 
         Debug.Log("DIRECAO PLAYER: " + UtilController.Instance.ReturnDirection(other.contacts));
 
-        if (other.gameObject.CompareTag ("Enemy"))
+        if (other.gameObject.CompareTag (TagsConstants.Enemy))
         { 
             if (hitted)
             {
@@ -139,7 +137,7 @@ public class Player : MonoBehaviour
 
         }
         
-        else if (other.gameObject.CompareTag ("Espinhos"))
+        else if (other.gameObject.CompareTag (TagsConstants.Espinhos))
         {
             PlayerDie();
         }
@@ -155,13 +153,13 @@ public class Player : MonoBehaviour
     void OnTriggerEnter2D (Collider2D other)
     {
 
-        if (other.CompareTag("Exit"))
+        if (other.CompareTag(TagsConstants.Exit))
         {
             levelCompleted = true;
             SoundManager.instance.PlayFxPlayer(fxWin);
         }
 
-        else if (other.CompareTag("Rio"))
+        else if (other.CompareTag(TagsConstants.Rio))
         {
             PlayerDie();
         }
