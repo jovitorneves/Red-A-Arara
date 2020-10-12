@@ -144,7 +144,7 @@ public class Player : MonoBehaviour
         
     }
 
-    void PlayerDie ()
+    public void PlayerDie ()
     {
         isAlive = false;
         Physics2D.IgnoreLayerCollision(9, 10);

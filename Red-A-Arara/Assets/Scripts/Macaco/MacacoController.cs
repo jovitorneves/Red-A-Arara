@@ -15,7 +15,7 @@ public class MacacoController : MonoBehaviour
 
     private Collision2D collision2DCurrent;
 
-    private Player playerScript;
+    public Player playerScript;
 
     [SerializeField]
     private float jumpForce = 300f;

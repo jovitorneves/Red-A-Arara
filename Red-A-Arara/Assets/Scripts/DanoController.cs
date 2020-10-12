@@ -12,6 +12,9 @@ public class DanoController : MonoBehaviour
             if (!macacoController.isJump)
             {
                 Destroy(transform.parent.gameObject);
+            } else
+            {
+                macacoController.playerScript.PlayerDie();
             }
         }
     }
