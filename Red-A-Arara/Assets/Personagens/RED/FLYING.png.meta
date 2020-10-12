@@ -1,0 +1,329 @@
+fileFormatVersion: 2
+guid: 269fc420d1eb7af4995cb27836e8687c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6772775923325811741
+    second: FLYING_0
+  - first:
+      213: 5941632107932350943
+    second: FLYING_1
+  - first:
+      213: -2846053855543560624
+    second: FLYING_2
+  - first:
+      213: -6678637041112908962
+    second: FLYING_3
+  - first:
+      213: -5218848531754364472
+    second: FLYING_4
+  - first:
+      213: -3659578487598463122
+    second: FLYING_5
+  - first:
+      213: -994751384912773101
+    second: FLYING_6
+  - first:
+      213: 3679728996334314935
+    second: FLYING_7
+  - first:
+      213: 7466038436739973414
+    second: FLYING_8
+  - first:
+      213: 4137991304442247137
+    second: FLYING_9
+  - first:
+      213: 4675774097954791960
+    second: FLYING_10
+  - first:
+      213: 4457825489596781676
+    second: FLYING_11
+  - first:
+      213: -8118201059469982762
+    second: FLYING_12
+  - first:
+      213: 3120332589702605270
+    second: FLYING_13
+  - first:
+      213: 8182634477234535539
+    second: FLYING_14
+  - first:
+      213: -1531759393229811766
+    second: FLYING_15
+  - first:
+      213: -8430875026888508577
+    second: FLYING_16
+  - first:
+      213: 2961278051316562674
+    second: FLYING_17
+  - first:
+      213: -6527712268607851155
+    second: FLYING_18
+  - first:
+      213: 1993893331718528679
+    second: FLYING_19
+  - first:
+      213: 7859675150742795611
+    second: FLYING_20
+  - first:
+      213: 365426001352218378
+    second: FLYING_21
+  - first:
+      213: 8120177728908891148
+    second: FLYING_22
+  - first:
+      213: 2394772417836641857
+    second: FLYING_23
+  - first:
+      213: 4772826482186194073
+    second: FLYING_24
+  - first:
+      213: 8421035229230666498
+    second: FLYING_25
+  - first:
+      213: -4231236686265511047
+    second: FLYING_26
+  - first:
+      213: -3866647951592239248
+    second: FLYING_27
+  - first:
+      213: -7566460635637899684
+    second: FLYING_28
+  - first:
+      213: -7464498252150256767
+    second: FLYING_29
+  - first:
+      213: -163582572811627401
+    second: FLYING_30
+  - first:
+      213: -5296453655981998322
+    second: FLYING_31
+  - first:
+      213: -3515044723526440489
+    second: FLYING_32
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FLYING_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 0
+        width: 155
+        height: 137
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1c372d81dbbdfd50800000000000000
+      internalID: 6772775923325811741
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FLYING_1
+      rect:
+        serializedVersion: 2
+        x: 259
+        y: 0
+        width: 155
+        height: 137
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd9fc5b0ceae47250800000000000000
+      internalID: 5941632107932350943
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FLYING_2
+      rect:
+        serializedVersion: 2
+        x: 524
+        y: 0
+        width: 155
+        height: 137
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 056f1b0f819c088d0800000000000000
+      internalID: -2846053855543560624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FLYING_3
+      rect:
+        serializedVersion: 2
+        x: 784
+        y: 0
+        width: 155
+        height: 137
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5bf2bcfef6b053a0800000000000000
+      internalID: -6678637041112908962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FLYING_4
+      rect:
+        serializedVersion: 2
+        x: 1047
+        y: 0
+        width: 155
+        height: 137
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c1563839ece297b0800000000000000
+      internalID: -5218848531754364472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FLYING_5
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 0
+        width: 126
+        height: 137
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e67480b31c0963dc0800000000000000
+      internalID: -3659578487598463122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
