@@ -10,8 +10,8 @@ public class MoverMacacoController : ScriptableObject
 
     private bool reverseMove = true;
     private float startTime = Time.time;
-    private float journeyLength;
-    private float speedMacaco = 3f;
+    private readonly float journeyLength;
+    private readonly float speedMacaco = 3f;
 
     public MoverMacacoController(GameObject macacoGameObject, Transform posicaoA, Transform posicaoB)
     {

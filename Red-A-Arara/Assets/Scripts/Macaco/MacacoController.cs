@@ -36,7 +36,7 @@ public class MacacoController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        moverMacacoController = ScriptableObject.CreateInstance<MoverMacacoController>();//recomendado pela unity
+        moverMacacoController = ScriptableObject.CreateInstance<MoverMacacoController>();//recomendado pela unity, se der error ao mover o macaco substituir pelo de baixo
         //moverMacacoController = new MoverMacacoController(gameObject, posicaoA, posicaoB);
         macacoRigidbody = GetComponent<Rigidbody2D>();
         playerScript = player.GetComponent<Player>();

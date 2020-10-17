@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public static class TagsConstants {
+public static class TagsConstants
+{
 
     public const string Player = "Player";
     public const string Enemy = "Enemy";
