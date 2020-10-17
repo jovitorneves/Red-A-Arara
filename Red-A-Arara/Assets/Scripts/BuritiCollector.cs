@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class BuritiCollector : MonoBehaviour
 {
@@ -9,12 +7,11 @@ public class BuritiCollector : MonoBehaviour
 
     void OnTriggerEnter2D (Collider2D other)
     {
-        if (other.CompareTag ("Player"))
+        if (other.CompareTag(TagsConstants.Player))
         {
-            GameManager.instance.score++;
-            SoundManager.instance.PlayFxBuritiCollector(fxCollect);
+            GameManager.Instance.score++;
+            SoundManager.Instance.PlayFxBuritiCollector(fxCollect);
             Destroy(gameObject);
-
         }
     }
 }

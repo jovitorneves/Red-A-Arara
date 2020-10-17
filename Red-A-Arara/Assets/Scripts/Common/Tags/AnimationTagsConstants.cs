@@ -10,5 +10,6 @@ public static class AnimationTagsConstants
     public const string Walk = "WALK";
     public const string Idle = "IDLE";
     public const string Jump = "JUMP";
+    public const string LevandoDano = "TAKENDAMAGE";
 
 }

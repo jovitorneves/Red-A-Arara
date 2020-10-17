@@ -27,16 +27,17 @@ public class MacacoController : MonoBehaviour
 
     private float distancia = 0f;
 
-    private float distanciaMax = 5f;
+    private readonly float distanciaMax = 5f;
 
-    private float distanciaMin = -5f;
+    private readonly float distanciaMin = -5f;
 
-    private float delayTime = 0.5f;
+    private readonly float delayTime = 0.5f;
 
     // Start is called before the first frame update
     void Start()
     {
-        moverMacacoController = new MoverMacacoController(gameObject, posicaoA, posicaoB);
+        moverMacacoController = ScriptableObject.CreateInstance<MoverMacacoController>();//recomendado pela unity
+        //moverMacacoController = new MoverMacacoController(gameObject, posicaoA, posicaoB);
         macacoRigidbody = GetComponent<Rigidbody2D>();
         playerScript = player.GetComponent<Player>();
         posicaoA.position = new Vector3(posicaoA.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z);
@@ -75,7 +76,7 @@ public class MacacoController : MonoBehaviour
 
         Debug.Log("DIRECAO MACACO: " + UtilController.Instance.ReturnDirection(collision2D.contacts));
 
-        if (collision2D.gameObject.CompareTag("chao") && isJump)
+        if (collision2D.gameObject.CompareTag(TagsConstants.Chao) && isJump)
         {
             isJump = false;
         }
@@ -84,7 +85,7 @@ public class MacacoController : MonoBehaviour
             distancia <= distanciaMax &&
             playerScript.isAlive &&
             !isJump)
-            Invoke("Pulo", delayTime);
+            Invoke(MethodNameTagsConstants.Pulo, delayTime);
 
     }
 
@@ -100,7 +101,7 @@ public class MacacoController : MonoBehaviour
             !playerScript.isAlive) return;
 
         if (!isJump)
-            Invoke("Pulo", delayTime);
+            Invoke(MethodNameTagsConstants.Pulo, delayTime);
 
         if (distancia < 0 && isLookLeft)
         {
@@ -119,7 +120,7 @@ public class MacacoController : MonoBehaviour
 
     private void PuloMacaco(Collision2D collision2D)
     {
-        if (collision2D.gameObject.CompareTag("chao") &&
+        if (collision2D.gameObject.CompareTag(TagsConstants.Chao) &&
             !isJump &&
             playerScript.isAlive)
         {

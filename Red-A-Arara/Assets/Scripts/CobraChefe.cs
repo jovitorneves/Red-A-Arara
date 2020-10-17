@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CobraChefe : MonoBehaviour
 {
@@ -45,8 +43,6 @@ public class CobraChefe : MonoBehaviour
         {
             Flip();
         }
-            
-      
     }
 
     void FixedUpdate()
@@ -70,7 +66,7 @@ public class CobraChefe : MonoBehaviour
 
     void OnBecameVisible()
     {
-        Invoke("MoveEnemy", 1f);
+        Invoke(MethodNameTagsConstants.MoveEnemy, 1f);
     }
 
     void OnBecameInvisible()
@@ -81,7 +77,7 @@ public class CobraChefe : MonoBehaviour
     void MoveEnemy ()
     {
         isVisible = true;
-        anim.Play("WALK");
+        anim.Play(AnimationTagsConstants.Walk);
     }
 
     void StopEnemy ()
@@ -92,27 +88,24 @@ public class CobraChefe : MonoBehaviour
     void OnTriggerEnter2D (Collider2D other)
     {
         
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag(TagsConstants.Player))
         {
-            damageTaken = damageTaken + 1;
+            damageTaken += 1;
 
             if (damageTaken == 3)
             {
-                SoundManager.instance.PlayFxCobraDie(fxCobraDie);
-                anim.Play("DEATH");
+                SoundManager.Instance.PlayFxCobraDie(fxCobraDie);
+                anim.Play(AnimationTagsConstants.Morte);
             }
             else
             {
-                anim.Play("TAKENDAMAGE");
-                SoundManager.instance.PlayFxCobraChefeDamageTaken(fxCobraDamageTaken);
-                Invoke("MoveEnemy", 1f);
+                anim.Play(AnimationTagsConstants.LevandoDano);
+                SoundManager.Instance.PlayFxCobraChefeDamageTaken(fxCobraDamageTaken);
+                Invoke(MethodNameTagsConstants.MoveEnemy, 1f);
             }
-                
-
         }
     }
     
-
     void EnemyDie()
     {
         Destroy(gameObject);

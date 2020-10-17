@@ -9,5 +9,6 @@ public static class TagsConstants {
     public const string Espinhos = "Espinhos";
     public const string Exit = "Exit";
     public const string Rio = "Rio";
+    public const string Chao = "chao";
 
 }

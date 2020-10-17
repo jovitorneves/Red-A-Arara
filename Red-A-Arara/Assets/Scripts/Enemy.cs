@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Enemy : MonoBehaviour
 {
@@ -10,7 +8,6 @@ public class Enemy : MonoBehaviour
 
     public LayerMask layerGround;
     
-
     public float radiusCheck;
     public float radiusCheckHorizontal;
 
@@ -44,8 +41,7 @@ public class Enemy : MonoBehaviour
         {
             Flip();
         }
-            
-      
+         
     }
 
     void FixedUpdate()
@@ -69,7 +65,7 @@ public class Enemy : MonoBehaviour
 
     void OnBecameVisible ()
     {
-        Invoke("MoveEnemy", 3f);
+        Invoke(MethodNameTagsConstants.MoveEnemy, 3f);
     }
 
     void OnBecameInvisible ()
@@ -80,7 +76,7 @@ public class Enemy : MonoBehaviour
     void MoveEnemy ()
     {
         isVisible = true;
-        anim.Play("WALK");
+        anim.Play(AnimationTagsConstants.Walk);
     }
 
     void StopEnemy ()
@@ -91,26 +87,16 @@ public class Enemy : MonoBehaviour
     void OnTriggerEnter2D (Collider2D other)
     {
         
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag(TagsConstants.Player))
         {
-
-            
-            
-            anim.Play("DEATH");
-
-            
-            
+            anim.Play(AnimationTagsConstants.Morte);
         }
     }
     
-
     void EnemyDie()
     {
-       
-        SoundManager.instance.PlayFxCobraDie(fxCobraDie);
+        SoundManager.Instance.PlayFxCobraDie(fxCobraDie);
         Destroy(gameObject);
-        
-        
     }
     
 }

@@ -48,11 +48,11 @@ public class Player : MonoBehaviour
 
             if (isAlive && !levelCompleted)
             {
-                SoundManager.instance.PlayFxPlayer(fxJump);
+                SoundManager.Instance.PlayFxPlayer(fxJump);
             }
         }
 
-        if (((int)GameManager.instance.time <= 0) && !timeIsOver)
+        if (((int)GameManager.Instance.time <= 0) && !timeIsOver)
         {
             timeIsOver = true;
             PlayerDie();
@@ -147,7 +147,7 @@ public class Player : MonoBehaviour
     {
         isAlive = false;
         Physics2D.IgnoreLayerCollision(9, 10);
-        SoundManager.instance.PlayFxPlayer(fxDie);
+        SoundManager.Instance.PlayFxPlayer(fxDie);
     }
 
     void OnTriggerEnter2D (Collider2D other)
@@ -156,7 +156,7 @@ public class Player : MonoBehaviour
         if (other.CompareTag(TagsConstants.Exit))
         {
             levelCompleted = true;
-            SoundManager.instance.PlayFxPlayer(fxWin);
+            SoundManager.Instance.PlayFxPlayer(fxWin);
         }
 
         else if (other.CompareTag(TagsConstants.Rio))
@@ -169,16 +169,16 @@ public class Player : MonoBehaviour
     {
         if (timeIsOver)
         {
-            GameManager.instance.SetOverlay(GameManager.GameStatus.LOSE);
+            GameManager.Instance.SetOverlay(GameStatus.LOSE);
         }
         else
         {
-            GameManager.instance.SetOverlay(GameManager.GameStatus.DIE);
+            GameManager.Instance.SetOverlay(GameStatus.DIE);
         }
     }
 
     void CelebrateAnimationFinished()
     {
-        GameManager.instance.SetOverlay(GameManager.GameStatus.WIN);
+        GameManager.Instance.SetOverlay(GameStatus.WIN);
     }
 }

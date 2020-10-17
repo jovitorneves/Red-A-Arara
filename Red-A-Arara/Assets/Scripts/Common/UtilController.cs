@@ -1,9 +1,8 @@
 ﻿using UnityEngine;
 
-public class UtilController : Singleton<UtilController>
+public class UtilController : GenericSingletonClass<UtilController>
 {
-    public enum HitDirection { None, Top, Bottom, Left, Right }
-
+ 
     public HitDirection ReturnDirection(ContactPoint2D[] collision2D)
     {
 
