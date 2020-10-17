@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using UnityEngine;
 
-public class MacacoController : MonoBehaviour
+public class MacacoController : BaseEnemyController
 {
     [SerializeField]
     private Rigidbody2D macacoRigidbody;

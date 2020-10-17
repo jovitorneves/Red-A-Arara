@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Enemy : BaseEnemyController
 {
     public float speed;
     public Transform groundCheck;

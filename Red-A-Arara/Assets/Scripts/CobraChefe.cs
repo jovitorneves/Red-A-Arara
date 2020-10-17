@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-public class CobraChefe : MonoBehaviour
+public class CobraChefe : BaseEnemyController
 {
     public float speed;
     public Transform groundCheck;
@@ -30,6 +30,7 @@ public class CobraChefe : MonoBehaviour
     {
         rb2D = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        isBoss = true;
     }
 
     // Update is called once per frame
@@ -94,6 +95,7 @@ public class CobraChefe : MonoBehaviour
 
             if (damageTaken == 3)
             {
+                this.isDead = true;
                 SoundManager.Instance.PlayFxCobraDie(fxCobraDie);
                 anim.Play(AnimationTagsConstants.Morte);
             }

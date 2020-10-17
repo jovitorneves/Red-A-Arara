@@ -71,21 +71,20 @@ public class Player : MonoBehaviour
 
             rb2D.velocity = new Vector2(move * speed, rb2D.velocity.y);
 
-        if ((move < 0 && facingRight) || (move > 0 && !facingRight))
-        {
-            Flip();
-        }
-        if (jumping)
-        {
-            rb2D.AddForce(new Vector2(0f, jumpForce));
-            jumping = false;
-        }
+            if ((move < 0 && facingRight) || (move > 0 && !facingRight))
+            {
+                Flip();
+            }
+            if (jumping)
+            {
+                rb2D.AddForce(new Vector2(0f, jumpForce));
+                jumping = false;
+            }
 
         }
         else
         {
             rb2D.velocity = new Vector2(0, rb2D.velocity.y);
-
         }
     }
 
@@ -136,7 +135,6 @@ public class Player : MonoBehaviour
             }
 
         }
-        
         else if (other.gameObject.CompareTag (TagsConstants.Espinhos))
         {
             PlayerDie();
@@ -158,7 +156,6 @@ public class Player : MonoBehaviour
             levelCompleted = true;
             SoundManager.Instance.PlayFxPlayer(fxWin);
         }
-
         else if (other.CompareTag(TagsConstants.Rio))
         {
             PlayerDie();
