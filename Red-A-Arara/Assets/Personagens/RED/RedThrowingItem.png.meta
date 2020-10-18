@@ -1,34 +1,91 @@
 fileFormatVersion: 2
-guid: 0c6279091d9a0b14d8388ea39385c8d9
+guid: 4d45e2ab3cd1b4ae49ca9bf127005e84
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6629818525482401367
-    second: Tucano (FLYING)_0
+      213: -2957015844729674877
+    second: RedThrowingItem_0
   - first:
-      213: 8037128579601194759
-    second: Tucano (FLYING)_1
+      213: 6156465864590786191
+    second: RedThrowingItem_1
   - first:
-      213: -383347988811407092
-    second: Tucano (FLYING)_2
+      213: 5997877715516257225
+    second: RedThrowingItem_2
   - first:
-      213: 8685136213772992955
-    second: Tucano (FLYING)_3
+      213: 1558633290781914500
+    second: RedThrowingItem_3
   - first:
-      213: -7394007748409021503
-    second: Tucano (FLYING)_4
+      213: -8238064883734047534
+    second: RedThrowingItem_4
   - first:
-      213: 3551086794559814103
-    second: Tucano (FLYING)_5
+      213: -7962698060451233363
+    second: RedThrowingItem_5
   - first:
-      213: -4319727149593322701
-    second: Tucano (FLYING)_6
+      213: -5958055450316980579
+    second: RedThrowingItem_6
   - first:
-      213: 2410437491265518919
-    second: Tucano (FLYING)_7
+      213: 3056581530748250503
+    second: RedThrowingItem_7
   - first:
-      213: 6327086784814637754
-    second: Tucano (FLYING)_8
+      213: -833686267898943353
+    second: RedThrowingItem_8
+  - first:
+      213: 6070512683973192631
+    second: RedThrowingItem_9
+  - first:
+      213: -6352736079673552051
+    second: RedThrowingItem_10
+  - first:
+      213: -5814746814521733639
+    second: RedThrowingItem_11
+  - first:
+      213: 4449926896478511196
+    second: RedThrowingItem_12
+  - first:
+      213: 5419054655173560332
+    second: RedThrowingItem_13
+  - first:
+      213: -9008836723580933176
+    second: RedThrowingItem_14
+  - first:
+      213: -1931971525984281960
+    second: RedThrowingItem_15
+  - first:
+      213: -637683639647025455
+    second: RedThrowingItem_0
+  - first:
+      213: -5622395924092075435
+    second: RedThrowingItem_1
+  - first:
+      213: 8231774599522217264
+    second: RedThrowingItem_2
+  - first:
+      213: -2195535561235998326
+    second: RedThrowingItem_3
+  - first:
+      213: 8847739584051677321
+    second: RedThrowingItem_4
+  - first:
+      213: 9000501577028444219
+    second: RedThrowingItem_5
+  - first:
+      213: 2459184792281095333
+    second: RedThrowingItem_6
+  - first:
+      213: 1281341617561069461
+    second: RedThrowingItem_7
+  - first:
+      213: 7574642469761720094
+    second: RedThrowingItem_8
+  - first:
+      213: -5189408324843367891
+    second: RedThrowingItem_9
+  - first:
+      213: 6075285894884375281
+    second: RedThrowingItem_10
+  - first:
+      213: 643652682004389175
+    second: RedThrowingItem_11
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -72,7 +129,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 30
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -126,13 +183,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tucano (FLYING)_0
+      name: RedThrowingItem_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 91
-        height: 64
+        width: 113
+        height: 100
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +197,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75ebea892d8d10c50800000000000000
-      internalID: 6629818525482401367
+      spriteID: 1d6c2cbbb1e7627f0800000000000000
+      internalID: -637683639647025455
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tucano (FLYING)_1
+      name: RedThrowingItem_1
       rect:
         serializedVersion: 2
-        x: 150
+        x: 270
         y: 0
-        width: 92
-        height: 64
+        width: 119
+        height: 103
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 70fd4415cdd998f60800000000000000
-      internalID: 8037128579601194759
+      spriteID: 55243ed12bc39f1b0800000000000000
+      internalID: -5622395924092075435
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tucano (FLYING)_2
+      name: RedThrowingItem_2
       rect:
         serializedVersion: 2
-        x: 300
+        x: 540
         y: 0
-        width: 97
-        height: 64
+        width: 113
+        height: 104
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,20 +239,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c01298509031eaaf0800000000000000
-      internalID: -383347988811407092
+      spriteID: 03dea9b62632d3270800000000000000
+      internalID: 8231774599522217264
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tucano (FLYING)_3
+      name: RedThrowingItem_3
       rect:
         serializedVersion: 2
-        x: 456
+        x: 810
         y: 0
-        width: 98
-        height: 64
+        width: 116
+        height: 104
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,20 +260,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb102dfde5dc78870800000000000000
-      internalID: 8685136213772992955
+      spriteID: a895acc1a04e781e0800000000000000
+      internalID: -2195535561235998326
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tucano (FLYING)_4
+      name: RedThrowingItem_4
       rect:
         serializedVersion: 2
-        x: 616
+        x: 1080
         y: 0
-        width: 97
-        height: 64
+        width: 114
+        height: 103
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,20 +281,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1cb2891c025336990800000000000000
-      internalID: -7394007748409021503
+      spriteID: 988009c364c79ca70800000000000000
+      internalID: 8847739584051677321
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tucano (FLYING)_5
+      name: RedThrowingItem_5
       rect:
         serializedVersion: 2
-        x: 779
+        x: 1350
         y: 0
-        width: 93
-        height: 64
+        width: 114
+        height: 102
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -245,20 +302,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d9715c00aef74130800000000000000
-      internalID: 3551086794559814103
+      spriteID: b30af136f7438ec70800000000000000
+      internalID: 9000501577028444219
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tucano (FLYING)_6
+      name: RedThrowingItem_6
       rect:
         serializedVersion: 2
-        x: 942
+        x: 1620
         y: 0
-        width: 87
-        height: 64
+        width: 115
+        height: 100
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +323,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33b11e95b0f3d04c0800000000000000
-      internalID: -4319727149593322701
+      spriteID: 5ac15fc0a87c02220800000000000000
+      internalID: 2459184792281095333
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tucano (FLYING)_7
+      name: RedThrowingItem_7
       rect:
         serializedVersion: 2
-        x: 1107
+        x: 1890
         y: 0
-        width: 93
-        height: 64
+        width: 134
+        height: 99
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -287,20 +344,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74d3a249028937120800000000000000
-      internalID: 2410437491265518919
+      spriteID: 597e6ae896d38c110800000000000000
+      internalID: 1281341617561069461
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tucano (FLYING)_8
+      name: RedThrowingItem_8
       rect:
         serializedVersion: 2
-        x: 1261
+        x: 2160
         y: 0
-        width: 89
-        height: 64
+        width: 184
+        height: 103
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -308,8 +365,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab2e1ff88e35ec750800000000000000
-      internalID: 6327086784814637754
+      spriteID: e1f1cbea1398e1960800000000000000
+      internalID: 7574642469761720094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedThrowingItem_9
+      rect:
+        serializedVersion: 2
+        x: 2430
+        y: 0
+        width: 227
+        height: 99
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d22914b8f948bf7b0800000000000000
+      internalID: -5189408324843367891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedThrowingItem_10
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 0
+        width: 270
+        height: 101
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fa36894550cf4450800000000000000
+      internalID: 6075285894884375281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedThrowingItem_11
+      rect:
+        serializedVersion: 2
+        x: 2970
+        y: 0
+        width: 270
+        height: 100
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73d599d34b6bee800800000000000000
+      internalID: 643652682004389175
       vertices: []
       indices: 
       edges: []

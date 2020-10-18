@@ -1,34 +1,37 @@
 fileFormatVersion: 2
-guid: 0c6279091d9a0b14d8388ea39385c8d9
+guid: 13617ede51db74a4ab2a2fcec2f593c2
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6629818525482401367
-    second: Tucano (FLYING)_0
+      213: -27164065374758982
+    second: RedHurlingCoco_0
   - first:
-      213: 8037128579601194759
-    second: Tucano (FLYING)_1
+      213: -2139051269457936979
+    second: RedHurlingCoco_1
   - first:
-      213: -383347988811407092
-    second: Tucano (FLYING)_2
+      213: -7242887649647415909
+    second: RedHurlingCoco_2
   - first:
-      213: 8685136213772992955
-    second: Tucano (FLYING)_3
+      213: -285782026647362012
+    second: RedHurlingCoco_3
   - first:
-      213: -7394007748409021503
-    second: Tucano (FLYING)_4
+      213: 8597758175694781304
+    second: RedHurlingCoco_4
   - first:
-      213: 3551086794559814103
-    second: Tucano (FLYING)_5
+      213: -715477075797723079
+    second: RedHurlingCoco_5
   - first:
-      213: -4319727149593322701
-    second: Tucano (FLYING)_6
+      213: -352363192858821799
+    second: RedHurlingCoco_6
   - first:
-      213: 2410437491265518919
-    second: Tucano (FLYING)_7
+      213: -1012866466142146448
+    second: RedHurlingCoco_7
   - first:
-      213: 6327086784814637754
-    second: Tucano (FLYING)_8
+      213: -3872454961005816325
+    second: RedHurlingCoco_8
+  - first:
+      213: -2315137293775565155
+    second: RedHurlingCoco_9
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -72,7 +75,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 30
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -126,13 +129,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Tucano (FLYING)_0
+      name: RedHurlingCoco_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 91
-        height: 64
+        width: 145
+        height: 98
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,41 +143,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 75ebea892d8d10c50800000000000000
-      internalID: 6629818525482401367
+      spriteID: ab79eac2d6e7f9ff0800000000000000
+      internalID: -27164065374758982
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tucano (FLYING)_1
-      rect:
-        serializedVersion: 2
-        x: 150
-        y: 0
-        width: 92
-        height: 64
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 70fd4415cdd998f60800000000000000
-      internalID: 8037128579601194759
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Tucano (FLYING)_2
+      name: RedHurlingCoco_1
       rect:
         serializedVersion: 2
         x: 300
         y: 0
-        width: 97
-        height: 64
+        width: 146
+        height: 102
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -182,20 +164,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c01298509031eaaf0800000000000000
-      internalID: -383347988811407092
+      spriteID: dad7c9f14309052e0800000000000000
+      internalID: -2139051269457936979
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tucano (FLYING)_3
+      name: RedHurlingCoco_2
       rect:
         serializedVersion: 2
-        x: 456
-        y: 0
-        width: 98
-        height: 64
+        x: 600
+        y: 22
+        width: 145
+        height: 101
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,20 +185,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: bb102dfde5dc78870800000000000000
-      internalID: 8685136213772992955
+      spriteID: b9da3be9e081c7b90800000000000000
+      internalID: -7242887649647415909
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tucano (FLYING)_4
+      name: RedHurlingCoco_3
       rect:
         serializedVersion: 2
-        x: 616
-        y: 0
-        width: 97
-        height: 64
+        x: 900
+        y: 38
+        width: 149
+        height: 97
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -224,20 +206,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1cb2891c025336990800000000000000
-      internalID: -7394007748409021503
+      spriteID: 4262e7ac2c2b80cf0800000000000000
+      internalID: -285782026647362012
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tucano (FLYING)_5
+      name: RedHurlingCoco_4
       rect:
         serializedVersion: 2
-        x: 779
-        y: 0
-        width: 93
-        height: 64
+        x: 1200
+        y: 43
+        width: 150
+        height: 95
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -245,20 +227,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7d9715c00aef74130800000000000000
-      internalID: 3551086794559814103
+      spriteID: 87b7ff6028f515770800000000000000
+      internalID: 8597758175694781304
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tucano (FLYING)_6
+      name: RedHurlingCoco_5
       rect:
         serializedVersion: 2
-        x: 942
-        y: 0
-        width: 87
-        height: 64
+        x: 1500
+        y: 39
+        width: 166
+        height: 101
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -266,20 +248,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 33b11e95b0f3d04c0800000000000000
-      internalID: -4319727149593322701
+      spriteID: 938342ce36d1216f0800000000000000
+      internalID: -715477075797723079
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tucano (FLYING)_7
+      name: RedHurlingCoco_6
       rect:
         serializedVersion: 2
-        x: 1107
-        y: 0
-        width: 93
-        height: 64
+        x: 1800
+        y: 16
+        width: 198
+        height: 106
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -287,20 +269,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 74d3a249028937120800000000000000
-      internalID: 2410437491265518919
+      spriteID: 95b3ab10b872c1bf0800000000000000
+      internalID: -352363192858821799
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Tucano (FLYING)_8
+      name: RedHurlingCoco_7
       rect:
         serializedVersion: 2
-        x: 1261
+        x: 2100
         y: 0
-        width: 89
-        height: 64
+        width: 252
+        height: 113
       alignment: 2
       pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -308,8 +290,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab2e1ff88e35ec750800000000000000
-      internalID: 6327086784814637754
+      spriteID: 07031b0c05391f1f0800000000000000
+      internalID: -1012866466142146448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHurlingCoco_8
+      rect:
+        serializedVersion: 2
+        x: 2400
+        y: 0
+        width: 276
+        height: 98
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf59c88eab6424ac0800000000000000
+      internalID: -3872454961005816325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHurlingCoco_9
+      rect:
+        serializedVersion: 2
+        x: 2722
+        y: 0
+        width: 99
+        height: 94
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9e8f3eb5eafedfd0800000000000000
+      internalID: -2315137293775565155
       vertices: []
       indices: 
       edges: []

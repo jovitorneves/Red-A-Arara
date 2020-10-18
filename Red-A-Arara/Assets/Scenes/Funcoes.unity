@@ -723,6 +723,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ccd5b7b4d70a44714b4b965657e0e16e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDead: 0
+  isBoss: 0
   macacoRigidbody: {fileID: 728206648}
   player: {fileID: 87543219}
   posicaoA: {fileID: 1440491534}
