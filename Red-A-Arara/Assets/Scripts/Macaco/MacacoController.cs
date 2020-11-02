@@ -40,11 +40,15 @@ public class MacacoController : BaseEnemyController
     // Start is called before the first frame update
     void Start()
     {
-        //moverMacacoController = ScriptableObject.CreateInstance<MoverMacacoController>();//recomendado pela unity, se der error ao mover o macaco substituir pelo de baixo
-        moverMacacoController = new MoverMacacoController(gameObject, posicaoA, posicaoB);
         macacoRigidbody = GetComponent<Rigidbody2D>();
         playerScript = player.GetComponent<Player>();
         animator = GetComponent<Animator>();
+
+        if (posicaoA.Equals(null) || posicaoB.Equals(null))
+            return;
+
+        //moverMacacoController = ScriptableObject.CreateInstance<MoverMacacoController>();//recomendado pela unity, se der error ao mover o macaco substituir pelo de baixo
+        moverMacacoController = new MoverMacacoController(gameObject, posicaoA, posicaoB);
         posicaoA.position = new Vector3(posicaoA.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z);
         posicaoB.position = new Vector3(posicaoB.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z);
     }
@@ -52,6 +56,9 @@ public class MacacoController : BaseEnemyController
     // Update is called once per frame
     void Update()
     {
+        if (posicaoA.Equals(null) || posicaoB.Equals(null))
+            return;
+
         float disA = gameObject.transform.position.x - posicaoA.position.x;
         float disB = gameObject.transform.position.x - posicaoB.position.x;
         disA = disA > 0 ? (disA * 1) : disA * -1;
