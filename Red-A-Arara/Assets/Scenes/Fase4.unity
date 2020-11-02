@@ -3466,6 +3466,11 @@ PrefabInstance:
       propertyPath: maxLimit.x
       value: -12.89
       objectReference: {fileID: 0}
+    - target: {fileID: 4060887002493018197, guid: d3ee570c7b178524199a1eb62abcdaa1,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1751028104}
     - target: {fileID: 4060887002493018199, guid: d3ee570c7b178524199a1eb62abcdaa1,
         type: 3}
       propertyPath: m_Name

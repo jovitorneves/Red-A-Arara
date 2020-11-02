@@ -13,6 +13,7 @@ public class MacacoController : BaseEnemyController
     private Transform posicaoA, posicaoB;
 
     private Collision2D collision2DCurrent;
+    private Animator animator;
 
     public Player playerScript;
 
@@ -21,25 +22,29 @@ public class MacacoController : BaseEnemyController
 
     private MoverMacacoController moverMacacoController;
 
-    private bool isLookLeft = true;
+    [SerializeField]
+    private bool isLookLeft = false;
 
     public bool isJump = false;
 
     private float distancia = 0f;
 
-    private readonly float distanciaMax = 5f;
+    private readonly float distanciaMonkeyAndPointMax = 2f;
 
-    private readonly float distanciaMin = -5f;
+    private readonly float distanciaMax = 3f;
+
+    private readonly float distanciaMin = -3f;
 
     private readonly float delayTime = 0.5f;
 
     // Start is called before the first frame update
     void Start()
     {
-        moverMacacoController = ScriptableObject.CreateInstance<MoverMacacoController>();//recomendado pela unity, se der error ao mover o macaco substituir pelo de baixo
-        //moverMacacoController = new MoverMacacoController(gameObject, posicaoA, posicaoB);
+        //moverMacacoController = ScriptableObject.CreateInstance<MoverMacacoController>();//recomendado pela unity, se der error ao mover o macaco substituir pelo de baixo
+        moverMacacoController = new MoverMacacoController(gameObject, posicaoA, posicaoB);
         macacoRigidbody = GetComponent<Rigidbody2D>();
         playerScript = player.GetComponent<Player>();
+        animator = GetComponent<Animator>();
         posicaoA.position = new Vector3(posicaoA.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z);
         posicaoB.position = new Vector3(posicaoB.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z);
     }
@@ -47,27 +52,32 @@ public class MacacoController : BaseEnemyController
     // Update is called once per frame
     void Update()
     {
-        CalculaDistanciaPlayer();
+        float disA = gameObject.transform.position.x - posicaoA.position.x;
+        float disB = gameObject.transform.position.x - posicaoB.position.x;
+        disA = disA > 0 ? (disA * 1) : disA * -1;
+        disB = disB > 0 ? (disB * 1) : disB * -1;
+
+        DistanciaPlayerIntervalMacaco();
 
         if (playerScript.isAlive)
         {
-            if (distancia < distanciaMin ||
-                distancia > distanciaMax)
+            if (player.gameObject.transform.position.x >= posicaoA.position.x &&
+                player.gameObject.transform.position.x <= posicaoB.position.x)
             {
-                gameObject.transform.position = moverMacacoController.MoverMacaco();
-                gameObject.transform.localScale = moverMacacoController.macacoGameObject.transform.localScale;
+                if (disA >= distanciaMonkeyAndPointMax &&
+                    disB >= distanciaMonkeyAndPointMax)
+                    PuloRule();
+                else
+                    MoveMonkey();
             }
             else
-            {
-                PuloRule();
-            }
+                MoveMonkey();
         }
     }
 
-    //Desenha um risco que liga o Ponto A e o Ponto B
-    private void OnDrawGizmos()
+    private void FixedUpdate()
     {
-        Gizmos.DrawLine(posicaoA.position, posicaoB.position);
+        PlayAnimations();
     }
 
     private void OnCollisionEnter2D(Collision2D collision2D)
@@ -81,36 +91,51 @@ public class MacacoController : BaseEnemyController
             isJump = false;
         }
 
-        if (distancia >= distanciaMin &&
-            distancia <= distanciaMax &&
+        if (player.gameObject.transform.position.x >= posicaoA.position.x &&
+            player.gameObject.transform.position.x <= posicaoB.position.x &&
             playerScript.isAlive &&
             !isJump)
             Invoke(MethodNameTagsConstants.Pulo, delayTime);
 
     }
 
-    private void CalculaDistanciaPlayer()
+    private void PlayAnimations()
+    {
+        if (isJump)
+            animator.Play(AnimationTagsConstants.Jump);
+        else
+            animator.Play(AnimationTagsConstants.Walk);
+    }
+
+    private void DistanciaPlayerIntervalMacaco()
     {
         distancia = gameObject.transform.position.x - player.transform.position.x;
     }
 
+    private void MoveMonkey()
+    {
+        if (isJump) return;
+
+        isLookLeft = !moverMacacoController.isLookLeft;
+        gameObject.transform.position = moverMacacoController.MoverMacaco(gameObject.transform.position);
+        gameObject.transform.localScale = moverMacacoController.macacoGameObject.transform.localScale;
+    }
+
     private void PuloRule()
     {
-        if ((distancia < distanciaMin ||
-            distancia > distanciaMax) &&
-            !playerScript.isAlive) return;
+        if (!playerScript.isAlive) return;
+
+        if (player.gameObject.transform.position.x < posicaoA.position.x ||
+            player.gameObject.transform.position.x > posicaoB.position.x)
+            return;
 
         if (!isJump)
             Invoke(MethodNameTagsConstants.Pulo, delayTime);
 
-        if (distancia < 0 && isLookLeft)
-        {
+        if (distancia < 0 && isLookLeft)//direita
             Flip();
-        }
-        else if (distancia > 0 && !isLookLeft)
-        {
+        else if (distancia > 0 && !isLookLeft)//esquerda
             Flip();
-        }
     }
 
     private void Pulo()
@@ -131,10 +156,10 @@ public class MacacoController : BaseEnemyController
 
     private void Flip()
     {
-        float x = transform.localScale.x * -1;
+        float x = isLookLeft ? -1 : 1;
 
-        isLookLeft = !isLookLeft;
         transform.localScale = new Vector3(x, transform.localScale.y, transform.localScale.z);
+        isLookLeft = !isLookLeft;
     }
 
     IEnumerator Delay()

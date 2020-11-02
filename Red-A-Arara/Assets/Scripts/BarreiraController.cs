@@ -7,11 +7,11 @@ public class BarreiraController : MonoBehaviour
     {
         if (collision2D.gameObject.CompareTag(TagsConstants.Player))
         {
-            this.gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
+            gameObject.GetComponent<BoxCollider2D>().isTrigger = true;
         }
         else
         {
-            this.gameObject.GetComponent<BoxCollider2D>().isTrigger = false;
+            gameObject.GetComponent<BoxCollider2D>().isTrigger = false;
         }
     }
 
@@ -19,7 +19,7 @@ public class BarreiraController : MonoBehaviour
     {
         if (collision.gameObject.CompareTag(TagsConstants.Player))
         {
-            this.gameObject.GetComponent<BoxCollider2D>().isTrigger = false;
+            gameObject.GetComponent<BoxCollider2D>().isTrigger = false;
         }
     }
 }
