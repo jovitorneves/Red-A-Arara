@@ -35,7 +35,7 @@ public class MacacoController : BaseEnemyController
 
     private readonly float distanciaMin = -3f;
 
-    private readonly float delayTime = 0.5f;
+    private readonly float delayTime = 0.8f;
 
     // Start is called before the first frame update
     void Start()

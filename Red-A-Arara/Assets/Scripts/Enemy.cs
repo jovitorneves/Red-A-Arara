@@ -46,14 +46,7 @@ public class Enemy : BaseEnemyController
 
     void FixedUpdate()
     {
-        if (isVisible)
-        {
-            rb2D.velocity = new Vector2(speed, rb2D.velocity.y);
-        }
-        else
-        {
-            rb2D.velocity = new Vector2(0f, rb2D.velocity.y);
-        }
+        rb2D.velocity = new Vector2(isVisible ? speed : 0f, rb2D.velocity.y);
     }
 
     void Flip()
