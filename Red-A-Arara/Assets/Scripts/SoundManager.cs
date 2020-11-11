@@ -31,7 +31,7 @@ public class SoundManager : GenericSingletonClass<SoundManager>
     public void PlayFxCobraDie (AudioClip clip)
     {
         fxCobraDie.clip = clip;
-        fxCobraAttack.Play();
+        fxCobraDie.Play();
     }
     
     public void PlayFxCobraChefeDamageTaken (AudioClip clip)
