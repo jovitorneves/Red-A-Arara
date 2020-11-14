@@ -1,14 +1,9 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using System.Reflection.Emit;
 
 public class GameManager : MonoBehaviour
 {
-    public static GameManager instance;
-
     public Sprite[] overlaySprites;
     public Image overlay;
     public Text timeHud;
@@ -16,22 +11,21 @@ public class GameManager : MonoBehaviour
 
     public float time;
     public int score;
-
-    public enum GameStatus { WIN, LOSE, DIE, PLAY }
     public GameStatus status;
-
+    public static GameManager Instance;
 
     void Awake()
     {
-        if (instance == null)
+        if (Instance == null)
         {
-            instance = this;
+            Instance = this;
         }
         else
         {
             Destroy(gameObject);
         }
     }
+
     // Start is called before the first frame update
     void Start()
     {
@@ -56,7 +50,7 @@ public class GameManager : MonoBehaviour
                 scoreHud.text = "Buritis " + score.ToString();
             }
         }
-        else if (Input.GetButtonDown("Jump")) 
+        else if (Input.GetButtonDown(InputTagsConstants.Jump)) 
         { 
             if (status == GameStatus.WIN)
             {

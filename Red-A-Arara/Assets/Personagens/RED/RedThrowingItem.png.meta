@@ -1,0 +1,452 @@
+fileFormatVersion: 2
+guid: 4d45e2ab3cd1b4ae49ca9bf127005e84
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2957015844729674877
+    second: RedThrowingItem_0
+  - first:
+      213: 6156465864590786191
+    second: RedThrowingItem_1
+  - first:
+      213: 5997877715516257225
+    second: RedThrowingItem_2
+  - first:
+      213: 1558633290781914500
+    second: RedThrowingItem_3
+  - first:
+      213: -8238064883734047534
+    second: RedThrowingItem_4
+  - first:
+      213: -7962698060451233363
+    second: RedThrowingItem_5
+  - first:
+      213: -5958055450316980579
+    second: RedThrowingItem_6
+  - first:
+      213: 3056581530748250503
+    second: RedThrowingItem_7
+  - first:
+      213: -833686267898943353
+    second: RedThrowingItem_8
+  - first:
+      213: 6070512683973192631
+    second: RedThrowingItem_9
+  - first:
+      213: -6352736079673552051
+    second: RedThrowingItem_10
+  - first:
+      213: -5814746814521733639
+    second: RedThrowingItem_11
+  - first:
+      213: 4449926896478511196
+    second: RedThrowingItem_12
+  - first:
+      213: 5419054655173560332
+    second: RedThrowingItem_13
+  - first:
+      213: -9008836723580933176
+    second: RedThrowingItem_14
+  - first:
+      213: -1931971525984281960
+    second: RedThrowingItem_15
+  - first:
+      213: -637683639647025455
+    second: RedThrowingItem_0
+  - first:
+      213: -5622395924092075435
+    second: RedThrowingItem_1
+  - first:
+      213: 8231774599522217264
+    second: RedThrowingItem_2
+  - first:
+      213: -2195535561235998326
+    second: RedThrowingItem_3
+  - first:
+      213: 8847739584051677321
+    second: RedThrowingItem_4
+  - first:
+      213: 9000501577028444219
+    second: RedThrowingItem_5
+  - first:
+      213: 2459184792281095333
+    second: RedThrowingItem_6
+  - first:
+      213: 1281341617561069461
+    second: RedThrowingItem_7
+  - first:
+      213: 7574642469761720094
+    second: RedThrowingItem_8
+  - first:
+      213: -5189408324843367891
+    second: RedThrowingItem_9
+  - first:
+      213: 6075285894884375281
+    second: RedThrowingItem_10
+  - first:
+      213: 643652682004389175
+    second: RedThrowingItem_11
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 30
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RedThrowingItem_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 113
+        height: 100
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d6c2cbbb1e7627f0800000000000000
+      internalID: -637683639647025455
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedThrowingItem_1
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 0
+        width: 119
+        height: 103
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55243ed12bc39f1b0800000000000000
+      internalID: -5622395924092075435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedThrowingItem_2
+      rect:
+        serializedVersion: 2
+        x: 540
+        y: 0
+        width: 113
+        height: 104
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03dea9b62632d3270800000000000000
+      internalID: 8231774599522217264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedThrowingItem_3
+      rect:
+        serializedVersion: 2
+        x: 810
+        y: 0
+        width: 116
+        height: 104
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a895acc1a04e781e0800000000000000
+      internalID: -2195535561235998326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedThrowingItem_4
+      rect:
+        serializedVersion: 2
+        x: 1080
+        y: 0
+        width: 114
+        height: 103
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 988009c364c79ca70800000000000000
+      internalID: 8847739584051677321
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedThrowingItem_5
+      rect:
+        serializedVersion: 2
+        x: 1350
+        y: 0
+        width: 114
+        height: 102
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b30af136f7438ec70800000000000000
+      internalID: 9000501577028444219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedThrowingItem_6
+      rect:
+        serializedVersion: 2
+        x: 1620
+        y: 0
+        width: 115
+        height: 100
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ac15fc0a87c02220800000000000000
+      internalID: 2459184792281095333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedThrowingItem_7
+      rect:
+        serializedVersion: 2
+        x: 1890
+        y: 0
+        width: 134
+        height: 99
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 597e6ae896d38c110800000000000000
+      internalID: 1281341617561069461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedThrowingItem_8
+      rect:
+        serializedVersion: 2
+        x: 2160
+        y: 0
+        width: 184
+        height: 103
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1f1cbea1398e1960800000000000000
+      internalID: 7574642469761720094
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedThrowingItem_9
+      rect:
+        serializedVersion: 2
+        x: 2430
+        y: 0
+        width: 227
+        height: 99
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d22914b8f948bf7b0800000000000000
+      internalID: -5189408324843367891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedThrowingItem_10
+      rect:
+        serializedVersion: 2
+        x: 2700
+        y: 0
+        width: 270
+        height: 101
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fa36894550cf4450800000000000000
+      internalID: 6075285894884375281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedThrowingItem_11
+      rect:
+        serializedVersion: 2
+        x: 2970
+        y: 0
+        width: 270
+        height: 100
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73d599d34b6bee800800000000000000
+      internalID: 643652682004389175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,10 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class SoundManager : MonoBehaviour
+public class SoundManager : GenericSingletonClass<SoundManager>
 {
-    public static SoundManager instance;
 
     public AudioSource fxPlayer;
     public AudioSource fxBuritiCollector;
@@ -13,21 +10,6 @@ public class SoundManager : MonoBehaviour
     public AudioSource fxCobraDie;
     public AudioSource fxCobraChefeDamageTaken;
 
-
-    void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-
-        DontDestroyOnLoad(gameObject);
-    }
-    
     public void PlayFxPlayer (AudioClip clip)
     {
         fxPlayer.clip = clip;
@@ -49,7 +31,7 @@ public class SoundManager : MonoBehaviour
     public void PlayFxCobraDie (AudioClip clip)
     {
         fxCobraDie.clip = clip;
-        fxCobraAttack.Play();
+        fxCobraDie.Play();
     }
     
     public void PlayFxCobraChefeDamageTaken (AudioClip clip)

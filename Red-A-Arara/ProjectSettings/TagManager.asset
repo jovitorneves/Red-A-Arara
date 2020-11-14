@@ -8,6 +8,9 @@ TagManager:
   - Exit
   - Espinhos
   - Rio
+  - chao
+  - Limite
+  - Dead
   layers:
   - Default
   - TransparentFX
