@@ -1,37 +1,55 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Camera : MonoBehaviour
 {
+    [SerializeField]
+    private Transform player;
+    [SerializeField]
+    private Vector2 smoothTime;
+    [SerializeField]
+    private Vector2 maxLimit;
+    [SerializeField]
+    private Vector2 minLimit;
+
+    [SerializeField]
+    private Transform posicaoA, posicaoB;
 
     private Vector2 velocity;
-
-    public Transform target;
-    public Vector2 smoothTime;
-    public Vector2 maxLimit;
-    public Vector2 minLimit;
 
     // Start is called before the first frame update
     void Start()
     {
-        transform.position = new Vector3(target.position.x, target.position.y, transform.position.z);
-
+        transform.position = new Vector3(player.position.x, player.position.y, transform.position.z);
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (target != null)
-        {
-            float posX = Mathf.SmoothDamp(transform.position.x, target.position.x, ref velocity.x, smoothTime.x);
-            float posY = Mathf.SmoothDamp(transform.position.y, target.position.y, ref velocity.y, smoothTime.y);
+        MoveCamera();
+    }
 
-            transform.position = new Vector3 (posX, posY, transform.position.z);
+    private void MoveCamera()
+    {
+        if (player.Equals(null)) return;
 
-            transform.position = new Vector3(Mathf.Clamp(transform.position.x, minLimit.x, maxLimit.x),
-            Mathf.Clamp(transform.position.y, minLimit.y, maxLimit.y), transform.position.z);
+        float posX = Mathf.SmoothDamp(transform.position.x, player.position.x, ref velocity.x, smoothTime.x);
+        float posY = Mathf.SmoothDamp(transform.position.y, player.position.y, ref velocity.y, smoothTime.y);
 
-        }
+        transform.position = new Vector3(posX, posY, transform.position.z);
+
+        float posNewX = Mathf.Clamp(transform.position.x, minLimit.x, maxLimit.x);
+        float posNewY = Mathf.Clamp(transform.position.y, minLimit.y, maxLimit.y);
+
+        transform.position = new Vector3(posNewX, posNewY, transform.position.z);
+    }
+
+    //Desenha um risco que liga o Ponto A e o Ponto B
+    private void OnDrawGizmos()
+    {
+        if (posicaoA.Equals(null) ||
+            posicaoB.Equals(null))
+            return;
+
+        Gizmos.DrawLine(posicaoA.position, posicaoB.position);
     }
 }

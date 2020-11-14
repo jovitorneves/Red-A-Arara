@@ -35,8 +35,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 80.4, y: -36.8}
-  m_SizeDelta: {x: 136.893, y: 60.331116}
+  m_AnchoredPosition: {x: 435.51, y: -36.8}
+  m_SizeDelta: {x: 847.1195, y: 60.331116}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4367136638936857380
 CanvasRenderer:
@@ -66,7 +66,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 55dbe975a837ead49a6a92c4f2a8fbbc, type: 3}
+    m_Font: {fileID: 12800000, guid: 94745375ce330456cbc4a26cce8de5e4, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -131,8 +131,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 98.2, y: -109.3}
-  m_SizeDelta: {x: 172.50867, y: 59.251884}
+  m_AnchoredPosition: {x: 435.51, y: -109.3}
+  m_SizeDelta: {x: 847.124, y: 59.251884}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &4367136639822999401
 CanvasRenderer:
@@ -162,7 +162,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls: []
   m_FontData:
-    m_Font: {fileID: 12800000, guid: 55dbe975a837ead49a6a92c4f2a8fbbc, type: 3}
+    m_Font: {fileID: 12800000, guid: 94745375ce330456cbc4a26cce8de5e4, type: 3}
     m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
@@ -205,7 +205,7 @@ GameObject:
   - component: {fileID: 4367136640169135466}
   - component: {fileID: 4367136640169135467}
   m_Layer: 5
-  m_Name: HUD
+  m_Name: Hud
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

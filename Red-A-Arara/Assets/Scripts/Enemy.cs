@@ -1,8 +1,6 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class Enemy : MonoBehaviour
+public class Enemy : BaseEnemyController
 {
     public float speed;
     public Transform groundCheck;
@@ -10,7 +8,6 @@ public class Enemy : MonoBehaviour
 
     public LayerMask layerGround;
     
-
     public float radiusCheck;
     public float radiusCheckHorizontal;
 
@@ -44,20 +41,12 @@ public class Enemy : MonoBehaviour
         {
             Flip();
         }
-            
-      
+         
     }
 
     void FixedUpdate()
     {
-        if (isVisible)
-        {
-            rb2D.velocity = new Vector2(speed, rb2D.velocity.y);
-        }
-        else
-        {
-            rb2D.velocity = new Vector2(0f, rb2D.velocity.y);
-        }
+        rb2D.velocity = new Vector2(isVisible ? speed : 0f, rb2D.velocity.y);
     }
 
     void Flip()
@@ -69,7 +58,7 @@ public class Enemy : MonoBehaviour
 
     void OnBecameVisible ()
     {
-        Invoke("MoveEnemy", 3f);
+        Invoke(MethodNameTagsConstants.MoveEnemy, 3f);
     }
 
     void OnBecameInvisible ()
@@ -80,7 +69,7 @@ public class Enemy : MonoBehaviour
     void MoveEnemy ()
     {
         isVisible = true;
-        anim.Play("WALK");
+        anim.Play(AnimationTagsConstants.Walk);
     }
 
     void StopEnemy ()
@@ -91,26 +80,16 @@ public class Enemy : MonoBehaviour
     void OnTriggerEnter2D (Collider2D other)
     {
         
-        if (other.gameObject.CompareTag("Player"))
+        if (other.gameObject.CompareTag(TagsConstants.Player))
         {
-
-            
-            
-            anim.Play("DEATH");
-
-            
-            
+            anim.Play(AnimationTagsConstants.Morte);
         }
     }
     
-
     void EnemyDie()
     {
-       
-        SoundManager.instance.PlayFxCobraDie(fxCobraDie);
+        SoundManager.Instance.PlayFxCobraDie(fxCobraDie);
         Destroy(gameObject);
-        
-        
     }
     
 }

@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Player : MonoBehaviour
 {
@@ -16,8 +14,6 @@ public class Player : MonoBehaviour
     public float radiusCheck;
     public float radiusCheckHit;
 
-    
-
     private Rigidbody2D rb2D;
     private Animator anim;
 
@@ -25,7 +21,7 @@ public class Player : MonoBehaviour
     public bool grounded;
     private bool jumping;
     private bool facingRight = true;
-    private bool isAlive = true;
+    public bool isAlive = true;
     private bool levelCompleted = false;
     private bool timeIsOver = false;
 
@@ -46,17 +42,17 @@ public class Player : MonoBehaviour
         hitted = Physics2D.OverlapCircle(hitEnemy.position, radiusCheckHit, layerHit);
         grounded = Physics2D.OverlapCircle(groundCheck.position, radiusCheck, layerGround);
 
-        if (Input.GetButtonDown("Jump") && grounded)
+        if (Input.GetButtonDown(InputTagsConstants.Jump) && grounded)
         {
             jumping = true;
 
             if (isAlive && !levelCompleted)
             {
-                SoundManager.instance.PlayFxPlayer(fxJump);
+                SoundManager.Instance.PlayFxPlayer(fxJump);
             }
         }
 
-        if (((int)GameManager.instance.time <= 0) && !timeIsOver)
+        if (((int)GameManager.Instance.time <= 0) && !timeIsOver)
         {
             timeIsOver = true;
             PlayerDie();
@@ -65,55 +61,57 @@ public class Player : MonoBehaviour
         PlayAnimations();
 
     }
+
     void FixedUpdate()
     {
         
         if (isAlive && !levelCompleted) { 
 
-            float move = Input.GetAxis("Horizontal");
+            float move = Input.GetAxis(InputTagsConstants.Horizontal);
 
             rb2D.velocity = new Vector2(move * speed, rb2D.velocity.y);
 
-        if ((move < 0 && facingRight) || (move > 0 && !facingRight))
-        {
-            Flip();
-        }
-        if (jumping)
-        {
-            rb2D.AddForce(new Vector2(0f, jumpForce));
-            jumping = false;
-        }
+            if ((move < 0 && facingRight) || (move > 0 && !facingRight))
+            {
+                Flip();
+            }
+            if (jumping)
+            {
+                rb2D.AddForce(new Vector2(0f, jumpForce));
+                jumping = false;
+            }
 
         }
         else
         {
             rb2D.velocity = new Vector2(0, rb2D.velocity.y);
-
         }
     }
+
     void PlayAnimations()
     {
         if (levelCompleted)
         {
-            anim.Play("WINCELEBRATE");
+            anim.Play(AnimationTagsConstants.Celebrar);
         }
         else if (!isAlive)
         {
-            anim.Play("DEATH");
+            anim.Play(AnimationTagsConstants.Morte);
         }
         else if (grounded && rb2D.velocity.x != 0)
         {
-            anim.Play("WALK");
+            anim.Play(AnimationTagsConstants.Walk);
         }
         else if (grounded && rb2D.velocity.x == 0)
         {
-            anim.Play("IDLE");
+            anim.Play(AnimationTagsConstants.Idle);
         }
         else if (!grounded)
         {
-            anim.Play("JUMP");
+            anim.Play(AnimationTagsConstants.Jump);
         }
     }
+
     void Flip()
     {
         facingRight = !facingRight;
@@ -122,7 +120,10 @@ public class Player : MonoBehaviour
 
     void OnCollisionEnter2D (Collision2D other)
     {
-        if (other.gameObject.CompareTag ("Enemy"))
+
+        Debug.Log("DIRECAO PLAYER: " + UtilController.Instance.ReturnDirection(other.contacts));
+
+        if (other.gameObject.CompareTag (TagsConstants.Enemy))
         { 
             if (hitted)
             {
@@ -134,31 +135,28 @@ public class Player : MonoBehaviour
             }
 
         }
-        
-        else if (other.gameObject.CompareTag ("Espinhos"))
+        else if (other.gameObject.CompareTag (TagsConstants.Espinhos))
         {
             PlayerDie();
         }
-
-        
     }
-    void PlayerDie ()
+
+    public void PlayerDie ()
     {
         isAlive = false;
         Physics2D.IgnoreLayerCollision(9, 10);
-        SoundManager.instance.PlayFxPlayer(fxDie);
+        SoundManager.Instance.PlayFxPlayer(fxDie);
     }
 
     void OnTriggerEnter2D (Collider2D other)
     {
 
-        if (other.CompareTag("Exit"))
+        if (other.CompareTag(TagsConstants.Exit))
         {
             levelCompleted = true;
-            SoundManager.instance.PlayFxPlayer(fxWin);
+            SoundManager.Instance.PlayFxPlayer(fxWin);
         }
-
-        else if (other.CompareTag("Rio"))
+        else if (other.CompareTag(TagsConstants.Rio))
         {
             PlayerDie();
         }
@@ -168,16 +166,16 @@ public class Player : MonoBehaviour
     {
         if (timeIsOver)
         {
-            GameManager.instance.SetOverlay(GameManager.GameStatus.LOSE);
+            GameManager.Instance.SetOverlay(GameStatus.LOSE);
         }
         else
         {
-            GameManager.instance.SetOverlay(GameManager.GameStatus.DIE);
+            GameManager.Instance.SetOverlay(GameStatus.DIE);
         }
     }
 
     void CelebrateAnimationFinished()
     {
-        GameManager.instance.SetOverlay(GameManager.GameStatus.WIN);
+        GameManager.Instance.SetOverlay(GameStatus.WIN);
     }
 }
