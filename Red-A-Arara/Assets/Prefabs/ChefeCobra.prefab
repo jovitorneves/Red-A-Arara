@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 7726769242339071368}
   - component: {fileID: 109707173}
   m_Layer: 10
-  m_Name: Chefe - COBRA
+  m_Name: ChefeCobra
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -120,6 +120,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9429e66413b55cd4daf8274783ba978b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDead: 0
+  isBoss: 0
   speed: 8
   groundCheck: {fileID: 8269540259163182717}
   groundCheckHorizontal: {fileID: 7551974830417704706}
@@ -131,9 +133,9 @@ MonoBehaviour:
   radiusCheckHorizontal: 0.3
   grounded: 0
   groundedHorizontal: 0
-  fxCobraAttack: {fileID: 0}
-  fxCobraDie: {fileID: 8300000, guid: 550c29c5e1285284ebbd67f93e258c28, type: 3}
-  fxCobraDamageTaken: {fileID: 8300000, guid: cd0230cf530499642b956f9af93b9394, type: 3}
+  fxCobraAttack: {fileID: 8300000, guid: 6f76ca9b2155b4d41b89ea2821a820c9, type: 3}
+  fxCobraDie: {fileID: 8300000, guid: 58a55c2089ebd49e99007e9191be59c2, type: 3}
+  fxCobraDamageTaken: {fileID: 8300000, guid: 58a55c2089ebd49e99007e9191be59c2, type: 3}
 --- !u!61 &4825187235579907390
 BoxCollider2D:
   m_ObjectHideFlags: 0
