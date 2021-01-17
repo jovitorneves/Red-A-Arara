@@ -64,6 +64,17 @@ public class GameManager : MonoBehaviour
         }
     }
 
+    private void FixedUpdate()
+    {
+        if (Input.GetKeyDown(KeyCode.Escape))
+        {
+            if (Application.CanStreamedLevelBeLoaded("Menu"))
+            {
+                SceneManager.LoadScene("Menu");
+            }
+        }
+    }
+
     public void SetOverlay(GameStatus parStatus)
     {
         status = parStatus;
