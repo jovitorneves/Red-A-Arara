@@ -1,5 +1,6 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
+using System.Collections.Generic;
 using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
@@ -14,11 +15,15 @@ public class GameManager : MonoBehaviour
     public GameStatus status;
     public static GameManager Instance;
 
+    private static bool destroyed = false;
+    private Stack<int> loadedLevels;
+
     void Awake()
     {
         if (Instance == null)
         {
             Instance = this;
+            loadedLevels = new Stack<int>();
         }
         else
         {
@@ -54,11 +59,11 @@ public class GameManager : MonoBehaviour
         { 
             if (status == GameStatus.WIN)
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+                LoadScene(buildIndex: SceneManager.GetActiveScene().buildIndex + 1);
             }
             else
             {
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+                LoadScene(buildIndex: SceneManager.GetActiveScene().buildIndex);
             }
 
         }
@@ -70,7 +75,7 @@ public class GameManager : MonoBehaviour
         {
             if (Application.CanStreamedLevelBeLoaded("Menu"))
             {
-                SceneManager.LoadScene("Menu");
+                LoadScene(sceneName: "Menu");
             }
         }
     }
@@ -80,5 +85,44 @@ public class GameManager : MonoBehaviour
         status = parStatus;
         overlay.enabled = true;
         overlay.sprite = overlaySprites[(int)parStatus];
+    }
+
+    public static Scene GetActiveScene()
+    {
+        return SceneManager.GetActiveScene();
+    }
+
+    public static void LoadScene(int buildIndex)
+    {
+        Instance.loadedLevels.Push(GetActiveScene().buildIndex);
+        SceneManager.LoadScene(buildIndex);
+    }
+
+    public static void LoadScene(string sceneName)
+    {
+        Instance.loadedLevels.Push(GetActiveScene().buildIndex);
+        SceneManager.LoadScene(sceneName);
+    }
+
+    public static void LoadPreviousScene()
+    {
+        if (Instance.loadedLevels.Count > 0)
+        {
+            SceneManager.LoadScene(Instance.loadedLevels.Pop());
+        }
+        else
+        {
+            Debug.LogError("No previous scene loaded");
+        }
+    }
+
+    private void OnApplicationQuit()
+    {
+        destroyed = true;
+    }
+
+    private void OnDestroy()
+    {
+        destroyed = true;
     }
 }
