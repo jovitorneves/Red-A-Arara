@@ -20,4 +20,35 @@ public class MainMenuController : MonoBehaviour
     {
         Application.Quit();
     }
+
+    //Fases
+    public void Fase1Game()
+    {
+        SceneManager.LoadScene(1);
+    }
+
+    public void Fase2Game()
+    {
+        SceneManager.LoadScene(2);
+    }
+
+    public void Fase3Game()
+    {
+        SceneManager.LoadScene(3);
+    }
+
+    public void Fase4Game()
+    {
+        SceneManager.LoadScene(4);
+    }
+
+    public void Fase5Game()
+    {
+        SceneManager.LoadScene(5);
+    }
+
+    public void Fase6Game()
+    {
+        SceneManager.LoadScene(6);
+    }
 }
