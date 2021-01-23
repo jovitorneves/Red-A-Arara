@@ -25,6 +25,13 @@ public class CobraChefe : BaseEnemyController
     public AudioClip fxCobraDie;
     public AudioClip fxCobraDamageTaken;
 
+    [SerializeField]
+    private GameObject heart1GameObject;
+    [SerializeField]
+    private GameObject heart2GameObject;
+    [SerializeField]
+    private GameObject heart3GameObject;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -93,11 +100,12 @@ public class CobraChefe : BaseEnemyController
         {
             damageTaken += 1;
 
-            if (damageTaken == 3)
+            if (damageTaken >= 3)
             {
                 this.isDead = true;
                 SoundManager.Instance.PlayFxCobraDie(fxCobraDie);
                 anim.Play(AnimationTagsConstants.Morte);
+                EnemyDie();
             }
             else
             {
@@ -105,12 +113,29 @@ public class CobraChefe : BaseEnemyController
                 SoundManager.Instance.PlayFxCobraChefeDamageTaken(fxCobraDamageTaken);
                 Invoke(MethodNameTagsConstants.MoveEnemy, 1f);
             }
+            Hearts();
+        }
+    }
+
+    private void Hearts()
+    {
+        if (damageTaken == 1)
+        {
+            heart3GameObject.SetActive(false);
+        } else if (damageTaken == 2)
+        {
+            heart2GameObject.SetActive(false);
+        } else if (damageTaken >= 3)
+        {
+            heart1GameObject.SetActive(false);
         }
     }
     
     void EnemyDie()
     {
-        Destroy(gameObject);
+        gameObject.SetActive(false);
+        gameObject.GetComponent<BoxCollider2D>().isTrigger = false;
+        //Destroy(gameObject);
     }
     
 }

@@ -4215,6 +4215,11 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1976151513833703720, guid: 67881796312fc0146b4bfe952ff2561b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4367136638936857383, guid: 67881796312fc0146b4bfe952ff2561b,
         type: 3}
       propertyPath: m_AnchoredPosition.x
@@ -4354,6 +4359,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &4367136638999588921 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2869959931425062719, guid: 67881796312fc0146b4bfe952ff2561b,
+    type: 3}
+  m_PrefabInstance: {fileID: 4367136638999588919}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4367136638999588922 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6643024082249028808, guid: 67881796312fc0146b4bfe952ff2561b,
+    type: 3}
+  m_PrefabInstance: {fileID: 4367136638999588919}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &4367136638999588923 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4160975091833799306, guid: 67881796312fc0146b4bfe952ff2561b,
+    type: 3}
+  m_PrefabInstance: {fileID: 4367136638999588919}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4738305700117266104
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4500,6 +4523,21 @@ PrefabInstance:
       propertyPath: m_LocalScale.x
       value: -1
       objectReference: {fileID: 0}
+    - target: {fileID: 8465051867500366651, guid: ee712a28b6b94b44f963ad74a0e67d94,
+        type: 3}
+      propertyPath: heart1GameObject
+      value: 
+      objectReference: {fileID: 4367136638999588923}
+    - target: {fileID: 8465051867500366651, guid: ee712a28b6b94b44f963ad74a0e67d94,
+        type: 3}
+      propertyPath: heart2GameObject
+      value: 
+      objectReference: {fileID: 4367136638999588922}
+    - target: {fileID: 8465051867500366651, guid: ee712a28b6b94b44f963ad74a0e67d94,
+        type: 3}
+      propertyPath: heart3GameObject
+      value: 
+      objectReference: {fileID: 4367136638999588921}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee712a28b6b94b44f963ad74a0e67d94, type: 3}
 --- !u!1001 &8721959703333980849
