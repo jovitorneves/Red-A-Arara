@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
 
     private static bool destroyed = false;
     private Stack<int> loadedLevels;
-    private bool isPause = false;
+    public bool isPause = false;
 
     void Awake()
     {

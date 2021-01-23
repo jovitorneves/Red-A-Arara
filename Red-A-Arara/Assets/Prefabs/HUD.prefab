@@ -274,7 +274,18 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5883569321864499385}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 2609595100937894124}
+        m_MethodName: ResumeGame
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4367136638936857400
 GameObject:
   m_ObjectHideFlags: 0
@@ -479,6 +490,7 @@ GameObject:
   - component: {fileID: 4367136640169135465}
   - component: {fileID: 4367136640169135466}
   - component: {fileID: 4367136640169135467}
+  - component: {fileID: 2609595100937894124}
   m_Layer: 5
   m_Name: HUD
   m_TagString: Untagged
@@ -567,6 +579,20 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &2609595100937894124
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4367136640169135468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f144839f8ef3c47efbdf4fd4c53ba3e4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  menuGameObject: {fileID: 4910074354442918478}
+  pauseGameObject: {fileID: 5217727047879043294}
 --- !u!1 &4367136640781398812
 GameObject:
   m_ObjectHideFlags: 0
