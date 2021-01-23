@@ -2,6 +2,7 @@
 using UnityEngine.UI;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+using UnityEditor;
 
 public class GameManager : MonoBehaviour
 {
@@ -17,6 +18,7 @@ public class GameManager : MonoBehaviour
 
     private static bool destroyed = false;
     private Stack<int> loadedLevels;
+    private bool isPause = false;
 
     void Awake()
     {
@@ -39,6 +41,7 @@ public class GameManager : MonoBehaviour
         status = GameStatus.PLAY;
         overlay.enabled = false;
         Physics2D.IgnoreLayerCollision(9, 10, false);
+        PauseGameAction();
     }
 
     // Update is called once per frame
@@ -78,6 +81,49 @@ public class GameManager : MonoBehaviour
                 LoadScene(sceneName: "Menu");
             }
         }
+
+        PauseGameAction();
+    }
+
+    //Habilita ou desabilita a cena, passando ela por parametro
+    void SetScene(string sceneName, bool sceneEnabled)
+    {
+        EditorBuildSettingsScene[] scenes = EditorBuildSettings.scenes;
+        foreach (EditorBuildSettingsScene scene in scenes)
+        {
+            if (scene.path.Contains(sceneName))
+            {
+                scene.enabled = sceneEnabled;
+            }
+        }
+        EditorBuildSettings.scenes = scenes;
+    }
+
+    private void PauseGameAction()
+    {
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            if (isPause)
+            {
+                ResumeGame();
+                isPause = false;
+            }
+            else
+            {
+                PauseGame();
+                isPause = true;
+            }
+        }
+    }
+
+    private void PauseGame()
+    {
+        Time.timeScale = 0;
+    }
+
+    private void ResumeGame()
+    {
+        Time.timeScale = 1;
     }
 
     public void SetOverlay(GameStatus parStatus)
