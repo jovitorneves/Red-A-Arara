@@ -10,6 +10,7 @@ public class GameManager : MonoBehaviour
     public Image overlay;
     public Text timeHud;
     public Text scoreHud;
+    public Text faseHud;
 
     public float time;
     public int score;
@@ -56,6 +57,7 @@ public class GameManager : MonoBehaviour
             {
                 timeHud.text = "Tempo: " + timeInt.ToString();
                 scoreHud.text = "Buritis " + score.ToString();
+                faseHud.text = "Fase: " + SceneManager.GetActiveScene().buildIndex;
             }
         }
         else if (Input.GetButtonDown(InputTagsConstants.Jump)) 
