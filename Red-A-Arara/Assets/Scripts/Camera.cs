@@ -20,6 +20,7 @@ public class Camera : MonoBehaviour
     void Start()
     {
         transform.position = new Vector3(player.position.x, player.position.y, transform.position.z);
+        LoadedData();
     }
 
     // Update is called once per frame
@@ -51,5 +52,14 @@ public class Camera : MonoBehaviour
             return;
 
         Gizmos.DrawLine(posicaoA.position, posicaoB.position);
+    }
+
+    //Carrega os dados da cena anterior
+    private void LoadedData()
+    {
+        SceneDB loadedData = DataBase.loadData<SceneDB>("sceneDB");
+        if (loadedData == null) { return; }
+
+        GameManager.Instance.heartCount = loadedData.heartCount;
     }
 }

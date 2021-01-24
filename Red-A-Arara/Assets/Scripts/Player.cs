@@ -138,8 +138,10 @@ public class Player : MonoBehaviour
         }
         else if (other.gameObject.CompareTag (TagsConstants.Espinhos))
         {
+            DataBase.deleteData("sceneDB");
+            GameManager.Instance.heartCount = 0;
             PlayerDie();
-            //TakeLife();
+            TakeLife();
         }
     }
 
@@ -160,8 +162,10 @@ public class Player : MonoBehaviour
         }
         else if (other.CompareTag(TagsConstants.Rio))
         {
+            DataBase.deleteData("sceneDB");
+            GameManager.Instance.heartCount = 0;
             PlayerDie();
-            //TakeLife();
+            TakeLife();
         }
     }
 
@@ -172,6 +176,7 @@ public class Player : MonoBehaviour
         {
             GameManager.Instance.heartCount--;
         }
+        GameManager.Instance.SaveDataScene();
     }
 
     void DieAnimationFinished()

@@ -22,6 +22,8 @@ public class GameManager : MonoBehaviour
     public bool isPause = false;
     public int buritiCount = 0;
     public int heartCount = 0;
+    private bool isBackToFirstStage = false;
+    private bool isBonusLife = false;
 
     void Awake()
     {
@@ -68,9 +70,13 @@ public class GameManager : MonoBehaviour
             {
                 LoadScene(buildIndex: SceneManager.GetActiveScene().buildIndex + 1);
             }
-            else
+            else if (status == GameStatus.DIE || status == GameStatus.LOSE)
             {
-                LoadScene(buildIndex: SceneManager.GetActiveScene().buildIndex);
+                DataBase.deleteData("sceneDB");
+                if (isBackToFirstStage)
+                    LoadScene(buildIndex: 1);
+                else
+                    LoadScene(buildIndex: SceneManager.GetActiveScene().buildIndex);
             }
 
         }
@@ -88,6 +94,19 @@ public class GameManager : MonoBehaviour
         }
 
         PauseGameAction();
+        SetBackToFirstStage();
+    }
+
+    //verifica se o usuario tinha mais de uma vida e se pedeu todas
+    private void SetBackToFirstStage()
+    {
+        if (heartCount > 0)
+            isBonusLife = true;
+
+        if (isBonusLife && heartCount == 0)
+            isBackToFirstStage = true;
+        else
+            isBackToFirstStage = false;
     }
 
     private void CountHeart()
@@ -97,6 +116,22 @@ public class GameManager : MonoBehaviour
             heartCount++;
             buritiCount = 0;
         }
+    }
+
+    //DATA BASE
+    public void SaveDataScene()
+    {
+        var model = new SceneDB
+        {
+            time = this.time,
+            fase = GetActiveScene().buildIndex,
+            score = score,
+            buritiCount = buritiCount,
+            heartCount = heartCount
+        };
+
+        //Save data from PlayerInfo to a file named players
+        DataBase.saveData(model, "sceneDB");
     }
 
     //Habilita ou desabilita a cena, passando ela por parametro
@@ -156,22 +191,22 @@ public class GameManager : MonoBehaviour
     {
         Instance.loadedLevels.Push(GetActiveScene().buildIndex);
         SceneManager.LoadScene(buildIndex);
-        GameManager.Instance.buritiCount = 0;
+        Instance.SaveDataScene();
     }
 
     public static void LoadScene(string sceneName)
     {
         Instance.loadedLevels.Push(GetActiveScene().buildIndex);
         SceneManager.LoadScene(sceneName);
-        GameManager.Instance.buritiCount = 0;
+        Instance.SaveDataScene();
     }
 
     public static void LoadPreviousScene()
     {
         if (Instance.loadedLevels.Count > 0)
         {
+            DataBase.deleteData("sceneDB");
             SceneManager.LoadScene(Instance.loadedLevels.Pop());
-            GameManager.Instance.buritiCount = 0;
         }
         else
         {
