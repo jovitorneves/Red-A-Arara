@@ -20,6 +20,8 @@ public class GameManager : MonoBehaviour
     private static bool destroyed = false;
     private Stack<int> loadedLevels;
     public bool isPause = false;
+    public int buritiCount = 0;
+    public int heartCount = 0;
 
     void Awake()
     {
@@ -72,6 +74,7 @@ public class GameManager : MonoBehaviour
             }
 
         }
+        CountHeart();
     }
 
     private void FixedUpdate()
@@ -85,6 +88,15 @@ public class GameManager : MonoBehaviour
         }
 
         PauseGameAction();
+    }
+
+    private void CountHeart()
+    {
+        if (buritiCount == 10)
+        {
+            heartCount++;
+            buritiCount = 0;
+        }
     }
 
     //Habilita ou desabilita a cena, passando ela por parametro
@@ -144,12 +156,14 @@ public class GameManager : MonoBehaviour
     {
         Instance.loadedLevels.Push(GetActiveScene().buildIndex);
         SceneManager.LoadScene(buildIndex);
+        GameManager.Instance.buritiCount = 0;
     }
 
     public static void LoadScene(string sceneName)
     {
         Instance.loadedLevels.Push(GetActiveScene().buildIndex);
         SceneManager.LoadScene(sceneName);
+        GameManager.Instance.buritiCount = 0;
     }
 
     public static void LoadPreviousScene()
@@ -157,6 +171,7 @@ public class GameManager : MonoBehaviour
         if (Instance.loadedLevels.Count > 0)
         {
             SceneManager.LoadScene(Instance.loadedLevels.Pop());
+            GameManager.Instance.buritiCount = 0;
         }
         else
         {

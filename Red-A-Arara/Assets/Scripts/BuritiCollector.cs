@@ -11,6 +11,7 @@ public class BuritiCollector : MonoBehaviour
         {
             GameManager.Instance.score++;
             SoundManager.Instance.PlayFxBuritiCollector(fxCollect);
+            GameManager.Instance.buritiCount++;
             Destroy(gameObject);
         }
     }

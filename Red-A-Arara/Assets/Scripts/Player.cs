@@ -132,12 +132,14 @@ public class Player : MonoBehaviour
             else
             {
                 PlayerDie();
+                TakeLife();
             }
 
         }
         else if (other.gameObject.CompareTag (TagsConstants.Espinhos))
         {
             PlayerDie();
+            //TakeLife();
         }
     }
 
@@ -159,6 +161,16 @@ public class Player : MonoBehaviour
         else if (other.CompareTag(TagsConstants.Rio))
         {
             PlayerDie();
+            //TakeLife();
+        }
+    }
+
+    //Tira uma vida da arara
+    private void TakeLife()
+    {
+        if (GameManager.Instance.heartCount > 0)
+        {
+            GameManager.Instance.heartCount--;
         }
     }
 
