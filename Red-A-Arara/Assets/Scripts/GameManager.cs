@@ -113,7 +113,10 @@ public class GameManager : MonoBehaviour
     {
         if (buritiCount == 10)
         {
-            heartCount++;
+            if (heartCount >= 3)
+                heartCount = 3;
+            else
+                heartCount++;
             buritiCount = 0;
         }
     }
