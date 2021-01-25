@@ -196,6 +196,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cc289a90a66f4d2c8d96e9392ccd81b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  groundCheck: {fileID: 993163445058259677}
+  layerGround:
+    serializedVersion: 2
+    m_Bits: 256
 --- !u!1 &993163445058259676
 GameObject:
   m_ObjectHideFlags: 0

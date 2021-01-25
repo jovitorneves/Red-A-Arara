@@ -440,6 +440,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoundManager
       objectReference: {fileID: 0}
+    - target: {fileID: 1514480824137006385, guid: 7e44a92965113074e8b3bddc4e614fd5,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e44a92965113074e8b3bddc4e614fd5, type: 3}
 --- !u!1 &210493903
@@ -596,6 +601,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Macaco
+      objectReference: {fileID: 0}
+    - target: {fileID: 35723945372751481, guid: 9f0c9b998d69e4f6ebab13c3ada8ee02,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 35723945372751484, guid: 9f0c9b998d69e4f6ebab13c3ada8ee02,
         type: 3}
@@ -864,6 +874,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: GameManager
+      objectReference: {fileID: 0}
+    - target: {fileID: 8721959703784491325, guid: ccf5831c697ce364c8630fae25646413,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8721959703784491327, guid: ccf5831c697ce364c8630fae25646413,
         type: 3}
@@ -5421,6 +5436,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: HUD
+      objectReference: {fileID: 0}
+    - target: {fileID: 4367136640169135468, guid: 67881796312fc0146b4bfe952ff2561b,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 67881796312fc0146b4bfe952ff2561b, type: 3}
