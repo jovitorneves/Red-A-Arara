@@ -12,7 +12,7 @@ public class FlyingController : MonoBehaviour
 
     private Rigidbody2D tempPlayerRigidbody;
     private int jumpCount = 20;
-    private readonly int jumpFixedForce = 1300;
+    private readonly int jumpFixedForce = 1000;
     private readonly int dragFixed = 30;
     private readonly int jumpForce = 900;
     private bool isGrounded;
@@ -67,13 +67,14 @@ public class FlyingController : MonoBehaviour
                     timer = 0f;
                 }
             }
-            if (isJumped)
-                playerRigidbody.drag = isGrounded ? tempPlayerRigidbody.drag : dragFixed;
         }
     }
 
     private void Flying()
     {
+        if (isJumped)
+            playerRigidbody.drag = isGrounded ? tempPlayerRigidbody.drag : dragFixed;
+
         if (jumpCount == 0 && isGrounded)
         {
             playerRigidbody.drag = tempPlayerRigidbody.drag;

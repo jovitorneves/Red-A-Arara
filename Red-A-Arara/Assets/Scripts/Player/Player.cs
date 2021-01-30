@@ -91,25 +91,15 @@ public class Player : MonoBehaviour
     void PlayAnimations()
     {
         if (levelCompleted)
-        {
             anim.Play(AnimationTagsConstants.Celebrar);
-        }
         else if (!isAlive)
-        {
             anim.Play(AnimationTagsConstants.Morte);
-        }
         else if (grounded && rb2D.velocity.x != 0)
-        {
             anim.Play(AnimationTagsConstants.Walk);
-        }
         else if (grounded && rb2D.velocity.x == 0)
-        {
             anim.Play(AnimationTagsConstants.Idle);
-        }
         else if (!grounded)
-        {
             anim.Play(AnimationTagsConstants.Jump);
-        }
     }
 
     void Flip()
@@ -126,9 +116,7 @@ public class Player : MonoBehaviour
         if (other.gameObject.CompareTag (TagsConstants.Enemy))
         { 
             if (hitted)
-            {
                 isAlive = true;
-            }
             else
             {
                 PlayerDie();
@@ -173,22 +161,17 @@ public class Player : MonoBehaviour
     private void TakeLife()
     {
         if (GameManager.Instance.heartCount > 0)
-        {
             GameManager.Instance.heartCount--;
-        }
+
         GameManager.Instance.SaveDataScene();
     }
 
     void DieAnimationFinished()
     {
         if (timeIsOver)
-        {
             GameManager.Instance.SetOverlay(GameStatus.LOSE);
-        }
         else
-        {
             GameManager.Instance.SetOverlay(GameStatus.DIE);
-        }
     }
 
     void CelebrateAnimationFinished()
