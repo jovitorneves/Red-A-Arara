@@ -144,9 +144,7 @@ public class GameManager : MonoBehaviour
         foreach (EditorBuildSettingsScene scene in scenes)
         {
             if (scene.path.Contains(sceneName))
-            {
                 scene.enabled = sceneEnabled;
-            }
         }
         EditorBuildSettings.scenes = scenes;
     }
@@ -212,9 +210,7 @@ public class GameManager : MonoBehaviour
             SceneManager.LoadScene(Instance.loadedLevels.Pop());
         }
         else
-        {
             Debug.LogError("No previous scene loaded");
-        }
     }
 
     private void OnApplicationQuit()
