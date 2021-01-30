@@ -9,8 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1514480824137006382}
-  - component: {fileID: 1514480824137006383}
   - component: {fileID: 1514480824137006380}
+  - component: {fileID: 1514480824137006383}
   - component: {fileID: 1514480824137006378}
   - component: {fileID: 1514480824137006381}
   - component: {fileID: 1494278546942618991}
@@ -37,6 +37,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1514480824137006380
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1514480824137006385}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 65a5680aa1911994193720a7f4acc476, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fxPlayer: {fileID: 1514480824137006378}
+  fxBuritiCollector: {fileID: 1514480824137006381}
+  fxCobraAttack: {fileID: 6548548410240737017}
+  fxCobraDie: {fileID: 1494278546942618991}
+  fxCobraChefeDamageTaken: {fileID: 5694678781711849041}
 --- !u!82 &1514480824137006383
 AudioSource:
   m_ObjectHideFlags: 0
@@ -49,7 +66,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: e420712f676c9bf41a7d63afb3ec5efb, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.3
+  m_Volume: 0.055
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -133,23 +150,6 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
---- !u!114 &1514480824137006380
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1514480824137006385}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 65a5680aa1911994193720a7f4acc476, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  fxPlayer: {fileID: 1514480824137006378}
-  fxBuritiCollector: {fileID: 1514480824137006381}
-  fxCobraAttack: {fileID: 6548548410240737017}
-  fxCobraDie: {fileID: 1494278546942618991}
-  fxCobraChefeDamageTaken: {fileID: 5694678781711849041}
 --- !u!82 &1514480824137006378
 AudioSource:
   m_ObjectHideFlags: 0
@@ -258,7 +258,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: fc0286a49266efb48b3904faeb5ca6d8, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.625
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -354,7 +354,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 550c29c5e1285284ebbd67f93e258c28, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.481
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -450,7 +450,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 6f76ca9b2155b4d41b89ea2821a820c9, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.555
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -546,7 +546,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: cd0230cf530499642b956f9af93b9394, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
+  m_Volume: 0.463
   m_Pitch: 1
   Loop: 0
   Mute: 0
