@@ -11,16 +11,16 @@ public class FlyingController : MonoBehaviour
     private LayerMask layerGround;
 
     private Rigidbody2D tempPlayerRigidbody;
-    private int jumpCount = 20;
+    private int jumpCount = 10;
     private readonly int jumpFixedForce = 1000;
-    private readonly int dragFixed = 30;
+    private readonly int dragFixed = 8;
     private readonly int jumpForce = 900;
     private bool isGrounded;
     private readonly float radiusCheck = 0.5f;
-    private readonly int limitJumps = 20;
+    private readonly int limitJumps = 10;
 
     private float timer = 0.0f;
-    private readonly float waitTime = 0.10f;
+    private readonly float waitTime = 0.20f;
 
     private bool isCaindo = false;
     private bool isJumped = false;
@@ -58,7 +58,7 @@ public class FlyingController : MonoBehaviour
                     timer = 0f;
                 }
             }
-            else if (jumpCount >= 0 && jumpCount <= 19)
+            else if (jumpCount >= 0 && jumpCount <= (jumpCount - 1))
             {
                 if (Input.GetKey(KeyCode.Q) && timer > waitTime)//Input.GetButton("Jump") *enquanto o usuario estiver pressionando o espaco
                 {
