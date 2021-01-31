@@ -26,6 +26,8 @@ public class CobraChefe : BaseEnemyController
     public AudioClip fxCobraDamageTaken;
 
     [SerializeField]
+    private GameObject iconeGameObject;
+    [SerializeField]
     private GameObject heart1GameObject;
     [SerializeField]
     private GameObject heart2GameObject;
@@ -128,7 +130,8 @@ public class CobraChefe : BaseEnemyController
         } else if (damageTaken >= 3)
         {
             heart1GameObject.SetActive(false);
-        }
+            iconeGameObject.SetActive(false);
+        }    
     }
     
     void EnemyDie()
