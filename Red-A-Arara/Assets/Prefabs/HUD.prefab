@@ -1049,6 +1049,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   menuGameObject: {fileID: 4910074354442918478}
   pauseGameObject: {fileID: 5217727047879043294}
+  faseGameObject: {fileID: 7228396470802746745}
   heart1GameObject: {fileID: 430261504761207508}
   heart2GameObject: {fileID: 8910875973827527026}
   heart3GameObject: {fileID: 6710350680956034134}

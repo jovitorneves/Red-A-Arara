@@ -12,15 +12,22 @@ public class MenuController : MonoBehaviour
     private GameObject pauseGameObject;
 
     [SerializeField]
+    private GameObject faseGameObject;
+    [SerializeField]
     private GameObject heart1GameObject;
     [SerializeField]
     private GameObject heart2GameObject;
     [SerializeField]
     private GameObject heart3GameObject;
 
+    private float timer = 0.0f;
+    private readonly float waitTime = 2.0f;
+
     // Update is called once per frame
     void Update()
     {
+        timer += Time.deltaTime;
+
         if (Input.GetKeyDown(KeyCode.P))
         {
             if (!GameManager.Instance.isPause)
@@ -32,6 +39,11 @@ public class MenuController : MonoBehaviour
             }
         }
         ShowHeart();
+
+        if (timer > waitTime)
+        {
+            faseGameObject.SetActive(false);
+        }
     }
 
     public void ResumeGame()
