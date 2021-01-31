@@ -2,7 +2,9 @@
 using UnityEngine.UI;
 using System.Collections.Generic;
 using UnityEngine.SceneManagement;
+#if UNITY_EDITOR
 using UnityEditor;
+#endif
 
 public class GameManager : MonoBehaviour
 {
@@ -140,13 +142,16 @@ public class GameManager : MonoBehaviour
     //Habilita ou desabilita a cena, passando ela por parametro
     void SetScene(string sceneName, bool sceneEnabled)
     {
+        #if UNITY_EDITOR
         EditorBuildSettingsScene[] scenes = EditorBuildSettings.scenes;
+       
         foreach (EditorBuildSettingsScene scene in scenes)
         {
             if (scene.path.Contains(sceneName))
                 scene.enabled = sceneEnabled;
         }
         EditorBuildSettings.scenes = scenes;
+        #endif
     }
 
     private void PauseGameAction()
