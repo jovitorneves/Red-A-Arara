@@ -2,7 +2,7 @@
 
 public class SoundManager : GenericSingletonClass<SoundManager>
 {
-
+    public AudioSource fxAmbiente;
     public AudioSource fxPlayer;
     public AudioSource fxBuritiCollector;
     public AudioSource fxCobraAttack;
@@ -30,6 +30,7 @@ public class SoundManager : GenericSingletonClass<SoundManager>
         {
             var model = new SoundDB
             {
+                ambiente = 0.055f,
                 buriti = 0.051f,
                 cobraAttack = 0.555f,
                 cobraChefeDamageTaken = 0.318f,
@@ -40,6 +41,7 @@ public class SoundManager : GenericSingletonClass<SoundManager>
             loadedData = model;
         }
         this.loadedData = loadedData;
+        fxAmbiente.volume = loadedData.ambiente;
     }
 
     //Action

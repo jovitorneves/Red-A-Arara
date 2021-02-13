@@ -77,6 +77,7 @@ public class MainMenuController : MonoBehaviour
         {
             var model = new SoundDB
             {
+                ambiente = 0.055f,
                 buriti = 0.051f,
                 cobraAttack = 0.555f,
                 cobraChefeDamageTaken = 0.318f,

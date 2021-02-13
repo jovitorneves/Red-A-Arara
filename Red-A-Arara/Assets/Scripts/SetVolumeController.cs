@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class SetVolumeController : MonoBehaviour
 {
 
+    public Slider sliderAmbiente;
     public Slider sliderPlayer;
     public Slider sliderBuriti;
     public Slider sliderCobraAttack;
@@ -28,6 +29,7 @@ public class SetVolumeController : MonoBehaviour
         SoundDB loadedData = DataBase.loadData<SoundDB>("soundDB");
         if (loadedData == null) { return; }
 
+        sliderAmbiente.value = loadedData.ambiente;
         sliderPlayer.value = loadedData.player;
         sliderBuriti.value = loadedData.buriti;
         sliderCobraAttack.value = loadedData.cobraAttack;
@@ -36,10 +38,27 @@ public class SetVolumeController : MonoBehaviour
     }
 
     //Actions
+    public void SetVolumeAmbiente(float volume)
+    {
+        var model = new SoundDB
+        {
+            ambiente = volume,
+            player = sliderPlayer.value,
+            buriti = sliderBuriti.value,
+            cobraAttack = sliderCobraAttack.value,
+            cobraDie = sliderCobraDie.value,
+            cobraChefeDamageTaken = sliderCobraChefeDamageTaken.value
+        };
+
+        //Save data from PlayerInfo to a file named players
+        DataBase.saveData(model, "soundDB");
+    }
+
     public void SetVolumePlayer(float volume)
     {
         var model = new SoundDB
         {
+            ambiente = sliderAmbiente.value,
             player = volume,
             buriti = sliderBuriti.value,
             cobraAttack = sliderCobraAttack.value,
@@ -55,6 +74,7 @@ public class SetVolumeController : MonoBehaviour
     {
         var model = new SoundDB
         {
+            ambiente = sliderAmbiente.value,
             buriti = volume,
             cobraAttack = sliderCobraAttack.value,
             cobraChefeDamageTaken = sliderCobraChefeDamageTaken.value,
@@ -70,6 +90,7 @@ public class SetVolumeController : MonoBehaviour
     {
         var model = new SoundDB
         {
+            ambiente = sliderAmbiente.value,
             buriti = sliderBuriti.value,
             cobraAttack = volume,
             cobraChefeDamageTaken = sliderCobraChefeDamageTaken.value,
@@ -85,6 +106,7 @@ public class SetVolumeController : MonoBehaviour
     {
         var model = new SoundDB
         {
+            ambiente = sliderAmbiente.value,
             buriti = sliderBuriti.value,
             cobraAttack = sliderCobraAttack.value,
             cobraChefeDamageTaken = sliderCobraChefeDamageTaken.value,
@@ -100,6 +122,7 @@ public class SetVolumeController : MonoBehaviour
     {
         var model = new SoundDB
         {
+            ambiente = sliderAmbiente.value,
             buriti = sliderBuriti.value,
             cobraAttack = sliderCobraAttack.value,
             cobraChefeDamageTaken = volume,
