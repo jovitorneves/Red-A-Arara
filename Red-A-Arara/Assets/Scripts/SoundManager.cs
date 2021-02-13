@@ -17,6 +17,11 @@ public class SoundManager : GenericSingletonClass<SoundManager>
         LoadSom();
     }
 
+    private void FixedUpdate()
+    {
+        LoadSom();
+    }
+
     //Som
     private void LoadSom()
     {

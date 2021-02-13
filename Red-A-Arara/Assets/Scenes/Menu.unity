@@ -5889,10 +5889,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sliderPlayer: {fileID: 299178784}
-  sliderBuriti: {fileID: 0}
-  sliderCobraAttack: {fileID: 0}
-  sliderCobraDie: {fileID: 0}
-  sliderCobraChefeDamageTaken: {fileID: 0}
+  sliderBuriti: {fileID: 172420548}
+  sliderCobraAttack: {fileID: 858578891}
+  sliderCobraDie: {fileID: 820240113}
+  sliderCobraChefeDamageTaken: {fileID: 1700119036}
 --- !u!1 &1725689216
 GameObject:
   m_ObjectHideFlags: 0

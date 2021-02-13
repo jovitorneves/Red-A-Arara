@@ -38,17 +38,15 @@ public class SetVolumeController : MonoBehaviour
     //Actions
     public void SetVolumePlayer(float volume)
     {
-        print("volume: " + volume);
-        SoundDB model = new SoundDB()
+        var model = new SoundDB
         {
+            player = volume,
             buriti = sliderBuriti.value,
             cobraAttack = sliderCobraAttack.value,
-            cobraChefeDamageTaken = sliderCobraChefeDamageTaken.value,
             cobraDie = sliderCobraDie.value,
-            player = volume
+            cobraChefeDamageTaken = sliderCobraChefeDamageTaken.value
         };
 
-        print("modelo: "+ model);
         //Save data from PlayerInfo to a file named players
         DataBase.saveData(model, "soundDB");
     }
