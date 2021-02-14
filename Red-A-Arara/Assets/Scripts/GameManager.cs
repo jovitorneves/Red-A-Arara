@@ -8,11 +8,13 @@ using UnityEditor;
 
 public class GameManager : MonoBehaviour
 {
-    public Sprite[] overlaySprites;
-    public Image overlay;
     public Text timeHud;
     public Text scoreHud;
     public Text faseHud;
+
+    //PopUp
+    public Text msgPopUp;
+    public GameObject popUpGO;
 
     public float time;
     public int score;
@@ -46,7 +48,7 @@ public class GameManager : MonoBehaviour
         time = 50f;
         score = 0;
         status = GameStatus.PLAY;
-        overlay.enabled = false;
+        popUpGO.SetActive(false);
         Physics2D.IgnoreLayerCollision(9, 10, false);
         PauseGameAction();
     }
@@ -184,8 +186,11 @@ public class GameManager : MonoBehaviour
     public void SetOverlay(GameStatus parStatus)
     {
         status = parStatus;
-        overlay.enabled = true;
-        overlay.sprite = overlaySprites[(int)parStatus];
+        popUpGO.SetActive(true);
+        if (parStatus == GameStatus.WIN) 
+            msgPopUp.text = "voce concluiu a fase";
+        else
+            msgPopUp.text = "voce morreu!";
     }
 
     public static Scene GetActiveScene()

@@ -854,7 +854,7 @@ PrefabInstance:
         type: 3}
       propertyPath: overlay
       value: 
-      objectReference: {fileID: 1851350327}
+      objectReference: {fileID: 0}
     - target: {fileID: 8721959703784491324, guid: ccf5831c697ce364c8630fae25646413,
         type: 3}
       propertyPath: timeHud
@@ -870,6 +870,16 @@ PrefabInstance:
       propertyPath: faseHud
       value: 
       objectReference: {fileID: 1851350328}
+    - target: {fileID: 8721959703784491324, guid: ccf5831c697ce364c8630fae25646413,
+        type: 3}
+      propertyPath: popUpGO
+      value: 
+      objectReference: {fileID: 1851350327}
+    - target: {fileID: 8721959703784491324, guid: ccf5831c697ce364c8630fae25646413,
+        type: 3}
+      propertyPath: msgPopUp
+      value: 
+      objectReference: {fileID: 1851350329}
     - target: {fileID: 8721959703784491325, guid: ccf5831c697ce364c8630fae25646413,
         type: 3}
       propertyPath: m_Name
@@ -5613,21 +5623,27 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1851350327 stripped
+--- !u!1 &1851350327 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6938474389287614140, guid: 67881796312fc0146b4bfe952ff2561b,
+    type: 3}
+  m_PrefabInstance: {fileID: 1851350324}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1851350328 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 4367136640781398810, guid: 67881796312fc0146b4bfe952ff2561b,
+  m_CorrespondingSourceObject: {fileID: 2529195201469889548, guid: 67881796312fc0146b4bfe952ff2561b,
     type: 3}
   m_PrefabInstance: {fileID: 1851350324}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1851350328 stripped
+--- !u!114 &1851350329 stripped
 MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2529195201469889548, guid: 67881796312fc0146b4bfe952ff2561b,
+  m_CorrespondingSourceObject: {fileID: 6745899749150181018, guid: 67881796312fc0146b4bfe952ff2561b,
     type: 3}
   m_PrefabInstance: {fileID: 1851350324}
   m_PrefabAsset: {fileID: 0}
