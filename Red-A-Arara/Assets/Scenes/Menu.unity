@@ -5723,7 +5723,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -260, y: 32.1}
+  m_AnchoredPosition: {x: -260, y: 18.09999}
   m_SizeDelta: {x: 170.38873, y: 88.653275}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1631253576
@@ -6095,6 +6095,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4d6e544a8877445b8ce871c41c23a5a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fase1textMeshPro: {fileID: 1056312649}
+  fase2textMeshPro: {fileID: 164157829}
+  fase3textMeshPro: {fileID: 2145361102}
+  fase4textMeshPro: {fileID: 1991206397}
+  fase5textMeshPro: {fileID: 1306984982}
+  fase6textMeshPro: {fileID: 5563607}
+  fase1Button: {fileID: 1185841486}
+  fase2Button: {fileID: 1801413771}
+  fase3Button: {fileID: 1421512055}
+  fase4Button: {fileID: 1028952163}
+  fase5Button: {fileID: 1631253576}
+  fase6Button: {fileID: 1725689218}
 --- !u!1 &1672552747
 GameObject:
   m_ObjectHideFlags: 0
@@ -6555,7 +6567,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -72.899994, y: 32.1}
+  m_AnchoredPosition: {x: -72.899994, y: 18.1}
   m_SizeDelta: {x: 170.38873, y: 88.653275}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1725689218

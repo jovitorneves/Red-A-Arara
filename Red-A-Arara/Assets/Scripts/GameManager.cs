@@ -73,6 +73,7 @@ public class GameManager : MonoBehaviour
             if (status == GameStatus.WIN)
             {
                 LoadScene(buildIndex: SceneManager.GetActiveScene().buildIndex + 1);
+                ActivePhases();
             }
             else if (status == GameStatus.DIE || status == GameStatus.LOSE)
             {
@@ -99,6 +100,17 @@ public class GameManager : MonoBehaviour
 
         PauseGameAction();
         SetBackToFirstStage();
+    }
+
+    private void ActivePhases()
+    {
+        var model = new ActivePhasesDB
+        {
+            activePhases = SceneManager.GetActiveScene().buildIndex
+        };
+
+        //Save data from PlayerInfo to a file named players
+        DataBase.saveData(model, "activePhasesDB");
     }
 
     //verifica se o usuario tinha mais de uma vida e se pedeu todas
