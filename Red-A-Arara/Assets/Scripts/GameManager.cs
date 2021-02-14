@@ -18,7 +18,7 @@ public class GameManager : MonoBehaviour
 
     public float time;
     public int score;
-    public GameStatus status;
+    public GameStatus status = GameStatus.PLAY;
     public static GameManager Instance;
 
     private static bool destroyed = false;
@@ -90,7 +90,7 @@ public class GameManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && status == GameStatus.PLAY)
         {
             if (Application.CanStreamedLevelBeLoaded("Menu"))
             {
@@ -170,7 +170,7 @@ public class GameManager : MonoBehaviour
 
     private void PauseGameAction()
     {
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.P) && status == GameStatus.PLAY)
         {
             if (isPause)
             {
