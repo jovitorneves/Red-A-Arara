@@ -2,8 +2,8 @@
 
 public class Player : MonoBehaviour
 {
-    public float speed;
-    public int jumpForce;
+    private float speed = 5;
+    private int jumpForce = 480;
 
     public Transform groundCheck;
     public Transform hitEnemy;
@@ -16,6 +16,8 @@ public class Player : MonoBehaviour
 
     private Rigidbody2D rb2D;
     private Animator anim;
+
+    private FlyingController flyingController;
 
     public bool hitted;
     public bool grounded;
@@ -34,6 +36,7 @@ public class Player : MonoBehaviour
     {
         rb2D = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        flyingController = GetComponent(typeof(FlyingController)) as FlyingController;
     }
 
     // Update is called once per frame
@@ -98,7 +101,7 @@ public class Player : MonoBehaviour
             anim.Play(AnimationTagsConstants.Walk);
         else if (grounded && rb2D.velocity.x == 0)
             anim.Play(AnimationTagsConstants.Idle);
-        else if (!grounded)
+        else if (!grounded && !flyingController.isFlying)
             anim.Play(AnimationTagsConstants.Jump);
     }
 

@@ -4,8 +4,8 @@ using UnityEngine;
 
 public static class AnimationTagsConstants
 {
-
     public const string Celebrar = "WINCELEBRATE";//WINCELEBRATE //WinCelebrate
+    public const string Voando = "FLYING";
     public const string Morte = "DEATH";//DEATH //Death
     public const string Walk = "WALK";//WALK //Walk
     public const string Idle = "IDLE";//IDLE //Idle
