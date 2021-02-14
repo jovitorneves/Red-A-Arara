@@ -40,6 +40,9 @@ public class FlyingController : MonoBehaviour
     private void Update()
     {
         timer += Time.deltaTime;
+        if (GameManager.Instance.status != GameStatus.PLAY)
+            return;
+
         IsFalling();
         if (isFlying)
         {
@@ -57,6 +60,9 @@ public class FlyingController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (GameManager.Instance.status != GameStatus.PLAY)
+            return;
+
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, radiusCheck, layerGround);
 
         //caso ele aperta a seta pra baixo ele cai mais rapido
