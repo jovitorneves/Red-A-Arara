@@ -1,0 +1,452 @@
+fileFormatVersion: 2
+guid: c36586400357646b18b76ffabb85e7aa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7548921776182810295
+    second: "HumanoIdle - co\u0301pia_0"
+  - first:
+      213: 4335371788710550757
+    second: "HumanoIdle - co\u0301pia_1"
+  - first:
+      213: -285258224775312836
+    second: "HumanoIdle - co\u0301pia_2"
+  - first:
+      213: -8009814876027076053
+    second: "HumanoIdle - co\u0301pia_3"
+  - first:
+      213: 168796901666758847
+    second: "HumanoIdle - co\u0301pia_4"
+  - first:
+      213: 3377982426822545853
+    second: "HumanoIdle - co\u0301pia_5"
+  - first:
+      213: -4126272846058390633
+    second: "HumanoIdle - co\u0301pia_6"
+  - first:
+      213: 4421592649884860613
+    second: "HumanoIdle - co\u0301pia_7"
+  - first:
+      213: 2217266064959800346
+    second: "HumanoIdle - co\u0301pia_8"
+  - first:
+      213: 2289405848434124693
+    second: "HumanoIdle - co\u0301pia_9"
+  - first:
+      213: 8056238951357037307
+    second: "HumanoIdle - co\u0301pia_10"
+  - first:
+      213: -5277085044602411214
+    second: "HumanoIdle - co\u0301pia_11"
+  - first:
+      213: -9124411697788818437
+    second: "HumanoIdle - co\u0301pia_12"
+  - first:
+      213: 3883395842315985417
+    second: "HumanoIdle - co\u0301pia_13"
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 100
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 100
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 100
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "HumanoIdle - co\u0301pia_0"
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 10
+        width: 477
+        height: 757
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b6569a0c5823c860800000000000000
+      internalID: 7548921776182810295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "HumanoIdle - co\u0301pia_1"
+      rect:
+        serializedVersion: 2
+        x: 1091
+        y: 10
+        width: 478
+        height: 757
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ec975b0ca55a2c30800000000000000
+      internalID: 4335371788710550757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "HumanoIdle - co\u0301pia_2"
+      rect:
+        serializedVersion: 2
+        x: 2093
+        y: 10
+        width: 478
+        height: 757
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3a420be72f8a0cf0800000000000000
+      internalID: -285258224775312836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "HumanoIdle - co\u0301pia_3"
+      rect:
+        serializedVersion: 2
+        x: 3082
+        y: 10
+        width: 458
+        height: 757
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2244cddecb67d090800000000000000
+      internalID: -8009814876027076053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "HumanoIdle - co\u0301pia_4"
+      rect:
+        serializedVersion: 2
+        x: 4084
+        y: 10
+        width: 457
+        height: 757
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb0a80343efa75200800000000000000
+      internalID: 168796901666758847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "HumanoIdle - co\u0301pia_5"
+      rect:
+        serializedVersion: 2
+        x: 5079
+        y: 10
+        width: 458
+        height: 757
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db11540be1101ee20800000000000000
+      internalID: 3377982426822545853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "HumanoIdle - co\u0301pia_6"
+      rect:
+        serializedVersion: 2
+        x: 6101
+        y: 10
+        width: 438
+        height: 757
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79b795c55b88cb6c0800000000000000
+      internalID: -4126272846058390633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "HumanoIdle - co\u0301pia_7"
+      rect:
+        serializedVersion: 2
+        x: 7083
+        y: 10
+        width: 457
+        height: 757
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c08dd5a617ac5d30800000000000000
+      internalID: 4421592649884860613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "HumanoIdle - co\u0301pia_8"
+      rect:
+        serializedVersion: 2
+        x: 8060
+        y: 10
+        width: 499
+        height: 757
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a14057e0dbf45ce10800000000000000
+      internalID: 2217266064959800346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "HumanoIdle - co\u0301pia_9"
+      rect:
+        serializedVersion: 2
+        x: 9020
+        y: 10
+        width: 537
+        height: 757
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5972e964d7a95cf10800000000000000
+      internalID: 2289405848434124693
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "HumanoIdle - co\u0301pia_10"
+      rect:
+        serializedVersion: 2
+        x: 10009
+        y: 10
+        width: 550
+        height: 757
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfa3d4974a28dcf60800000000000000
+      internalID: 8056238951357037307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "HumanoIdle - co\u0301pia_11"
+      rect:
+        serializedVersion: 2
+        x: 10971
+        y: 10
+        width: 590
+        height: 757
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23762f27c1704c6b0800000000000000
+      internalID: -5277085044602411214
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "HumanoIdle - co\u0301pia_12"
+      rect:
+        serializedVersion: 2
+        x: 11959
+        y: 10
+        width: 597
+        height: 757
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfbe0e077e39f5180800000000000000
+      internalID: -9124411697788818437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: "HumanoIdle - co\u0301pia_13"
+      rect:
+        serializedVersion: 2
+        x: 12941
+        y: 10
+        width: 617
+        height: 757
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 902297781f794e530800000000000000
+      internalID: 3883395842315985417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
