@@ -1,58 +1,43 @@
 fileFormatVersion: 2
-guid: 72f9ae0dde42fe34c82f3d748e179f80
+guid: 746ef8ed3284d4e36bab20a500843f34
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 21300000
-    second: JUMP_0
+      213: 63944495686079885
+    second: RedPulando_0
   - first:
-      213: 21300002
-    second: JUMP_1
+      213: -8640129300033057596
+    second: RedPulando_1
   - first:
-      213: 21300004
-    second: JUMP_2
+      213: 4245353414199963059
+    second: RedPulando_2
   - first:
-      213: 21300006
-    second: JUMP_3
+      213: -8878114552927101981
+    second: RedPulando_3
   - first:
-      213: 21300008
-    second: JUMP_4
+      213: 1421167850863875470
+    second: RedPulando_4
   - first:
-      213: 21300010
-    second: JUMP_5
+      213: -304735278106681276
+    second: RedPulando_5
   - first:
-      213: -6150384008709971305
-    second: JUMP_0
+      213: -1817422917127166989
+    second: RedPulando_0
   - first:
-      213: -4959259091351612375
-    second: JUMP_1
+      213: 2971273614593491085
+    second: RedPulando_1
   - first:
-      213: 1131083306628328740
-    second: JUMP_2
+      213: -4340288094295927790
+    second: RedPulando_2
   - first:
-      213: -1959255609046229392
-    second: JUMP_3
+      213: -1555032465081206300
+    second: RedPulando_3
   - first:
-      213: 5863146554602884080
-    second: JUMP_4
+      213: 3751136579814046266
+    second: RedPulando_4
   - first:
-      213: 1661297097616155045
-    second: JUMP_5
-  - first:
-      213: 1810671005484508929
-    second: JUMP_6
-  - first:
-      213: -6166176918317346491
-    second: JUMP_6
-  - first:
-      213: -4290912688688556156
-    second: JUMP_7
-  - first:
-      213: 553134489282318932
-    second: JUMP_8
-  - first:
-      213: -998739267773105257
-    second: JUMP_9
+      213: -6938666911796505477
+    second: RedPulando_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -96,7 +81,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 30
+  spritePixelsToUnits: 155
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -108,11 +93,11 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
@@ -121,10 +106,10 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
@@ -133,18 +118,30 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 1
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: JUMP_0
+      name: RedPulando_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 45
-        height: 42
+        x: 55
+        y: 10
+        width: 125
+        height: 125
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +149,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7926998845275aaa0800000000000000
-      internalID: -6150384008709971305
+      spriteID: 3f32bf96c7737c6e0800000000000000
+      internalID: -1817422917127166989
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JUMP_1
+      name: RedPulando_1
       rect:
         serializedVersion: 2
-        x: 65
-        y: 0
-        width: 45
-        height: 42
+        x: 365
+        y: 15
+        width: 135
+        height: 125
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +170,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9245cd6b12c2d2bb0800000000000000
-      internalID: -4959259091351612375
+      spriteID: d8006582c951c3920800000000000000
+      internalID: 2971273614593491085
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JUMP_2
+      name: RedPulando_2
       rect:
         serializedVersion: 2
-        x: 126
-        y: 0
-        width: 45
-        height: 42
+        x: 645
+        y: 65
+        width: 175
+        height: 120
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +191,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 42da4fe464a62bf00800000000000000
-      internalID: 1131083306628328740
+      spriteID: 21452ac59f234c3c0800000000000000
+      internalID: -4340288094295927790
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JUMP_3
+      name: RedPulando_3
       rect:
         serializedVersion: 2
-        x: 190
-        y: 0
-        width: 45
-        height: 42
+        x: 960
+        y: 90
+        width: 180
+        height: 120
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,20 +212,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07e9b9677635fc4e0800000000000000
-      internalID: -1959255609046229392
+      spriteID: 4e972a0463a6b6ae0800000000000000
+      internalID: -1555032465081206300
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JUMP_5
+      name: RedPulando_4
       rect:
         serializedVersion: 2
-        x: 318
-        y: 0
-        width: 45
-        height: 42
+        x: 1285
+        y: 65
+        width: 175
+        height: 120
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,41 +233,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5a16cc988ec1e0710800000000000000
-      internalID: 1661297097616155045
+      spriteID: a3a3acf48d6be0430800000000000000
+      internalID: 3751136579814046266
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JUMP_6
+      name: RedPulando_5
       rect:
         serializedVersion: 2
-        x: 318
-        y: 0
-        width: 45
-        height: 42
-      alignment: 9
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 5415b7933c65d6aa0800000000000000
-      internalID: -6166176918317346491
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: JUMP_4
-      rect:
-        serializedVersion: 2
-        x: 252
-        y: 0
-        width: 45
-        height: 42
+        x: 1615
+        y: 45
+        width: 165
+        height: 120
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -278,8 +254,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 82305410000000000800000000000000
-      internalID: 21300008
+      spriteID: b74dc93d437e4bf90800000000000000
+      internalID: -6938666911796505477
       vertices: []
       indices: 
       edges: []
@@ -287,7 +263,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 10c638052353a8348adfd20434091725
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 

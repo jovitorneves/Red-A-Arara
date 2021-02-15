@@ -102,7 +102,7 @@ public class Player : MonoBehaviour
         else if (grounded && rb2D.velocity.x == 0)
             anim.Play(AnimationTagsConstants.ParadaRed);
         else if (!grounded && !flyingController.isFlying)
-            anim.Play(AnimationTagsConstants.Jump);
+            anim.Play(AnimationTagsConstants.PulandoRed);
     }
 
     void Flip()
