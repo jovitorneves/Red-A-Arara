@@ -501,12 +501,12 @@ TextureImporter:
       name: HumanoIdle_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 80
         y: 0
-        width: 955.6
+        width: 505
         height: 779
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -522,12 +522,12 @@ TextureImporter:
       name: HumanoIdle_1
       rect:
         serializedVersion: 2
-        x: 955
+        x: 1079
         y: 0
-        width: 955.6
+        width: 488
         height: 779
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -543,12 +543,12 @@ TextureImporter:
       name: HumanoIdle_2
       rect:
         serializedVersion: 2
-        x: 1910
+        x: 2085
         y: 0
-        width: 955.6
+        width: 485
         height: 779
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -564,12 +564,12 @@ TextureImporter:
       name: HumanoIdle_3
       rect:
         serializedVersion: 2
-        x: 2865
+        x: 3081
         y: 0
-        width: 955.6
+        width: 478
         height: 779
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -585,12 +585,12 @@ TextureImporter:
       name: HumanoIdle_4
       rect:
         serializedVersion: 2
-        x: 3820
+        x: 4080
         y: 0
-        width: 955.6
+        width: 474
         height: 779
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -606,12 +606,12 @@ TextureImporter:
       name: HumanoIdle_5
       rect:
         serializedVersion: 2
-        x: 4775
+        x: 5083
         y: 0
-        width: 955.6
+        width: 474
         height: 779
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -627,12 +627,12 @@ TextureImporter:
       name: HumanoIdle_6
       rect:
         serializedVersion: 2
-        x: 5730
+        x: 6082
         y: 0
-        width: 955.6
+        width: 474
         height: 779
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -648,12 +648,12 @@ TextureImporter:
       name: HumanoIdle_7
       rect:
         serializedVersion: 2
-        x: 6685
+        x: 7068
         y: 0
-        width: 955.6
+        width: 460
         height: 779
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -669,12 +669,12 @@ TextureImporter:
       name: HumanoIdle_8
       rect:
         serializedVersion: 2
-        x: 7640
+        x: 8067
         y: 0
-        width: 955.6
+        width: 470
         height: 779
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -690,12 +690,12 @@ TextureImporter:
       name: HumanoIdle_9
       rect:
         serializedVersion: 2
-        x: 8595
+        x: 9066
         y: 0
-        width: 955.6
+        width: 485
         height: 779
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
