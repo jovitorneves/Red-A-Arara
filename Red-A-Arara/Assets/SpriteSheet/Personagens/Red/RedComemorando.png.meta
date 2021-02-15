@@ -1,25 +1,19 @@
 fileFormatVersion: 2
-guid: f076ac9f339ed1f45918bcec3f81bae3
+guid: 8079b652547d04d4f8df7c07acb8f3d6
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 21300000
-    second: IDLE_0
+      213: 744098285785266118
+    second: RedComemorando_0
   - first:
-      213: 21300002
-    second: IDLE_1
+      213: 573460361340987717
+    second: RedComemorando_1
   - first:
-      213: 21300004
-    second: IDLE_2
+      213: 229115038252549097
+    second: RedComemorando_2
   - first:
-      213: 21300006
-    second: IDLE_3
-  - first:
-      213: 21300008
-    second: IDLE_4
-  - first:
-      213: 21300010
-    second: IDLE_5
+      213: -4553043819452391744
+    second: RedComemorando_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -61,9 +55,9 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 7
-  spritePivot: {x: 0.5, y: 0}
-  spritePixelsToUnits: 30
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 130
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -75,7 +69,7 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
@@ -117,13 +111,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: IDLE_0
+      name: RedComemorando_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 8
         y: 0
-        width: 32
-        height: 32
+        width: 100
+        height: 114
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +125,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f2762675c98fa84296b7d125d0db435
-      internalID: 21300000
+      spriteID: 6c73532d271935a00800000000000000
+      internalID: 744098285785266118
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IDLE_1
+      name: RedComemorando_1
       rect:
         serializedVersion: 2
-        x: 32
+        x: 132
         y: 0
-        width: 32
-        height: 32
+        width: 104
+        height: 110
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +146,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 238eda6fecfc4094788f415b030fdcf9
-      internalID: 21300002
+      spriteID: 5492f7a092755f700800000000000000
+      internalID: 573460361340987717
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IDLE_2
+      name: RedComemorando_2
       rect:
         serializedVersion: 2
-        x: 64
+        x: 264
         y: 0
-        width: 32
-        height: 32
+        width: 88
+        height: 114
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +167,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aac9c802107448748b705ce605dfbd5a
-      internalID: 21300004
+      spriteID: 9e34eb3d9eafd2300800000000000000
+      internalID: 229115038252549097
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: IDLE_3
+      name: RedComemorando_3
       rect:
         serializedVersion: 2
-        x: 96
+        x: 392
         y: 0
-        width: 32
-        height: 32
+        width: 88
+        height: 114
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,50 +188,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 628885724ebe8c443a886dc5799e5089
-      internalID: 21300006
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IDLE_4
-      rect:
-        serializedVersion: 2
-        x: 128
-        y: 0
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0db24faf6b7e6ae46bddd1ee6eb2b246
-      internalID: 21300008
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: IDLE_5
-      rect:
-        serializedVersion: 2
-        x: 160
-        y: 0
-        width: 32
-        height: 32
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9158dd61ee1460746b791cdd324eda1f
-      internalID: 21300010
+      spriteID: 0ce90cee4c650d0c0800000000000000
+      internalID: -4553043819452391744
       vertices: []
       indices: 
       edges: []
@@ -245,7 +197,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 2abfdde0ce84d234c921ccb26d8a3b88
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 

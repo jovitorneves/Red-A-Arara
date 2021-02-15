@@ -94,7 +94,7 @@ public class Player : MonoBehaviour
     void PlayAnimations()
     {
         if (levelCompleted)
-            anim.Play(AnimationTagsConstants.Celebrar);
+            anim.Play(AnimationTagsConstants.WinRed);
         else if (!isAlive)
             anim.Play(AnimationTagsConstants.MorteRed);
         else if (grounded && rb2D.velocity.x != 0)

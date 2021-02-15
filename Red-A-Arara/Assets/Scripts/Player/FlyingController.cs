@@ -40,7 +40,7 @@ public class FlyingController : MonoBehaviour
     private void Update()
     {
         timer += Time.deltaTime;
-        if (GameManager.Instance.status != GameStatus.PLAY)
+        if (GameManager.Instance.status != GameStatus.PLAY || !player.isAlive)
             return;
 
         IsFalling();
