@@ -100,7 +100,7 @@ public class Player : MonoBehaviour
         else if (grounded && rb2D.velocity.x != 0)
             anim.Play(AnimationTagsConstants.Walk);
         else if (grounded && rb2D.velocity.x == 0)
-            anim.Play(AnimationTagsConstants.Idle);
+            anim.Play(AnimationTagsConstants.ParadaRed);
         else if (!grounded && !flyingController.isFlying)
             anim.Play(AnimationTagsConstants.Jump);
     }
