@@ -1,49 +1,49 @@
 fileFormatVersion: 2
-guid: 00afc9645de3cbd4cbc72e9dd859e414
+guid: 4deff0b6b14fa46e1adb11607c6578ec
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -1745646317731160461
-    second: DEATH_0
+      213: -8961229010336782772
+    second: RedMorta_0
   - first:
-      213: -1962882971833571424
-    second: DEATH_1
+      213: 1242535166902618836
+    second: RedMorta_1
   - first:
-      213: 7163519229324203079
-    second: DEATH_2
+      213: 4285446521665570807
+    second: RedMorta_2
   - first:
-      213: -2824850348822682002
-    second: DEATH_3
+      213: -4768268899880214818
+    second: RedMorta_3
   - first:
-      213: -4395442915117589123
-    second: DEATH_4
+      213: -629494260681810300
+    second: RedMorta_4
   - first:
-      213: 7527047216810660112
-    second: DEATH_5
+      213: -1965548218710108005
+    second: RedMorta_5
   - first:
-      213: -6116082883535636463
-    second: DEATH_6
+      213: 9194235727513955935
+    second: RedMorta_6
   - first:
-      213: -2220491615111669356
-    second: DEATH_0
+      213: 3970066080942105818
+    second: RedMorta_0
   - first:
-      213: -6340865200498674704
-    second: DEATH_1
+      213: -4323502348394237818
+    second: RedMorta_1
   - first:
-      213: 959277885212518525
-    second: DEATH_2
+      213: 905917877852552154
+    second: RedMorta_2
   - first:
-      213: -758882055772835835
-    second: DEATH_3
+      213: 6971246277847554224
+    second: RedMorta_3
   - first:
-      213: -8639507226604673756
-    second: DEATH_4
+      213: -848101166736802623
+    second: RedMorta_4
   - first:
-      213: -7875803907654621340
-    second: DEATH_5
+      213: -8817350855670485512
+    second: RedMorta_5
   - first:
-      213: 5125499513679543926
-    second: DEATH_6
+      213: 9041367391405634525
+    second: RedMorta_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -87,7 +87,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 30
+  spritePixelsToUnits: 130
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -99,11 +99,11 @@ TextureImporter:
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
-  applyGammaDecoding: 1
+  applyGammaDecoding: 0
   platformSettings:
   - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
@@ -115,7 +115,19 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 3
     buildTarget: Standalone
-    maxTextureSize: 2048
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 2
@@ -129,13 +141,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: DEATH_0
+      name: RedMorta_0
       rect:
         serializedVersion: 2
-        x: 15
-        y: 0
-        width: 45
-        height: 32
+        x: 100
+        y: 7
+        width: 100
+        height: 109
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +155,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 499198604aa3f21e0800000000000000
-      internalID: -2220491615111669356
+      spriteID: ad4a169f012881730800000000000000
+      internalID: 3970066080942105818
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DEATH_1
+      name: RedMorta_1
       rect:
         serializedVersion: 2
-        x: 67
-        y: 0
-        width: 45
-        height: 32
+        x: 272
+        y: 8
+        width: 140
+        height: 112
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,20 +176,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0f3f3ab02b8b008a0800000000000000
-      internalID: -6340865200498674704
+      spriteID: 680f4626585dff3c0800000000000000
+      internalID: -4323502348394237818
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DEATH_2
+      name: RedMorta_2
       rect:
         serializedVersion: 2
-        x: 128
-        y: 0
-        width: 45
-        height: 32
+        x: 564
+        y: 9
+        width: 100
+        height: 111
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,20 +197,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d78eaf4772a005d00800000000000000
-      internalID: 959277885212518525
+      spriteID: adbb3199287729c00800000000000000
+      internalID: 905917877852552154
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DEATH_3
+      name: RedMorta_3
       rect:
         serializedVersion: 2
-        x: 192
-        y: 0
-        width: 45
-        height: 32
+        x: 816
+        y: 9
+        width: 104
+        height: 103
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,20 +218,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 500fd3f7ac8e775f0800000000000000
-      internalID: -758882055772835835
+      spriteID: 0b81ed0fd87deb060800000000000000
+      internalID: 6971246277847554224
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DEATH_4
+      name: RedMorta_4
       rect:
         serializedVersion: 2
-        x: 256
-        y: 0
-        width: 45
-        height: 32
+        x: 1072
+        y: 9
+        width: 100
+        height: 91
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,20 +239,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 425eec393fd4a1880800000000000000
-      internalID: -8639507226604673756
+      spriteID: 1ccfe077b70fa34f0800000000000000
+      internalID: -848101166736802623
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DEATH_5
+      name: RedMorta_5
       rect:
         serializedVersion: 2
-        x: 326
-        y: 0
-        width: 45
-        height: 32
+        x: 1343
+        y: 9
+        width: 101
+        height: 83
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,20 +260,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 467ec93e21683b290800000000000000
-      internalID: -7875803907654621340
+      spriteID: 8fd26c3fc1a72a580800000000000000
+      internalID: -8817350855670485512
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: DEATH_6
+      name: RedMorta_6
       rect:
         serializedVersion: 2
-        x: 396
+        x: 1611
         y: 0
-        width: 45
-        height: 32
+        width: 121
+        height: 76
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -269,8 +281,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 67e7e41d6ae612740800000000000000
-      internalID: 5125499513679543926
+      spriteID: dd378804db3697d70800000000000000
+      internalID: 9041367391405634525
       vertices: []
       indices: 
       edges: []
@@ -278,7 +290,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 66852db0a3af9834ba9131c3f9554eb1
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 

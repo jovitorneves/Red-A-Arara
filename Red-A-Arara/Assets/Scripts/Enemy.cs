@@ -33,7 +33,6 @@ public class Enemy : BaseEnemyController
     // Update is called once per frame
     void Update()
     {
-        
         grounded = Physics2D.OverlapCircle(groundCheck.position, radiusCheck, layerGround);
         groundedHorizontal = Physics2D.OverlapCircle(groundCheckHorizontal.position, radiusCheckHorizontal, layerGround);
 
@@ -79,10 +78,9 @@ public class Enemy : BaseEnemyController
 
     void OnTriggerEnter2D (Collider2D other)
     {
-        
         if (other.gameObject.CompareTag(TagsConstants.Player))
         {
-            anim.Play(AnimationTagsConstants.Morte);
+            anim.Play(AnimationTagsConstants.Death);
         }
     }
     

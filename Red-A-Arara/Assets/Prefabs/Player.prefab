@@ -166,8 +166,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 210dafe34b363444d948b8fd30fd28a7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 5
-  jumpForce: 480
   groundCheck: {fileID: 993163445058259677}
   hitEnemy: {fileID: 3941521764181313351}
   layerGround:
@@ -200,6 +198,7 @@ MonoBehaviour:
   layerGround:
     serializedVersion: 2
     m_Bits: 256
+  isFlying: 0
 --- !u!1 &993163445058259676
 GameObject:
   m_ObjectHideFlags: 0
