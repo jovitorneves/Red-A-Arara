@@ -20,6 +20,24 @@ TextureImporter:
   - first:
       213: -4945264591959115716
     second: RedFlyCoco_5
+  - first:
+      213: -5436968360555831206
+    second: RedFlyCoco_0
+  - first:
+      213: -7638282130061439949
+    second: RedFlyCoco_1
+  - first:
+      213: -2704624077989491258
+    second: RedFlyCoco_2
+  - first:
+      213: -1982083112728218500
+    second: RedFlyCoco_3
+  - first:
+      213: -1421436031339331146
+    second: RedFlyCoco_4
+  - first:
+      213: 3845791634474079811
+    second: RedFlyCoco_5
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -63,7 +81,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 30
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -120,19 +138,19 @@ TextureImporter:
       name: RedFlyCoco_0
       rect:
         serializedVersion: 2
-        x: 20
+        x: 33
         y: 0
-        width: 126
-        height: 93
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        width: 96
+        height: 81
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d4de1d53c97447190800000000000000
-      internalID: -7965663104668144307
+      spriteID: a50280615120c84b0800000000000000
+      internalID: -5436968360555831206
       vertices: []
       indices: 
       edges: []
@@ -141,19 +159,19 @@ TextureImporter:
       name: RedFlyCoco_1
       rect:
         serializedVersion: 2
-        x: 204
+        x: 219
         y: 0
-        width: 135
-        height: 96
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        width: 102
+        height: 84
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 5f8dbe58834a424e0800000000000000
-      internalID: -2007298971228448523
+      spriteID: 33c497f3fde5ff590800000000000000
+      internalID: -7638282130061439949
       vertices: []
       indices: 
       edges: []
@@ -162,19 +180,19 @@ TextureImporter:
       name: RedFlyCoco_2
       rect:
         serializedVersion: 2
-        x: 384
-        y: 28
-        width: 140
-        height: 95
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 387
+        y: 26
+        width: 126
+        height: 88
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 34f4b5e1dd51636c0800000000000000
-      internalID: -4164116766016188605
+      spriteID: 6cdc7741bbe377ad0800000000000000
+      internalID: -2704624077989491258
       vertices: []
       indices: 
       edges: []
@@ -183,19 +201,19 @@ TextureImporter:
       name: RedFlyCoco_3
       rect:
         serializedVersion: 2
-        x: 566
-        y: 39
-        width: 149
-        height: 96
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 576
+        y: 41
+        width: 129
+        height: 88
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 86811dd4698e59ac0800000000000000
-      internalID: -3848914574269933464
+      spriteID: c74b88619e93e74e0800000000000000
+      internalID: -1982083112728218500
       vertices: []
       indices: 
       edges: []
@@ -204,19 +222,19 @@ TextureImporter:
       name: RedFlyCoco_4
       rect:
         serializedVersion: 2
-        x: 768
-        y: 28
-        width: 141
-        height: 98
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 771
+        y: 25
+        width: 126
+        height: 89
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d18358aae13a233f0800000000000000
-      internalID: -922495621552326627
+      spriteID: 6b10419e57b064ce0800000000000000
+      internalID: -1421436031339331146
       vertices: []
       indices: 
       edges: []
@@ -225,19 +243,19 @@ TextureImporter:
       name: RedFlyCoco_5
       rect:
         serializedVersion: 2
-        x: 960
-        y: 18
-        width: 141
-        height: 94
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        x: 969
+        y: 15
+        width: 120
+        height: 84
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c38b5f30e04ee5bb0800000000000000
-      internalID: -4945264591959115716
+      spriteID: 3461ffc9d1ffe5530800000000000000
+      internalID: 3845791634474079811
       vertices: []
       indices: 
       edges: []

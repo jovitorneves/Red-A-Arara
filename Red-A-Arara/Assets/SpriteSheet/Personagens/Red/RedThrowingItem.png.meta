@@ -129,7 +129,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 30
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -186,12 +186,12 @@ TextureImporter:
       name: RedThrowingItem_0
       rect:
         serializedVersion: 2
-        x: 0
+        x: 8
         y: 0
-        width: 113
-        height: 100
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        width: 91
+        height: 88
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -207,12 +207,12 @@ TextureImporter:
       name: RedThrowingItem_1
       rect:
         serializedVersion: 2
-        x: 270
+        x: 278
         y: 0
-        width: 119
-        height: 103
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        width: 92
+        height: 86
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -228,12 +228,12 @@ TextureImporter:
       name: RedThrowingItem_2
       rect:
         serializedVersion: 2
-        x: 540
+        x: 549
         y: 0
-        width: 113
-        height: 104
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        width: 92
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -249,12 +249,12 @@ TextureImporter:
       name: RedThrowingItem_3
       rect:
         serializedVersion: 2
-        x: 810
+        x: 817
         y: 0
-        width: 116
-        height: 104
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        width: 100
+        height: 93
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -270,12 +270,12 @@ TextureImporter:
       name: RedThrowingItem_4
       rect:
         serializedVersion: 2
-        x: 1080
+        x: 1087
         y: 0
-        width: 114
-        height: 103
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        width: 98
+        height: 94
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -291,12 +291,12 @@ TextureImporter:
       name: RedThrowingItem_5
       rect:
         serializedVersion: 2
-        x: 1350
+        x: 1356
         y: 0
-        width: 114
-        height: 102
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        width: 95
+        height: 93
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -312,12 +312,12 @@ TextureImporter:
       name: RedThrowingItem_6
       rect:
         serializedVersion: 2
-        x: 1620
+        x: 1627
         y: 0
-        width: 115
-        height: 100
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        width: 100
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -333,12 +333,12 @@ TextureImporter:
       name: RedThrowingItem_7
       rect:
         serializedVersion: 2
-        x: 1890
+        x: 1898
         y: 0
-        width: 134
-        height: 99
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        width: 122
+        height: 94
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -354,12 +354,12 @@ TextureImporter:
       name: RedThrowingItem_8
       rect:
         serializedVersion: 2
-        x: 2160
+        x: 2169
         y: 0
-        width: 184
-        height: 103
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        width: 167
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -375,12 +375,12 @@ TextureImporter:
       name: RedThrowingItem_9
       rect:
         serializedVersion: 2
-        x: 2430
+        x: 2437
         y: 0
-        width: 227
-        height: 99
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        width: 213
+        height: 94
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -396,12 +396,12 @@ TextureImporter:
       name: RedThrowingItem_10
       rect:
         serializedVersion: 2
-        x: 2700
+        x: 2708
         y: 0
-        width: 270
-        height: 101
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        width: 252
+        height: 94
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -417,12 +417,12 @@ TextureImporter:
       name: RedThrowingItem_11
       rect:
         serializedVersion: 2
-        x: 2970
+        x: 2979
         y: 0
-        width: 270
-        height: 100
-      alignment: 2
-      pivot: {x: 0.5, y: 1}
+        width: 249
+        height: 94
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
