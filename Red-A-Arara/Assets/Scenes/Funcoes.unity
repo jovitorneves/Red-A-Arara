@@ -9064,6 +9064,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21ea4cdb6778040bc8f7d79b7489b27b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  portaAnimator: {fileID: 1389618691}
 --- !u!1001 &1774465875
 PrefabInstance:
   m_ObjectHideFlags: 0
