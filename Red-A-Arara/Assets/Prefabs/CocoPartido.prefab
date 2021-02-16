@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 7914384856809843572}
   - component: {fileID: 7914384856809843573}
   - component: {fileID: 7914384856809843574}
-  m_Layer: 5
+  m_Layer: 0
   m_Name: CocoPartido
   m_TagString: CocoPartido
   m_Icon: {fileID: 0}
