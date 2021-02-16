@@ -208,9 +208,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 143
-        height: 192
+        y: 37
+        width: 108
+        height: 89
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -228,10 +228,10 @@ TextureImporter:
       name: FLYING_1
       rect:
         serializedVersion: 2
-        x: 259
-        y: 0
-        width: 143
-        height: 192
+        x: 269
+        y: 31
+        width: 109
+        height: 90
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -249,10 +249,10 @@ TextureImporter:
       name: FLYING_2
       rect:
         serializedVersion: 2
-        x: 527
-        y: 0
-        width: 143
-        height: 192
+        x: 533
+        y: 25
+        width: 109
+        height: 89
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -270,10 +270,10 @@ TextureImporter:
       name: FLYING_3
       rect:
         serializedVersion: 2
-        x: 783
-        y: 0
-        width: 143
-        height: 192
+        x: 794
+        y: 18
+        width: 108
+        height: 90
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -291,10 +291,10 @@ TextureImporter:
       name: FLYING_4
       rect:
         serializedVersion: 2
-        x: 1047
-        y: 0
-        width: 143
-        height: 192
+        x: 1054
+        y: 20
+        width: 110
+        height: 81
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -312,10 +312,10 @@ TextureImporter:
       name: FLYING_5
       rect:
         serializedVersion: 2
-        x: 1312
+        x: 1321
         y: 0
-        width: 128
-        height: 192
+        width: 110
+        height: 87
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
