@@ -114,7 +114,11 @@ public class FlyingController : MonoBehaviour
             playerRigidbody.AddForce(new Vector2(0f, jumpForce/2));
         }
 
-        animationPlayer.Play(AnimationTagsConstants.Voando);
+        if (player.isCoco)
+            animationPlayer.Play(AnimationTagsConstants.VoandoCocoRed);
+        else
+            animationPlayer.Play(AnimationTagsConstants.Voando);
+
         isFlying = true;
         jumpCount--;
         print("jumpCount: "+ jumpCount);

@@ -27,6 +27,8 @@ public class Player : MonoBehaviour
     private bool levelCompleted = false;
     private bool timeIsOver = false;
 
+    public bool isCoco = false;
+
     public AudioClip fxWin;
     public AudioClip fxDie;
     public AudioClip fxJump;
@@ -97,12 +99,16 @@ public class Player : MonoBehaviour
             anim.Play(AnimationTagsConstants.WinRed);
         else if (!isAlive)
             anim.Play(AnimationTagsConstants.MorteRed);
-        else if (grounded && rb2D.velocity.x != 0)
+        else if (grounded && rb2D.velocity.x != 0 && !isCoco)
             anim.Play(AnimationTagsConstants.AndandoRed);
-        else if (grounded && rb2D.velocity.x == 0)
+        else if (grounded && rb2D.velocity.x != 0 && isCoco)
+            anim.Play(AnimationTagsConstants.AndandoCocoRed);
+        else if (grounded && rb2D.velocity.x == 0 && !isCoco)
             anim.Play(AnimationTagsConstants.ParadaRed);
-        else if (!grounded && !flyingController.isFlying)
+        else if (!grounded && !flyingController.isFlying && !isCoco)
             anim.Play(AnimationTagsConstants.PulandoRed);
+        else if (!grounded && !flyingController.isFlying && isCoco)
+            anim.Play(AnimationTagsConstants.VoandoCocoRed);
     }
 
     void Flip()
@@ -116,7 +122,7 @@ public class Player : MonoBehaviour
 
         Debug.Log("DIRECAO PLAYER: " + UtilController.Instance.ReturnDirection(other.contacts));
 
-        if (other.gameObject.CompareTag (TagsConstants.Enemy))
+        if (other.gameObject.CompareTag(TagsConstants.Enemy))
         { 
             if (hitted)
                 isAlive = true;
@@ -127,12 +133,16 @@ public class Player : MonoBehaviour
             }
 
         }
-        else if (other.gameObject.CompareTag (TagsConstants.Espinhos))
+        else if (other.gameObject.CompareTag(TagsConstants.Espinhos))
         {
             DataBase.deleteData("sceneDB");
             GameManager.Instance.heartCount = 0;
             PlayerDie();
             TakeLife();
+        } else if (other.gameObject.CompareTag(TagsConstants.CocoPartido))
+        {
+            isCoco = true;
+            anim.Play(AnimationTagsConstants.PegandoCocoRed);
         }
     }
 

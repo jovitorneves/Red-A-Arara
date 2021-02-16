@@ -216,12 +216,12 @@ PrefabInstance:
     - target: {fileID: 993163444905955678, guid: 66c457c8f4642c74995e45054f80d0f8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -30.69
+      value: -13.89
       objectReference: {fileID: 0}
     - target: {fileID: 993163444905955678, guid: 66c457c8f4642c74995e45054f80d0f8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.59
+      value: -2.6
       objectReference: {fileID: 0}
     - target: {fileID: 993163444905955678, guid: 66c457c8f4642c74995e45054f80d0f8,
         type: 3}
@@ -281,7 +281,7 @@ PrefabInstance:
     - target: {fileID: 3568671442255583689, guid: 66c457c8f4642c74995e45054f80d0f8,
         type: 3}
       propertyPath: m_Offset.y
-      value: 0.572603
+      value: 0.52805024
       objectReference: {fileID: 0}
     - target: {fileID: 3568671442255583689, guid: 66c457c8f4642c74995e45054f80d0f8,
         type: 3}
@@ -296,17 +296,17 @@ PrefabInstance:
     - target: {fileID: 3568671442255583689, guid: 66c457c8f4642c74995e45054f80d0f8,
         type: 3}
       propertyPath: m_Size.y
-      value: 0.8114147
+      value: 0.72230923
       objectReference: {fileID: 0}
     - target: {fileID: 3568671442255583689, guid: 66c457c8f4642c74995e45054f80d0f8,
         type: 3}
       propertyPath: m_Offset.x
-      value: 0.008146763
+      value: -0.0054130554
       objectReference: {fileID: 0}
     - target: {fileID: 3568671442255583689, guid: 66c457c8f4642c74995e45054f80d0f8,
         type: 3}
       propertyPath: m_Size.x
-      value: 1.0434847
+      value: 0.7606716
       objectReference: {fileID: 0}
     - target: {fileID: 3941521764181313351, guid: 66c457c8f4642c74995e45054f80d0f8,
         type: 3}
@@ -10036,6 +10036,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0675ca445203c427fb002fc46ac41bcf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDead: 0
+  isBoss: 0
   player: {fileID: 87543219}
   posicaoA: {fileID: 1323795983}
   posicaoB: {fileID: 2147349164}

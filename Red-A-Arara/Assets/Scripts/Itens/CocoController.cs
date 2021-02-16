@@ -15,4 +15,10 @@ public class CocoController : MonoBehaviour
     {
         
     }
+
+    void OnCollisionStay2D(Collision2D other)
+    {
+        if (other.gameObject.CompareTag(TagsConstants.Player))
+            Destroy(gameObject);
+    }
 }
