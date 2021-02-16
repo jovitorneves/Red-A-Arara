@@ -12,9 +12,9 @@ public class FlyingController : MonoBehaviour
 
     private int jumpCount = 10;
     private int jumpValidCount = 9;
-    private readonly int jumpFixedForce = 600;
+    private readonly int jumpFixedForce = 500;
     private readonly int dragFixed = 8;
-    private readonly int jumpForce = 600;
+    private readonly int jumpForce = 500;
     private bool isGrounded;
     private readonly float radiusCheck = 0.5f;
     private readonly int limitJumps = 10;
