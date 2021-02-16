@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 3568671442255583689}
   - component: {fileID: 993163444905955677}
   - component: {fileID: 713964803171794817}
+  - component: {fileID: 8360585574159005940}
   m_Layer: 9
   m_Name: Player
   m_TagString: Player
@@ -180,6 +181,7 @@ MonoBehaviour:
   hitted: 0
   grounded: 0
   isAlive: 1
+  isCoco: 0
   fxWin: {fileID: 8300000, guid: 188693a41d3a79348aa250317c9feb48, type: 3}
   fxDie: {fileID: 8300000, guid: 1696c1afc06f3554e99e62b203b074dc, type: 3}
   fxJump: {fileID: 8300000, guid: fc0286a49266efb48b3904faeb5ca6d8, type: 3}
@@ -200,6 +202,18 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 256
   isFlying: 0
+--- !u!114 &8360585574159005940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 993163444905955667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 56fae8713935444fe966b9257ed21112, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &993163445058259676
 GameObject:
   m_ObjectHideFlags: 0
