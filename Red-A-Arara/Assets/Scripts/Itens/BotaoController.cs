@@ -24,7 +24,6 @@ public class BotaoController : MonoBehaviour
         if (UtilController.Instance.ReturnDirection(other.contacts) != HitDirection.Top)
             return;
 
-        portaAnimator.enabled = true;
         portaAnimator.Play(AnimationTagsConstants.OpenClosePorta);
     }
 }
