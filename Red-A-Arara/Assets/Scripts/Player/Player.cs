@@ -107,8 +107,13 @@ public class Player : MonoBehaviour
             anim.Play(AnimationTagsConstants.ParadaRed);
         else if (!grounded && !flyingController.isFlying && !isCoco)
             anim.Play(AnimationTagsConstants.PulandoRed);
+        else if (!grounded && flyingController.isFlying && !isCoco)
+            anim.Play(AnimationTagsConstants.Voando);
         else if (!grounded && !flyingController.isFlying && isCoco)
             anim.Play(AnimationTagsConstants.VoandoCocoRed);
+
+        if (!flyingController.isFlying)
+            rb2D.drag = 0;
     }
 
     void Flip()
