@@ -328,6 +328,26 @@ PrefabInstance:
       propertyPath: cocoRB
       value: 
       objectReference: {fileID: 737509073}
+    - target: {fileID: 8360585574159005940, guid: 66c457c8f4642c74995e45054f80d0f8,
+        type: 3}
+      propertyPath: vector2.x
+      value: -100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8360585574159005940, guid: 66c457c8f4642c74995e45054f80d0f8,
+        type: 3}
+      propertyPath: vector2.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 8360585574159005940, guid: 66c457c8f4642c74995e45054f80d0f8,
+        type: 3}
+      propertyPath: distancia
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8360585574159005940, guid: 66c457c8f4642c74995e45054f80d0f8,
+        type: 3}
+      propertyPath: force
+      value: -250
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66c457c8f4642c74995e45054f80d0f8, type: 3}
 --- !u!1 &87543219 stripped
