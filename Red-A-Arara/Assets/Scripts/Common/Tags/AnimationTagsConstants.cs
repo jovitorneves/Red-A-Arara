@@ -14,6 +14,7 @@ public static class AnimationTagsConstants
     public const string VoandoCocoRed = "RedVoandoCoco";
     public const string AremessoCocoRed = "RedAremessoCoco";
     public const string PegandoCocoRed = "RedPegandoCoco";
+    public const string ParadaCocoRed = "RedParadaCoco";
     public const string AndandoCocoRed = "RedAndandoCoco";
     public const string AremessoChaoCocoRed = "RedAremessoChaoCoco";
 

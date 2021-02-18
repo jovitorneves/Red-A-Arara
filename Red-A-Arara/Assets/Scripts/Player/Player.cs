@@ -105,6 +105,8 @@ public class Player : MonoBehaviour
             anim.Play(AnimationTagsConstants.AndandoCocoRed);
         else if (grounded && rb2D.velocity.x == 0 && !isCoco)
             anim.Play(AnimationTagsConstants.ParadaRed);
+        else if (grounded && rb2D.velocity.x == 0 && isCoco)
+            anim.Play(AnimationTagsConstants.ParadaCocoRed);
         else if (!grounded && !flyingController.isFlying && !isCoco)
             anim.Play(AnimationTagsConstants.PulandoRed);
         else if (!grounded && flyingController.isFlying && !isCoco)
@@ -125,7 +127,7 @@ public class Player : MonoBehaviour
     void OnCollisionEnter2D (Collision2D other)
     {
 
-        Debug.Log("DIRECAO PLAYER: " + UtilController.Instance.ReturnDirection(other.contacts));
+        //Debug.Log("DIRECAO PLAYER: " + UtilController.Instance.ReturnDirection(other.contacts));
 
         if (other.gameObject.CompareTag(TagsConstants.Enemy))
         { 
