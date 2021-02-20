@@ -214,6 +214,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 56fae8713935444fe966b9257ed21112, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  cocoGameObject: {fileID: 7914384856809843561, guid: 4c9781619c5894d60ac76897093b0f30,
+    type: 3}
 --- !u!1 &993163445058259676
 GameObject:
   m_ObjectHideFlags: 0

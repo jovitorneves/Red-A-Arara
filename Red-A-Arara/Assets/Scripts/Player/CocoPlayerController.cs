@@ -3,7 +3,7 @@
 public class CocoPlayerController : MonoBehaviour
 {
     [SerializeField]
-    private Rigidbody2D cocoRB;
+    private GameObject cocoGameObject;
 
     private float force = 250f;
     private readonly float forceFixed = 250f;
@@ -12,7 +12,6 @@ public class CocoPlayerController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        cocoRB = cocoRB.GetComponent<Rigidbody2D>();
         player = GetComponent(typeof(Player)) as Player;
     }
 
@@ -27,31 +26,26 @@ public class CocoPlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //if (Input.GetButton("J"))//não deixar o usuario pressionar a tecla infinitamente, pois isso faz com que crie um hiper forca
-        //    return;
-        if (!player.isCoco)
-            return;
-        if (Input.GetKey(KeyCode.J))
+        if (Input.GetKey(KeyCode.J) && player.isCoco && player.isAlive)
         {
-            AplicaForce();
+            AjustaPosicaoCoco();
             player.isCoco = false;
         }
-    }
-
-    private void AplicaForce()
-    {
-        AjustaPosicaoCoco();
-        cocoRB.AddForce(new Vector2(force, forceFixed));
     }
 
     //faz o coco ser lancado um pouco mas a frente para evitar colisao com o personagem
     private void AjustaPosicaoCoco()
     {
-        Vector3 vetor = new Vector3(0, 0, 0);
+        Vector3 vetor = transform.position;
 
-        vetor = transform.position;
         vetor[0] += transform.localScale.x == 1 ? 1 : -1;
         vetor[1] += 1f;
-        cocoRB.transform.position = vetor;
+
+        //Instancia prefab 
+        GameObject cocoGO = Instantiate(cocoGameObject, vetor, Quaternion.identity);
+
+        //Aplica Force
+        Rigidbody2D cocoRB = cocoGO.GetComponent<Rigidbody2D>();
+        cocoRB.AddForce(new Vector2(force, forceFixed));
     }
 }

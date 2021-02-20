@@ -1,11 +1,7 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class CocoController : MonoBehaviour
 {
-    [SerializeField]
-    private bool isCenario = true;
     [SerializeField]
     private Vector3 fixedVector;
 
@@ -24,11 +20,10 @@ public class CocoController : MonoBehaviour
     void OnCollisionStay2D(Collision2D other)
     {
         if (other.gameObject.CompareTag(TagsConstants.Player))
-            if (isCenario)
-                Destroy(gameObject);
-            else
-                gameObject.transform.position = fixedVector;
-        if (other.gameObject.CompareTag(TagsConstants.Enemy))
-            gameObject.transform.position = fixedVector;
+            Destroy(gameObject);
+        //    else
+        //        gameObject.transform.position = fixedVector;
+        //if (other.gameObject.CompareTag(TagsConstants.Enemy))
+        //    gameObject.transform.position = fixedVector;
     }
 }
