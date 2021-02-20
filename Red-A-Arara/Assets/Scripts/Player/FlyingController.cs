@@ -66,7 +66,7 @@ public class FlyingController : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, radiusCheck, layerGround);
 
         //caso ele aperta a seta pra baixo ele cai mais rapido
-        if (Input.GetKey(KeyCode.DownArrow))
+        if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
             playerRigidbody.drag = 0;
         else
         {
