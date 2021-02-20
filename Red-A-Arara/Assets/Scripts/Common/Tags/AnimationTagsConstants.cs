@@ -27,7 +27,8 @@ public static class AnimationTagsConstants
     public const string VoandoTucano = "VoandoTucano";
 
     //Porta
-    public const string OpenClosePorta = "AbrindoFechandoPorta";
+    public const string OpenPorta = "AbrindoPorta";
+    public const string ClosePorta = "FechandoPorta";
 
     //GERAL
     public const string Death = "DEATH";

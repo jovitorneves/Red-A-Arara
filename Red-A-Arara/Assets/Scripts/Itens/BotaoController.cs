@@ -1,11 +1,11 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class BotaoController : MonoBehaviour
 {
     [SerializeField]
     private Animator portaAnimator;
+    private bool IsCoco = false;
+    private bool IsPlayer = false;
 
     // Start is called before the first frame update
     void Start()
@@ -24,6 +24,25 @@ public class BotaoController : MonoBehaviour
         if (UtilController.Instance.ReturnDirection(other.contacts) != HitDirection.Top)
             return;
 
-        portaAnimator.Play(AnimationTagsConstants.OpenClosePorta);
+        IsCoco = other.gameObject.CompareTag(TagsConstants.CocoPartido);
+        IsPlayer = other.gameObject.CompareTag(TagsConstants.Player);
+
+        if (IsCoco || IsPlayer)
+            portaAnimator.Play(AnimationTagsConstants.OpenPorta);
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (IsCoco)
+        {
+            IsCoco = false;
+            portaAnimator.Play(AnimationTagsConstants.ClosePorta);
+        }
+
+        if (IsPlayer)
+        {
+            IsPlayer = false;
+            portaAnimator.Play(AnimationTagsConstants.ClosePorta);
+        }
     }
 }
