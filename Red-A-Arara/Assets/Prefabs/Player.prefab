@@ -172,7 +172,7 @@ MonoBehaviour:
   hitEnemy: {fileID: 3941521764181313351}
   layerGround:
     serializedVersion: 2
-    m_Bits: 256
+    m_Bits: 1281
   layerHit:
     serializedVersion: 2
     m_Bits: 1024
