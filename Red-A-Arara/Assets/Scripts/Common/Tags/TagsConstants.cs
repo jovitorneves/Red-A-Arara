@@ -11,4 +11,5 @@ public static class TagsConstants
     public const string Rio = "Rio";
     public const string Chao = "chao";
     public const string CocoPartido = "CocoPartido";
+    public const string Humano = "Humano";
 }

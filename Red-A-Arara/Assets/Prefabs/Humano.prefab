@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 3957415073079504920}
   m_Layer: 10
   m_Name: Humano
-  m_TagString: Enemy
+  m_TagString: Humano
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

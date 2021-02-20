@@ -26,6 +26,7 @@ public class GameManager : MonoBehaviour
     public bool isPause = false;
     public int buritiCount = 0;
     public int heartCount = 0;
+    public bool isHumano = false;
     private bool isBackToFirstStage = false;
     private bool isBonusLife = false;
 
@@ -202,10 +203,12 @@ public class GameManager : MonoBehaviour
     {
         status = parStatus;
         popUpGO.SetActive(true);
-        if (parStatus == GameStatus.WIN) 
-            msgPopUp.text = "voce concluiu a fase";
+        if (parStatus == GameStatus.WIN)
+            msgPopUp.text = "Voce concluiu a fase";
         else
-            msgPopUp.text = "voce morreu!";
+        {
+            msgPopUp.text = isHumano ? "Capturado!" : "Voce morreu!";
+        }
     }
 
     public static Scene GetActiveScene()

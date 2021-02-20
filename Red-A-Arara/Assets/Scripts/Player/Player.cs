@@ -26,6 +26,7 @@ public class Player : MonoBehaviour
     public bool isAlive = true;
     private bool levelCompleted = false;
     private bool timeIsOver = false;
+    private bool isHumano = false;
 
     public bool isCoco = false;
 
@@ -129,8 +130,9 @@ public class Player : MonoBehaviour
 
         //Debug.Log("DIRECAO PLAYER: " + UtilController.Instance.ReturnDirection(other.contacts));
 
-        if (other.gameObject.CompareTag(TagsConstants.Enemy))
-        { 
+        if (other.gameObject.CompareTag(TagsConstants.Enemy) || other.gameObject.CompareTag(TagsConstants.Humano))
+        {
+            isHumano = other.gameObject.CompareTag(TagsConstants.Humano);
             if (hitted)
                 isAlive = true;
             else
@@ -191,7 +193,10 @@ public class Player : MonoBehaviour
         if (timeIsOver)
             GameManager.Instance.SetOverlay(GameStatus.LOSE);
         else
+        {
+            GameManager.Instance.isHumano = isHumano;
             GameManager.Instance.SetOverlay(GameStatus.DIE);
+        }
     }
 
     void CelebrateAnimationFinished()

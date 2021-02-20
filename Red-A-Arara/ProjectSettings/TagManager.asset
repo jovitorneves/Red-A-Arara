@@ -12,6 +12,7 @@ TagManager:
   - Limite
   - Dead
   - CocoPartido
+  - Humano
   layers:
   - Default
   - TransparentFX
