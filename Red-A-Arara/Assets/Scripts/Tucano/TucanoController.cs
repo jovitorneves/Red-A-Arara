@@ -57,13 +57,17 @@ public class TucanoController : BaseEnemyController
 
         if (isMove)
         {
-            if (player.gameObject.transform.position.x >= posicaoA.position.x &&
-                player.gameObject.transform.position.x <= posicaoB.position.x)
-                if (delayTime <= 0)
-                    MoveTucano();
-            else
-                if (delayTime <= 0)
-                    MoveTucano();
+            //Move o tucano sempre
+            if (delayTime <= 0)
+                MoveTucano();
+            //Move o tucano só quando player estiver perto
+            //if (player.gameObject.transform.position.x >= posicaoA.position.x &&
+            //    player.gameObject.transform.position.x <= posicaoB.position.x)
+            //    if (delayTime <= 0)
+            //        MoveTucano();
+            //else
+            //    if (delayTime <= 0)
+            //        MoveTucano();
         } else
             animator.Play(AnimationTagsConstants.IdleTucano);
     }
