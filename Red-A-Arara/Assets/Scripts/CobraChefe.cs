@@ -106,7 +106,7 @@ public class CobraChefe : BaseEnemyController
             {
                 this.isDead = true;
                 SoundManager.Instance.PlayFxCobraDie(fxCobraDie);
-                anim.Play(AnimationTagsConstants.Morte);
+                anim.Play(AnimationTagsConstants.MorteRed);
                 EnemyDie();
             }
             else

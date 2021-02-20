@@ -49,6 +49,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 65a5680aa1911994193720a7f4acc476, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  fxAmbiente: {fileID: 1514480824137006383}
   fxPlayer: {fileID: 1514480824137006378}
   fxBuritiCollector: {fileID: 1514480824137006381}
   fxCobraAttack: {fileID: 6548548410240737017}

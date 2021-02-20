@@ -2,8 +2,8 @@
 
 public class Player : MonoBehaviour
 {
-    public float speed;
-    public int jumpForce;
+    private float speed = 5;
+    private int jumpForce = 480;
 
     public Transform groundCheck;
     public Transform hitEnemy;
@@ -17,6 +17,8 @@ public class Player : MonoBehaviour
     private Rigidbody2D rb2D;
     private Animator anim;
 
+    private FlyingController flyingController;
+
     public bool hitted;
     public bool grounded;
     private bool jumping;
@@ -24,6 +26,8 @@ public class Player : MonoBehaviour
     public bool isAlive = true;
     private bool levelCompleted = false;
     private bool timeIsOver = false;
+
+    public bool isCoco = false;
 
     public AudioClip fxWin;
     public AudioClip fxDie;
@@ -34,6 +38,7 @@ public class Player : MonoBehaviour
     {
         rb2D = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        flyingController = GetComponent(typeof(FlyingController)) as FlyingController;
     }
 
     // Update is called once per frame
@@ -91,15 +96,26 @@ public class Player : MonoBehaviour
     void PlayAnimations()
     {
         if (levelCompleted)
-            anim.Play(AnimationTagsConstants.Celebrar);
+            anim.Play(AnimationTagsConstants.WinRed);
         else if (!isAlive)
-            anim.Play(AnimationTagsConstants.Morte);
-        else if (grounded && rb2D.velocity.x != 0)
-            anim.Play(AnimationTagsConstants.Walk);
-        else if (grounded && rb2D.velocity.x == 0)
-            anim.Play(AnimationTagsConstants.Idle);
-        else if (!grounded)
-            anim.Play(AnimationTagsConstants.Jump);
+            anim.Play(AnimationTagsConstants.MorteRed);
+        else if (grounded && rb2D.velocity.x != 0 && !isCoco)
+            anim.Play(AnimationTagsConstants.AndandoRed);
+        else if (grounded && rb2D.velocity.x != 0 && isCoco)
+            anim.Play(AnimationTagsConstants.AndandoCocoRed);
+        else if (grounded && rb2D.velocity.x == 0 && !isCoco)
+            anim.Play(AnimationTagsConstants.ParadaRed);
+        else if (grounded && rb2D.velocity.x == 0 && isCoco)
+            anim.Play(AnimationTagsConstants.ParadaCocoRed);
+        else if (!grounded && !flyingController.isFlying && !isCoco)
+            anim.Play(AnimationTagsConstants.PulandoRed);
+        else if (!grounded && flyingController.isFlying && !isCoco)
+            anim.Play(AnimationTagsConstants.Voando);
+        else if (!grounded && !flyingController.isFlying && isCoco)
+            anim.Play(AnimationTagsConstants.VoandoCocoRed);
+
+        if (!flyingController.isFlying)
+            rb2D.drag = 0;
     }
 
     void Flip()
@@ -111,9 +127,9 @@ public class Player : MonoBehaviour
     void OnCollisionEnter2D (Collision2D other)
     {
 
-        Debug.Log("DIRECAO PLAYER: " + UtilController.Instance.ReturnDirection(other.contacts));
+        //Debug.Log("DIRECAO PLAYER: " + UtilController.Instance.ReturnDirection(other.contacts));
 
-        if (other.gameObject.CompareTag (TagsConstants.Enemy))
+        if (other.gameObject.CompareTag(TagsConstants.Enemy))
         { 
             if (hitted)
                 isAlive = true;
@@ -124,12 +140,16 @@ public class Player : MonoBehaviour
             }
 
         }
-        else if (other.gameObject.CompareTag (TagsConstants.Espinhos))
+        else if (other.gameObject.CompareTag(TagsConstants.Espinhos))
         {
             DataBase.deleteData("sceneDB");
             GameManager.Instance.heartCount = 0;
             PlayerDie();
             TakeLife();
+        } else if (other.gameObject.CompareTag(TagsConstants.CocoPartido))
+        {
+            isCoco = true;
+            anim.Play(AnimationTagsConstants.PegandoCocoRed);
         }
     }
 

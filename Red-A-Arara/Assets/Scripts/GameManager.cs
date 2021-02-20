@@ -8,15 +8,17 @@ using UnityEditor;
 
 public class GameManager : MonoBehaviour
 {
-    public Sprite[] overlaySprites;
-    public Image overlay;
     public Text timeHud;
     public Text scoreHud;
     public Text faseHud;
 
+    //PopUp
+    public Text msgPopUp;
+    public GameObject popUpGO;
+
     public float time;
     public int score;
-    public GameStatus status;
+    public GameStatus status = GameStatus.PLAY;
     public static GameManager Instance;
 
     private static bool destroyed = false;
@@ -46,7 +48,7 @@ public class GameManager : MonoBehaviour
         time = 50f;
         score = 0;
         status = GameStatus.PLAY;
-        overlay.enabled = false;
+        popUpGO.SetActive(false);
         Physics2D.IgnoreLayerCollision(9, 10, false);
         PauseGameAction();
     }
@@ -71,6 +73,7 @@ public class GameManager : MonoBehaviour
             if (status == GameStatus.WIN)
             {
                 LoadScene(buildIndex: SceneManager.GetActiveScene().buildIndex + 1);
+                ActivePhases();
             }
             else if (status == GameStatus.DIE || status == GameStatus.LOSE)
             {
@@ -87,7 +90,7 @@ public class GameManager : MonoBehaviour
 
     private void FixedUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.Escape))
+        if (Input.GetKeyDown(KeyCode.Escape) && status == GameStatus.PLAY)
         {
             if (Application.CanStreamedLevelBeLoaded("Menu"))
             {
@@ -97,6 +100,17 @@ public class GameManager : MonoBehaviour
 
         PauseGameAction();
         SetBackToFirstStage();
+    }
+
+    private void ActivePhases()
+    {
+        var model = new ActivePhasesDB
+        {
+            activePhases = SceneManager.GetActiveScene().buildIndex
+        };
+
+        //Save data from PlayerInfo to a file named players
+        DataBase.saveData(model, "activePhasesDB");
     }
 
     //verifica se o usuario tinha mais de uma vida e se pedeu todas
@@ -156,7 +170,7 @@ public class GameManager : MonoBehaviour
 
     private void PauseGameAction()
     {
-        if (Input.GetKeyDown(KeyCode.P))
+        if (Input.GetKeyDown(KeyCode.P) && status == GameStatus.PLAY)
         {
             if (isPause)
             {
@@ -184,8 +198,11 @@ public class GameManager : MonoBehaviour
     public void SetOverlay(GameStatus parStatus)
     {
         status = parStatus;
-        overlay.enabled = true;
-        overlay.sprite = overlaySprites[(int)parStatus];
+        popUpGO.SetActive(true);
+        if (parStatus == GameStatus.WIN) 
+            msgPopUp.text = "voce concluiu a fase";
+        else
+            msgPopUp.text = "voce morreu!";
     }
 
     public static Scene GetActiveScene()

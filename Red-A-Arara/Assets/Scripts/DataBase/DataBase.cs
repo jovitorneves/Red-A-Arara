@@ -58,7 +58,7 @@ public class DataBase
         try
         {
             jsonByte = File.ReadAllBytes(tempPath);
-            Debug.Log("Loaded Data from: " + tempPath.Replace("/", "\\"));
+            //Debug.Log("Loaded Data from: " + tempPath.Replace("/", "\\"));
         }
         catch (Exception e)
         {

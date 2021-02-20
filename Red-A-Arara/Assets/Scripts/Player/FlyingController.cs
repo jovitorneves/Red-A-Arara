@@ -10,37 +10,59 @@ public class FlyingController : MonoBehaviour
     [SerializeField]
     private LayerMask layerGround;
 
-    private Rigidbody2D tempPlayerRigidbody;
     private int jumpCount = 10;
-    private readonly int jumpFixedForce = 1000;
+    private int jumpValidCount = 9;
+    private readonly int jumpFixedForce = 500;
     private readonly int dragFixed = 8;
-    private readonly int jumpForce = 900;
+    private readonly int jumpForce = 500;
     private bool isGrounded;
     private readonly float radiusCheck = 0.5f;
     private readonly int limitJumps = 10;
 
     private float timer = 0.0f;
-    private readonly float waitTime = 0.20f;
+    private readonly float waitTime = 0.10f;
 
+    public bool isFlying = false;
     private bool isCaindo = false;
     private bool isJumped = false;
+    private Animator animationPlayer;
+
+    private Player player;
 
     // Start is called before the first frame update
     void Start()
     {
         playerRigidbody = gameObject.GetComponent<Rigidbody2D>();
-        tempPlayerRigidbody = playerRigidbody;
+        animationPlayer = GetComponent<Animator>();
+        player = GetComponent(typeof(Player)) as Player;
     }
 
     private void Update()
     {
         timer += Time.deltaTime;
+        if (GameManager.Instance.status != GameStatus.PLAY || !player.isAlive)
+            return;
+
         IsFalling();
+        if (isFlying)
+        {
+            if (Input.GetButtonDown(InputTagsConstants.Jump)) {
+                isFlying = false;
+                playerRigidbody.drag = 0;
+            } else if (isGrounded)
+            {
+                isFlying = false;
+                playerRigidbody.drag = 0;
+            }
+        }
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (GameManager.Instance.status != GameStatus.PLAY)
+            return;
+
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, radiusCheck, layerGround);
 
         //caso ele aperta a seta pra baixo ele cai mais rapido
@@ -58,7 +80,7 @@ public class FlyingController : MonoBehaviour
                     timer = 0f;
                 }
             }
-            else if (jumpCount >= 0 && jumpCount <= (jumpCount - 1))
+            else if (jumpCount >= 0 && jumpCount <= jumpValidCount)
             {
                 if (Input.GetKey(KeyCode.Q) && timer > waitTime)//Input.GetButton("Jump") *enquanto o usuario estiver pressionando o espaco
                 {
@@ -73,11 +95,11 @@ public class FlyingController : MonoBehaviour
     private void Flying()
     {
         if (isJumped)
-            playerRigidbody.drag = isGrounded ? tempPlayerRigidbody.drag : dragFixed;
+            playerRigidbody.drag = isGrounded ? 0 : dragFixed;
 
         if (jumpCount == 0 && isGrounded)
         {
-            playerRigidbody.drag = tempPlayerRigidbody.drag;
+            playerRigidbody.drag = 0;
             jumpCount = limitJumps;
             isJumped = false;
         }
@@ -92,6 +114,12 @@ public class FlyingController : MonoBehaviour
             playerRigidbody.AddForce(new Vector2(0f, jumpForce/2));
         }
 
+        if (player.isCoco)
+            animationPlayer.Play(AnimationTagsConstants.VoandoCocoRed);
+        else
+            animationPlayer.Play(AnimationTagsConstants.Voando);
+
+        isFlying = true;
         jumpCount--;
         print("jumpCount: "+ jumpCount);
     }
