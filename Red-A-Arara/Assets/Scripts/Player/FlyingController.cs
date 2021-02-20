@@ -73,7 +73,7 @@ public class FlyingController : MonoBehaviour
             //Input.GetKey(KeyCode.Space)
             if (jumpCount == limitJumps)
             {
-                if (Input.GetKey(KeyCode.Q))
+                if (Input.GetKey(KeyCode.K))
                 {
                     Flying();
                     isJumped = true;
@@ -82,7 +82,7 @@ public class FlyingController : MonoBehaviour
             }
             else if (jumpCount >= 0 && jumpCount <= jumpValidCount)
             {
-                if (Input.GetKey(KeyCode.Q) && timer > waitTime)//Input.GetButton("Jump") *enquanto o usuario estiver pressionando o espaco
+                if (Input.GetKey(KeyCode.K) && timer > waitTime)
                 {
                     Flying();
                     isJumped = true;
