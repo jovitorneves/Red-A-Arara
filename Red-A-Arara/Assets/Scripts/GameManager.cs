@@ -58,7 +58,7 @@ public class GameManager : MonoBehaviour
     {
         if (status == GameStatus.PLAY)
         {
-            //time -= Time.deltaTime;
+            time -= Time.deltaTime;
             int timeInt = (int)time;
 
             if (timeInt >= 0)
