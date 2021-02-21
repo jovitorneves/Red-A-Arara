@@ -146,12 +146,12 @@ PrefabInstance:
     - target: {fileID: 993163444905955678, guid: 66c457c8f4642c74995e45054f80d0f8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -11.95
+      value: -10.84
       objectReference: {fileID: 0}
     - target: {fileID: 993163444905955678, guid: 66c457c8f4642c74995e45054f80d0f8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.87
+      value: 4.21
       objectReference: {fileID: 0}
     - target: {fileID: 993163444905955678, guid: 66c457c8f4642c74995e45054f80d0f8,
         type: 3}
@@ -819,7 +819,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1023203930}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -5.87, y: 4.72, z: 0}
+  m_LocalPosition: {x: -5.87, y: 4.889, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1479906710}
@@ -1333,7 +1333,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1479906709}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.5500002, y: 0.009999752, z: 0}
+  m_LocalPosition: {x: -3.5500002, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1023203931}
@@ -16106,7 +16106,7 @@ PrefabInstance:
     - target: {fileID: 3957415073079504916, guid: b55d3794bb7454ff097caf69d59f5cbb,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.95
+      value: 4.889
       objectReference: {fileID: 0}
     - target: {fileID: 3957415073079504916, guid: b55d3794bb7454ff097caf69d59f5cbb,
         type: 3}
@@ -16173,6 +16173,21 @@ PrefabInstance:
       propertyPath: posicaoB
       value: 
       objectReference: {fileID: 1499695875}
+    - target: {fileID: 3957415073079504920, guid: b55d3794bb7454ff097caf69d59f5cbb,
+        type: 3}
+      propertyPath: pointA
+      value: 
+      objectReference: {fileID: 1479906709}
+    - target: {fileID: 3957415073079504920, guid: b55d3794bb7454ff097caf69d59f5cbb,
+        type: 3}
+      propertyPath: pointB
+      value: 
+      objectReference: {fileID: 1499695874}
+    - target: {fileID: 3957415073079504920, guid: b55d3794bb7454ff097caf69d59f5cbb,
+        type: 3}
+      propertyPath: reverseMove
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3957415073079504922, guid: b55d3794bb7454ff097caf69d59f5cbb,
         type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
