@@ -28,9 +28,9 @@ public class MacacoController : BaseEnemyController
 
     private float distancia = 0f;
 
-    private readonly float distanciaMonkeyAndPointMax = 2f;
+    private readonly float distanciaMonkeyAndPointMax = 0.1f;
 
-    private float delayTime = 5f;
+    private float delayTime = 2f;
 
     // Start is called before the first frame update
     void Start()
@@ -126,7 +126,7 @@ public class MacacoController : BaseEnemyController
             if (delayTime <= 0)
             {
                 macacoRigidbody.AddForce(new Vector2(isLookLeft ? -jumpForce : jumpForce, jumpForce));
-                delayTime = 5f;
+                delayTime = 2f;
             }
 
         if (distancia < 0 && isLookLeft)//direita
