@@ -47,7 +47,6 @@ public class MacacoController : BaseEnemyController
         if (posicaoA.Equals(null) || posicaoB.Equals(null))
             return;
 
-        //moverMacacoController = ScriptableObject.CreateInstance<MoverMacacoController>();//recomendado pela unity, se der error ao mover o macaco substituir pelo de baixo
         moverMacacoController = new MoverMacacoController(gameObject, posicaoA, posicaoB);
         posicaoA.position = new Vector3(posicaoA.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z);
         posicaoB.position = new Vector3(posicaoB.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z);
