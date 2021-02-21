@@ -1,10 +1,8 @@
 ﻿using UnityEngine;
 using UnityEngine.SceneManagement;
 
-//Colocar um tempo de 3 segundos falando que o usuario pode pular novamente na HUD
 public class FlyingController : MonoBehaviour
 {
-
     private Rigidbody2D playerRigidbody;
     [SerializeField]
     private Transform groundCheck;
@@ -69,7 +67,7 @@ public class FlyingController : MonoBehaviour
         if (SceneManager.GetActiveScene().buildIndex < 5)
             return;
 
-        if (GameManager.Instance.status != GameStatus.PLAY)
+        if (GameManager.Instance.status != GameStatus.PLAY || !player.isAlive)
             return;
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, radiusCheck, layerGround);
