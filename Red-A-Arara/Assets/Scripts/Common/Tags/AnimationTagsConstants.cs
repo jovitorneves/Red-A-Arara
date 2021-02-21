@@ -32,11 +32,11 @@ public static class AnimationTagsConstants
 
     //GERAL
     public const string Death = "DEATH";
-    public const string Walk = "WALK";//WALK //Walk
-    public const string Idle = "IDLE";//IDLE //Idle
-    public const string Jump = "JUMP";//JUMP //Jump
+    public const string Walk = "WALK";
+    public const string Idle = "IDLE";
+    public const string Jump = "JUMP";
 
     //COBRA
-    public const string LevandoDano = "TAKENDAMAGE";//TAKENDAMAGE //TakenDamage
+    public const string LevandoDano = "TAKENDAMAGE";
     public const string CobraAtordoada = "CobraAtordoada";
 }

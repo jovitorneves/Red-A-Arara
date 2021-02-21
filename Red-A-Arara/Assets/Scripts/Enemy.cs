@@ -19,6 +19,8 @@ public class Enemy : BaseEnemyController
 
     private bool facingRight = true;
     private bool isVisible = false;
+    private bool isAtordoada = false;
+    private float delayTime;
 
     public AudioClip fxCobraAttack;
     public AudioClip fxCobraDie;
@@ -28,6 +30,9 @@ public class Enemy : BaseEnemyController
     {
         rb2D = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        delayTime = Time.deltaTime * 120f;
+        if (!isBoss)
+            anim.Play(AnimationTagsConstants.Walk);
     }
 
     // Update is called once per frame
@@ -36,15 +41,28 @@ public class Enemy : BaseEnemyController
         grounded = Physics2D.OverlapCircle(groundCheck.position, radiusCheck, layerGround);
         groundedHorizontal = Physics2D.OverlapCircle(groundCheckHorizontal.position, radiusCheckHorizontal, layerGround);
 
-        if ((!grounded) || (groundedHorizontal))
+        if (isAtordoada)
+            delayTime -= Time.deltaTime;
+
+        if (delayTime <= 0 && isAtordoada)
         {
-            Flip();
+            isAtordoada = false;
+            anim.Play(AnimationTagsConstants.Walk);
         }
+
+        if (isAtordoada)
+            return;
+
+        if ((!grounded) || (groundedHorizontal))
+            Flip();
          
     }
 
     void FixedUpdate()
     {
+        if (isAtordoada)
+            return;
+
         rb2D.velocity = new Vector2(isVisible ? speed : 0f, rb2D.velocity.y);
     }
 
@@ -79,8 +97,12 @@ public class Enemy : BaseEnemyController
     void OnTriggerEnter2D (Collider2D other)
     {
         if (other.gameObject.CompareTag(TagsConstants.Player))
-        {
             anim.Play(AnimationTagsConstants.Death);
+        if (other.gameObject.CompareTag(TagsConstants.CocoPartido) && !isBoss)
+        {
+            anim.Play(AnimationTagsConstants.CobraAtordoada);
+            isAtordoada = true;
+            delayTime = Time.deltaTime * 120f;
         }
     }
     
