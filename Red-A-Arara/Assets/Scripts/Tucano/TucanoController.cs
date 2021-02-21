@@ -10,7 +10,6 @@ public class TucanoController : BaseEnemyController
     [SerializeField]
     private Transform posicaoA, posicaoB;
 
-    private Collision2D collision2DCurrent;
     private Animator animator;
 
     private Player playerScript;
@@ -79,7 +78,10 @@ public class TucanoController : BaseEnemyController
 
     private void OnCollisionEnter2D(Collision2D collision2D)
     {
-        collision2DCurrent = collision2D;
+        //if (collision2D.gameObject.CompareTag(TagsConstants.CocoPartido))
+        //{
+
+        //}
     }
 
     private void DistanciaPlayerIntervalTucano()
