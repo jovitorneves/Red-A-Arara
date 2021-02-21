@@ -29,6 +29,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Fase7.unity
     guid: 30a623bc5ad633146bab706bf8cb1f68
+  - enabled: 1
+    path: Assets/Scenes/Fase8.unity
+    guid: 082c7a33f74a7419da8c0e055e48f960
   - enabled: 0
     path: Assets/Scenes/Funcoes.unity
     guid: 524c5137f40d249c2b92061cf03f0e3c
