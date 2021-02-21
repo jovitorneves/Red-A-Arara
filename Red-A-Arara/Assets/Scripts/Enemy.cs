@@ -30,7 +30,7 @@ public class Enemy : BaseEnemyController
     {
         rb2D = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
-        delayTime = Time.deltaTime * 120f;
+        delayTime = Time.deltaTime * 220f;
         if (!isBoss)
             anim.Play(AnimationTagsConstants.Walk);
     }
@@ -102,7 +102,7 @@ public class Enemy : BaseEnemyController
         {
             anim.Play(AnimationTagsConstants.CobraAtordoada);
             isAtordoada = true;
-            delayTime = Time.deltaTime * 120f;
+            delayTime = Time.deltaTime * 220f;
         }
     }
     
