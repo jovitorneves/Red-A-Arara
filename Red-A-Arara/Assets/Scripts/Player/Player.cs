@@ -127,9 +127,6 @@ public class Player : MonoBehaviour
 
     void OnCollisionEnter2D (Collision2D other)
     {
-
-        //Debug.Log("DIRECAO PLAYER: " + UtilController.Instance.ReturnDirection(other.contacts));
-
         if (other.gameObject.CompareTag(TagsConstants.Enemy) || other.gameObject.CompareTag(TagsConstants.Humano))
         {
             isHumano = other.gameObject.CompareTag(TagsConstants.Humano);
