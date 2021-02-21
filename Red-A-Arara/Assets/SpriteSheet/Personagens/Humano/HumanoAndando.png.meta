@@ -1,0 +1,617 @@
+fileFormatVersion: 2
+guid: a897c788d7e8a4e06970ec4975bceb62
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6270171357022147100
+    second: HumanoAndando_0
+  - first:
+      213: 6470758923455623529
+    second: HumanoAndando_1
+  - first:
+      213: 2750038577480866840
+    second: HumanoAndando_2
+  - first:
+      213: -6661030471891917037
+    second: HumanoAndando_3
+  - first:
+      213: 6892135918524943349
+    second: HumanoAndando_4
+  - first:
+      213: 3094553526920405492
+    second: HumanoAndando_5
+  - first:
+      213: -4761416453281617181
+    second: HumanoAndando_6
+  - first:
+      213: -2229374463370695833
+    second: HumanoAndando_7
+  - first:
+      213: 5849666067264760866
+    second: HumanoAndando_8
+  - first:
+      213: 1160674047242147799
+    second: HumanoAndando_9
+  - first:
+      213: -5713701183503011325
+    second: HumanoAndando_10
+  - first:
+      213: 4280242678413789199
+    second: HumanoAndando_11
+  - first:
+      213: -8235163076382615018
+    second: HumanoAndando_12
+  - first:
+      213: 7335397144134743563
+    second: HumanoAndando_13
+  - first:
+      213: 8974160020868130375
+    second: HumanoAndando_14
+  - first:
+      213: -3128685982434223757
+    second: HumanoAndando_15
+  - first:
+      213: 2966830024185717958
+    second: HumanoAndando_16
+  - first:
+      213: -4108126322787327313
+    second: HumanoAndando_17
+  - first:
+      213: -5206567069056602659
+    second: HumanoAndando_18
+  - first:
+      213: -8518019717077727402
+    second: HumanoAndando_19
+  - first:
+      213: -2642071337816925248
+    second: HumanoAndando_20
+  - first:
+      213: -2587212562350675102
+    second: HumanoAndando_21
+  - first:
+      213: 801979907616364752
+    second: HumanoAndando_22
+  - first:
+      213: 544631388556116429
+    second: HumanoAndando_23
+  - first:
+      213: -428647520584390667
+    second: HumanoAndando_24
+  - first:
+      213: 5353371671139716726
+    second: HumanoAndando_25
+  - first:
+      213: -4883910927668855252
+    second: HumanoAndando_26
+  - first:
+      213: 4526636014205053958
+    second: HumanoAndando_27
+  - first:
+      213: -3903884131574889354
+    second: HumanoAndando_28
+  - first:
+      213: -8698997163396228025
+    second: HumanoAndando_29
+  - first:
+      213: -7578471210829760171
+    second: HumanoAndando_30
+  - first:
+      213: 7369893869336019016
+    second: HumanoAndando_31
+  - first:
+      213: -2303045258365720282
+    second: HumanoAndando_32
+  - first:
+      213: 3255950406772704285
+    second: HumanoAndando_33
+  - first:
+      213: -2633646265441045112
+    second: HumanoAndando_34
+  - first:
+      213: 8953188403051888904
+    second: HumanoAndando_35
+  - first:
+      213: 1289681048283086195
+    second: HumanoAndando_36
+  - first:
+      213: 1183830970120983361
+    second: HumanoAndando_37
+  - first:
+      213: -380610280098285485
+    second: HumanoAndando_38
+  - first:
+      213: 5044588578219597710
+    second: HumanoAndando_39
+  - first:
+      213: -8794727875547203245
+    second: HumanoAndando_40
+  - first:
+      213: -4728907191404299354
+    second: HumanoAndando_41
+  - first:
+      213: 7661244062465342404
+    second: HumanoAndando_42
+  - first:
+      213: 4661126881168218562
+    second: HumanoAndando_43
+  - first:
+      213: 135996767472273732
+    second: HumanoAndando_44
+  - first:
+      213: 6828625289798322148
+    second: HumanoAndando_45
+  - first:
+      213: 7632335042400968546
+    second: HumanoAndando_46
+  - first:
+      213: -2118129197992134710
+    second: HumanoAndando_47
+  - first:
+      213: 5677364955434780483
+    second: HumanoAndando_48
+  - first:
+      213: 8837976121751582987
+    second: HumanoAndando_49
+  - first:
+      213: -3188603787417815581
+    second: HumanoAndando_50
+  - first:
+      213: -2989784881209173206
+    second: HumanoAndando_51
+  - first:
+      213: -1698712516117164970
+    second: HumanoAndando_52
+  - first:
+      213: 3262564115198929192
+    second: HumanoAndando_53
+  - first:
+      213: 8771336974188512942
+    second: HumanoAndando_54
+  - first:
+      213: -5638255411642554401
+    second: HumanoAndando_55
+  - first:
+      213: -8197710626674200445
+    second: HumanoAndando_56
+  - first:
+      213: -2014356091420991917
+    second: HumanoAndando_57
+  - first:
+      213: -8935216875239923835
+    second: HumanoAndando_58
+  - first:
+      213: -4967852071666668424
+    second: HumanoAndando_59
+  - first:
+      213: -2076416241806432388
+    second: HumanoAndando_60
+  - first:
+      213: 2060260286471795621
+    second: HumanoAndando_61
+  - first:
+      213: 7033534140554878741
+    second: HumanoAndando_62
+  - first:
+      213: 7109920389821235723
+    second: HumanoAndando_63
+  - first:
+      213: -7874514911489151042
+    second: HumanoAndando_64
+  - first:
+      213: 3195498587404270587
+    second: HumanoAndando_65
+  - first:
+      213: 2018704089859968987
+    second: HumanoAndando_66
+  - first:
+      213: -9125904285967246002
+    second: HumanoAndando_67
+  - first:
+      213: 8718566658242218026
+    second: HumanoAndando_68
+  - first:
+      213: 1043157070890442012
+    second: HumanoAndando_69
+  - first:
+      213: 1737864427735217670
+    second: HumanoAndando_70
+  - first:
+      213: 6288732577227207781
+    second: HumanoAndando_71
+  - first:
+      213: 3427674602241311344
+    second: HumanoAndando_0
+  - first:
+      213: 1824139607220810475
+    second: HumanoAndando_1
+  - first:
+      213: -1760024419177771247
+    second: HumanoAndando_2
+  - first:
+      213: 8933601021241098846
+    second: HumanoAndando_3
+  - first:
+      213: -3820127429916762822
+    second: HumanoAndando_4
+  - first:
+      213: 167825083486143013
+    second: HumanoAndando_5
+  - first:
+      213: 804321902617237851
+    second: HumanoAndando_6
+  - first:
+      213: 3239158527586493047
+    second: HumanoAndando_7
+  - first:
+      213: -6370199398131185494
+    second: HumanoAndando_8
+  - first:
+      213: 5737798467922122295
+    second: HumanoAndando_9
+  - first:
+      213: -1237387969235626688
+    second: HumanoAndando_10
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 50
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HumanoAndando_0
+      rect:
+        serializedVersion: 2
+        x: 1618
+        y: 0
+        width: 267
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 072c830e3eb819f20800000000000000
+      internalID: 3427674602241311344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanoAndando_1
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 0
+        width: 267
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be2fd1dde45a05910800000000000000
+      internalID: 1824139607220810475
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanoAndando_2
+      rect:
+        serializedVersion: 2
+        x: 815
+        y: 0
+        width: 268
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 11f45e2ad132397e0800000000000000
+      internalID: -1760024419177771247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanoAndando_3
+      rect:
+        serializedVersion: 2
+        x: 1220
+        y: 0
+        width: 272
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e52842cebc68afb70800000000000000
+      internalID: 8933601021241098846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanoAndando_4
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 0
+        width: 400
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3dd517a75e2cfac0800000000000000
+      internalID: -3820127429916762822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanoAndando_5
+      rect:
+        serializedVersion: 2
+        x: 2018
+        y: 0
+        width: 267
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5228795360c345200800000000000000
+      internalID: 167825083486143013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanoAndando_6
+      rect:
+        serializedVersion: 2
+        x: 2406
+        y: 0
+        width: 274
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b59119a4286892b00800000000000000
+      internalID: 804321902617237851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanoAndando_7
+      rect:
+        serializedVersion: 2
+        x: 2800
+        y: 0
+        width: 269
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77268ffd48dc3fc20800000000000000
+      internalID: 3239158527586493047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanoAndando_8
+      rect:
+        serializedVersion: 2
+        x: 3200
+        y: 0
+        width: 265
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa8cbfde5618897a0800000000000000
+      internalID: -6370199398131185494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanoAndando_9
+      rect:
+        serializedVersion: 2
+        x: 3620
+        y: 0
+        width: 261
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73657417e41c0af40800000000000000
+      internalID: 5737798467922122295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanoAndando_10
+      rect:
+        serializedVersion: 2
+        x: 4018
+        y: 0
+        width: 263
+        height: 400
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0455e5ca23ae3dee0800000000000000
+      internalID: -1237387969235626688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanoAndando_11
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 0
+        width: 257
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f08025fc90a766b30800000000000000
+      internalID: 4280242678413789199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
