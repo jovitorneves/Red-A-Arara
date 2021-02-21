@@ -1,6 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class HumanoController : BaseEnemyController
 {
@@ -10,7 +8,6 @@ public class HumanoController : BaseEnemyController
     [SerializeField]
     private Transform posicaoA, posicaoB;
 
-    private Collision2D collision2DCurrent;
     private Animator animator;
 
     private Player playerScript;
@@ -18,9 +15,7 @@ public class HumanoController : BaseEnemyController
     [SerializeField]
     private bool isLookLeft = false;
 
-    private float distancia = 0f;
-
-    private readonly float distanciaHumanoAndPointMax = 1.5f;
+    private readonly float distanciaHumanoAndPointMax = 0.1f;
 
     private readonly float speed = 1f;
 
@@ -50,8 +45,6 @@ public class HumanoController : BaseEnemyController
         disA = disA > 0 ? (disA * 1) : disA * -1;
         disB = disB > 0 ? (disB * 1) : disB * -1;
 
-        DistanciaPlayerIntervalHumano();
-
         if (playerScript.isAlive)
         {
             if (player.gameObject.transform.position.x >= posicaoA.position.x &&
@@ -59,7 +52,7 @@ public class HumanoController : BaseEnemyController
             {
                 if (disA >= distanciaHumanoAndPointMax &&
                     disB >= distanciaHumanoAndPointMax)
-                    PuloRule();
+                    CapturaRule();
                 else
                     MoveHumano();
             }
@@ -75,26 +68,11 @@ public class HumanoController : BaseEnemyController
 
     private void OnCollisionEnter2D(Collision2D collision2D)
     {
-        collision2DCurrent = collision2D;
-
-        //Debug.Log("DIRECAO HUMANO: " + UtilController.Instance.ReturnDirection(collision2D.contacts));
-
-        //if (collision2D.gameObject.CompareTag(TagsConstants.Chao) && isJump)
+        //if (collision2D.gameObject.CompareTag(TagsConstants.CocoPartido))
         //{
-        //    isJump = false;
+        //    
         //}
 
-        //if (player.gameObject.transform.position.x >= posicaoA.position.x &&
-        //    player.gameObject.transform.position.x <= posicaoB.position.x &&
-        //    playerScript.isAlive &&
-        //    !isJump)
-        //    Invoke(MethodNameTagsConstants.Pulo, delayTime);
-
-    }
-
-    private void DistanciaPlayerIntervalHumano()
-    {
-        distancia = gameObject.transform.position.x - player.transform.position.x;
     }
 
     private void MoveHumano()
@@ -114,7 +92,7 @@ public class HumanoController : BaseEnemyController
         animator.Play(AnimationTagsConstants.IdleHumano);
     }
 
-    private void PuloRule()
+    private void CapturaRule()
     {
         if (!playerScript.isAlive) return;
 
