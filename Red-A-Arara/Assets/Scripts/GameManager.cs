@@ -204,10 +204,10 @@ public class GameManager : MonoBehaviour
         status = parStatus;
         popUpGO.SetActive(true);
         if (parStatus == GameStatus.WIN)
-            msgPopUp.text = "Voce concluiu a fase";
+            msgPopUp.text = "Você concluiu a fase!";
         else
         {
-            msgPopUp.text = isHumano ? "Capturado!" : "Voce morreu!";
+            msgPopUp.text = isHumano ? "Capturado!" : "Você morreu!";
         }
     }
 
