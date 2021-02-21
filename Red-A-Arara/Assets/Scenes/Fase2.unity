@@ -19177,6 +19177,11 @@ PrefabInstance:
       propertyPath: popUpGO
       value: 
       objectReference: {fileID: 4367136638999588921}
+    - target: {fileID: 8721959703784491324, guid: ccf5831c697ce364c8630fae25646413,
+        type: 3}
+      propertyPath: time
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 8721959703784491325, guid: ccf5831c697ce364c8630fae25646413,
         type: 3}
       propertyPath: m_Name

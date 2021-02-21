@@ -46,10 +46,6 @@ public class GameManager : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (SceneManager.GetActiveScene().buildIndex == 7)
-            time = 200f;
-        else
-            time = 50f;
         score = 0;
         status = GameStatus.PLAY;
         popUpGO.SetActive(false);

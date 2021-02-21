@@ -908,6 +908,11 @@ PrefabInstance:
       propertyPath: msgPopUp
       value: 
       objectReference: {fileID: 1851350329}
+    - target: {fileID: 8721959703784491324, guid: ccf5831c697ce364c8630fae25646413,
+        type: 3}
+      propertyPath: time
+      value: 50
+      objectReference: {fileID: 0}
     - target: {fileID: 8721959703784491325, guid: ccf5831c697ce364c8630fae25646413,
         type: 3}
       propertyPath: m_Name
