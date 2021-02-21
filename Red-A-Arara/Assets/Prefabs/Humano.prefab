@@ -167,6 +167,9 @@ MonoBehaviour:
   isDead: 0
   isBoss: 0
   player: {fileID: 0}
-  posicaoA: {fileID: 0}
-  posicaoB: {fileID: 0}
-  isLookLeft: 0
+  moveSpeed: 1
+  pointA: {fileID: 0}
+  pointB: {fileID: 0}
+  reverseMove: 0
+  objectToUse: {fileID: 0}
+  moveThisObject: 1
