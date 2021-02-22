@@ -36,6 +36,10 @@ public static class AnimationTagsConstants
     public const string Idle = "IDLE";
     public const string Jump = "JUMP";
 
+    //MACACO
+    public const string MortoMacaco = "MortoMacaco";
+    public const string AtordoadoMacaco = "AtordoadoMacaco";
+
     //COBRA
     public const string LevandoDano = "TAKENDAMAGE";
     public const string CobraAtordoada = "CobraAtordoada";
