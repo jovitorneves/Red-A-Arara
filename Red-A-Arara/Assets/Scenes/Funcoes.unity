@@ -146,12 +146,12 @@ PrefabInstance:
     - target: {fileID: 993163444905955678, guid: 66c457c8f4642c74995e45054f80d0f8,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.84
+      value: -30.94
       objectReference: {fileID: 0}
     - target: {fileID: 993163444905955678, guid: 66c457c8f4642c74995e45054f80d0f8,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.21
+      value: -0.44
       objectReference: {fileID: 0}
     - target: {fileID: 993163444905955678, guid: 66c457c8f4642c74995e45054f80d0f8,
         type: 3}
@@ -16018,6 +16018,16 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Tucano
+      objectReference: {fileID: 0}
+    - target: {fileID: 705594490886861957, guid: 9f5629881a31540d681b9765c9f83238,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 705594490886861957, guid: 9f5629881a31540d681b9765c9f83238,
+        type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.58
       objectReference: {fileID: 0}
     - target: {fileID: 705594490886861959, guid: 9f5629881a31540d681b9765c9f83238,
         type: 3}

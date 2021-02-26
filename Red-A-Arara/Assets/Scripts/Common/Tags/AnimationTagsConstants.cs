@@ -25,6 +25,8 @@ public static class AnimationTagsConstants
     //TUCANO
     public const string IdleTucano = "IdleTucano";
     public const string VoandoTucano = "VoandoTucano";
+    public const string MortoTucano = "MortoTucano";
+    public const string AtordoadoTucano = "AtordoadoTucano";
 
     //Porta
     public const string OpenPorta = "AbrindoPorta";
