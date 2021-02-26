@@ -21,6 +21,7 @@ public static class AnimationTagsConstants
     //HUMANO
     public const string IdleHumano = "IdleHumano";
     public const string CapturaHumano = "CapturaHumano";
+    public const string AtordoadoHumano = "AtordoadoHumano";
 
     //TUCANO
     public const string IdleTucano = "IdleTucano";
