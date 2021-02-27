@@ -96,7 +96,7 @@ public class MacacoController : BaseEnemyController
     private void OnCollisionEnter2D(Collision2D collision2D)
     {
         if (collision2D.gameObject.CompareTag(TagsConstants.Player))
-            animator.Play(AnimationTagsConstants.Death);
+            animator.Play(AnimationTagsConstants.MortoMacaco);
         if (collision2D.gameObject.CompareTag(TagsConstants.CocoPartido) && !isBoss)
         {
             animator.Play(AnimationTagsConstants.AtordoadoMacaco);
