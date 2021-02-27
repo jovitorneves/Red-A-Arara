@@ -133,4 +133,9 @@ public class TucanoController : BaseEnemyController
         gameObject.transform.localScale = newScale;
         isLookLeft = !isLookLeft;
     }
+
+    public void deadTucano()
+    {
+        Destroy(gameObject);
+    }
 }
