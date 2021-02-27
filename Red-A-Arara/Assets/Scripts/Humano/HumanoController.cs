@@ -27,6 +27,8 @@ public class HumanoController : BaseEnemyController
     private float journeyLength;
     private float distCovered;
     private float fracJourney;
+    private bool isAtordoada = false;
+    private float delayTime;
 
     void Start()
     {
@@ -51,6 +53,14 @@ public class HumanoController : BaseEnemyController
 
         if (!playerScript.isAlive) return;
 
+        if (isAtordoada)
+            delayTime -= Time.deltaTime;
+
+        if (delayTime <= 0 && isAtordoada)
+            isAtordoada = false;
+
+        if (isAtordoada) return;
+
         float disA = gameObject.transform.position.x - pointA.transform.position.x;
         float disB = gameObject.transform.position.x - pointB.transform.position.x;
         disA = disA > 0 ? (disA * 1) : disA * -1;
@@ -72,10 +82,12 @@ public class HumanoController : BaseEnemyController
 
     private void OnCollisionEnter2D(Collision2D collision2D)
     {
-        //if (collision2D.gameObject.CompareTag(TagsConstants.CocoPartido))
-        //{
-        //    
-        //}
+        if (collision2D.gameObject.CompareTag(TagsConstants.CocoPartido))
+        {
+            animator.Play(AnimationTagsConstants.AtordoadoHumano);
+            isAtordoada = true;
+            delayTime = Time.deltaTime * 220f;
+        }
     }
 
     private void MoveHumano(bool isCaptura)

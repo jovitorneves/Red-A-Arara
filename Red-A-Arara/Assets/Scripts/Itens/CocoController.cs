@@ -16,9 +16,9 @@ public class CocoController : MonoBehaviour
 
     void OnCollisionStay2D(Collision2D other)
     {
-        if (other.gameObject.CompareTag(TagsConstants.Player))
-            Destroy(gameObject);
-        if (other.gameObject.CompareTag(TagsConstants.Enemy))
+        if (other.gameObject.CompareTag(TagsConstants.Player) ||
+            other.gameObject.CompareTag(TagsConstants.Enemy) ||
+            other.gameObject.CompareTag(TagsConstants.Humano))
             Destroy(gameObject);
     }
 }
