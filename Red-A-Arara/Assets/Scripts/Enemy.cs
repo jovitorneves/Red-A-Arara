@@ -60,8 +60,7 @@ public class Enemy : BaseEnemyController
 
     void FixedUpdate()
     {
-        if (isAtordoada)
-            return;
+        if (isAtordoada) return;
 
         rb2D.velocity = new Vector2(isVisible ? speed : 0f, rb2D.velocity.y);
     }

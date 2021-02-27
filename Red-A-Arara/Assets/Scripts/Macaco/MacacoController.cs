@@ -31,6 +31,8 @@ public class MacacoController : BaseEnemyController
     private readonly float distanciaMonkeyAndPointMax = 0.1f;
 
     private float delayTime = 2f;
+    private bool isAtordoada = false;
+    private float delayAtordoadoTime;
 
     // Start is called before the first frame update
     void Start()
@@ -38,6 +40,7 @@ public class MacacoController : BaseEnemyController
         macacoRigidbody = GetComponent<Rigidbody2D>();
         playerScript = player.GetComponent<Player>();
         animator = GetComponent<Animator>();
+        delayAtordoadoTime = Time.deltaTime * 220f;
 
         if (posicaoA.Equals(null) || posicaoB.Equals(null))
             return;
@@ -45,6 +48,7 @@ public class MacacoController : BaseEnemyController
         moverMacacoController = new MoverMacacoController(gameObject, posicaoA, posicaoB);
         posicaoA.position = new Vector3(posicaoA.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z);
         posicaoB.position = new Vector3(posicaoB.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z);
+        animator.Play(AnimationTagsConstants.Walk);
     }
 
     // Update is called once per frame
@@ -62,42 +66,43 @@ public class MacacoController : BaseEnemyController
 
         delayTime -= Time.deltaTime;
 
-        if (playerScript.isAlive)
+        if (isAtordoada)
+            delayAtordoadoTime -= Time.deltaTime;
+
+        if (!playerScript.isAlive) return;
+
+        if (delayTime <= 0 && isAtordoada)
         {
-            if (player.gameObject.transform.position.x >= posicaoA.position.x &&
-                player.gameObject.transform.position.x <= posicaoB.position.x)
-            {
-                if (disA >= distanciaMonkeyAndPointMax &&
-                    disB >= distanciaMonkeyAndPointMax)
-                    PuloRule();
-                else
-                    MoveMonkey();
-            }
-            else
-                MoveMonkey();
+            isAtordoada = false;
+            animator.Play(AnimationTagsConstants.Walk);
         }
+
+        if (isAtordoada) return;
+
+        if (player.gameObject.transform.position.x >= posicaoA.position.x &&
+            player.gameObject.transform.position.x <= posicaoB.position.x &&
+            disA >= distanciaMonkeyAndPointMax &&
+            disB >= distanciaMonkeyAndPointMax)
+            PuloRule();
+        else
+            MoveMonkey();
     }
 
     private void FixedUpdate()
     {
-        PlayAnimations();
         IsJumping();
     }
 
     private void OnCollisionEnter2D(Collision2D collision2D)
     {
-        //if (collision2D.gameObject.CompareTag(TagsConstants.CocoPartido))
-        //{
-            
-        //}
-    }
-
-    private void PlayAnimations()
-    {
-        if (isJump)
-            animator.Play(AnimationTagsConstants.Jump);
-        else
-            animator.Play(AnimationTagsConstants.Walk);
+        if (collision2D.gameObject.CompareTag(TagsConstants.Player))
+            animator.Play(AnimationTagsConstants.Death);
+        if (collision2D.gameObject.CompareTag(TagsConstants.CocoPartido) && !isBoss)
+        {
+            animator.Play(AnimationTagsConstants.AtordoadoMacaco);
+            isAtordoada = true;
+            delayTime = Time.deltaTime * 220f;
+        }
     }
 
     private void DistanciaPlayerIntervalMacaco()
@@ -112,6 +117,7 @@ public class MacacoController : BaseEnemyController
         isLookLeft = !moverMacacoController.isLookLeft;
         gameObject.transform.position = moverMacacoController.MoverMacaco(gameObject.transform.position);
         gameObject.transform.localScale = moverMacacoController.macacoGameObject.transform.localScale;
+        animator.Play(AnimationTagsConstants.Walk);
     }
 
     private void PuloRule()
@@ -127,7 +133,9 @@ public class MacacoController : BaseEnemyController
             {
                 macacoRigidbody.AddForce(new Vector2(isLookLeft ? -jumpForce : jumpForce, jumpForce));
                 delayTime = 2f;
-            }
+                animator.Play(AnimationTagsConstants.Jump);
+            } else
+                animator.Play(AnimationTagsConstants.Walk);
 
         if (distancia < 0 && isLookLeft)//direita
             Flip();
