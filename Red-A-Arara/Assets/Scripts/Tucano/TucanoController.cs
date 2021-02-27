@@ -26,6 +26,8 @@ public class TucanoController : BaseEnemyController
     private Vector3 nextPos;
 
     private float delayTime = 3f;
+    private bool isAtordoada = false;
+    private float delayAtordoadoTime = 2f;
 
     // Start is called before the first frame update
     void Start()
@@ -54,6 +56,14 @@ public class TucanoController : BaseEnemyController
         DistanciaPlayerIntervalTucano();
         delayTime -= Time.deltaTime;
 
+        if (isAtordoada)
+            delayAtordoadoTime -= Time.deltaTime;
+
+        if (delayTime <= 0 && isAtordoada)
+            isAtordoada = false;
+
+        if (isAtordoada) return;
+
         if (isMove)
         {
             //Move o tucano sempre
@@ -78,10 +88,14 @@ public class TucanoController : BaseEnemyController
 
     private void OnCollisionEnter2D(Collision2D collision2D)
     {
-        //if (collision2D.gameObject.CompareTag(TagsConstants.CocoPartido))
-        //{
-
-        //}
+        if (collision2D.gameObject.CompareTag(TagsConstants.Player))
+            animator.Play(AnimationTagsConstants.MortoTucano);
+        if (collision2D.gameObject.CompareTag(TagsConstants.CocoPartido))
+        {
+            animator.Play(AnimationTagsConstants.AtordoadoTucano);
+            isAtordoada = true;
+            delayAtordoadoTime = Time.deltaTime * 2;
+        }
     }
 
     private void DistanciaPlayerIntervalTucano()
