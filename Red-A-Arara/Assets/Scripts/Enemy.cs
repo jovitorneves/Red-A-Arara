@@ -53,6 +53,8 @@ public class Enemy : BaseEnemyController
         if (isAtordoada)
             return;
 
+        if (isDead) return;
+
         if ((!grounded) || (groundedHorizontal))
             Flip();
          
@@ -61,6 +63,8 @@ public class Enemy : BaseEnemyController
     void FixedUpdate()
     {
         if (isAtordoada) return;
+
+        if (isDead) return;
 
         rb2D.velocity = new Vector2(isVisible ? speed : 0f, rb2D.velocity.y);
     }
@@ -96,7 +100,10 @@ public class Enemy : BaseEnemyController
     void OnTriggerEnter2D (Collider2D other)
     {
         if (other.gameObject.CompareTag(TagsConstants.Player))
+        {
             anim.Play(AnimationTagsConstants.Death);
+            isDead = true;
+        }
         if (other.gameObject.CompareTag(TagsConstants.CocoPartido) && !isBoss)
         {
             anim.Play(AnimationTagsConstants.CobraAtordoada);
