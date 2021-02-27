@@ -32,7 +32,7 @@ public class MacacoController : BaseEnemyController
 
     private float delayTime = 2f;
     private bool isAtordoada = false;
-    private float delayAtordoadoTime;
+    private float delayAtordoadoTime = 2f;
 
     // Start is called before the first frame update
     void Start()
@@ -40,7 +40,7 @@ public class MacacoController : BaseEnemyController
         macacoRigidbody = GetComponent<Rigidbody2D>();
         playerScript = player.GetComponent<Player>();
         animator = GetComponent<Animator>();
-        delayAtordoadoTime = Time.deltaTime * 220f;
+        delayAtordoadoTime = Time.deltaTime * 2;
 
         if (posicaoA.Equals(null) || posicaoB.Equals(null))
             return;
@@ -101,7 +101,7 @@ public class MacacoController : BaseEnemyController
         {
             animator.Play(AnimationTagsConstants.AtordoadoMacaco);
             isAtordoada = true;
-            delayTime = Time.deltaTime * 220f;
+            delayAtordoadoTime = Time.deltaTime * 2;
         }
     }
 
