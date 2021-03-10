@@ -2,7 +2,6 @@
 
 public class SoundManager : GenericSingletonClass<SoundManager>
 {
-
     public AudioSource fxPlayer;
     public AudioSource fxBuritiCollector;
 
