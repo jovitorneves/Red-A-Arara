@@ -150,12 +150,12 @@ TextureImporter:
       name: TucanoAtordoado_0
       rect:
         serializedVersion: 2
-        x: 45
-        y: 0
+        x: 41
+        y: 12
         width: 206
-        height: 231
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 288
+      alignment: 9
+      pivot: {x: 0.5, y: 0.313}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -171,12 +171,12 @@ TextureImporter:
       name: TucanoAtordoado_1
       rect:
         serializedVersion: 2
-        x: 346
-        y: 0
+        x: 347
+        y: 12
         width: 205
-        height: 220
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 288
+      alignment: 9
+      pivot: {x: 0.5, y: 0.313}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -192,12 +192,12 @@ TextureImporter:
       name: TucanoAtordoado_2
       rect:
         serializedVersion: 2
-        x: 648
-        y: 0
+        x: 646
+        y: 12
         width: 203
-        height: 213
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 288
+      alignment: 9
+      pivot: {x: 0.5, y: 0.313}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -214,11 +214,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 946
-        y: 0
+        y: 12
         width: 205
-        height: 219
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 288
+      alignment: 9
+      pivot: {x: 0.5, y: 0.313}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -234,12 +234,12 @@ TextureImporter:
       name: TucanoAtordoado_4
       rect:
         serializedVersion: 2
-        x: 1245
-        y: 0
+        x: 1238
+        y: 12
         width: 212
-        height: 235
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 288
+      alignment: 9
+      pivot: {x: 0.5, y: 0.313}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -255,12 +255,12 @@ TextureImporter:
       name: TucanoAtordoado_5
       rect:
         serializedVersion: 2
-        x: 1546
-        y: 0
+        x: 1544
+        y: 12
         width: 207
-        height: 198
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        height: 288
+      alignment: 9
+      pivot: {x: 0.5, y: 0.313}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

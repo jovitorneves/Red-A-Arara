@@ -351,7 +351,7 @@ TextureImporter:
       name: HumanoAndando_0
       rect:
         serializedVersion: 2
-        x: 1618
+        x: 26
         y: 0
         width: 267
         height: 400
@@ -435,9 +435,9 @@ TextureImporter:
       name: HumanoAndando_4
       rect:
         serializedVersion: 2
-        x: 1600
+        x: 1620
         y: 0
-        width: 400
+        width: 272
         height: 400
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -582,12 +582,12 @@ TextureImporter:
       name: HumanoAndando_11
       rect:
         serializedVersion: 2
-        x: 26
+        x: 3199
         y: 0
         width: 257
         height: 400
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
