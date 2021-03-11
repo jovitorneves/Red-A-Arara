@@ -10184,7 +10184,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "- Arremessar coc\xF4"
+  m_Text: '- Arremessar coco'
 --- !u!222 &1742617853
 CanvasRenderer:
   m_ObjectHideFlags: 0
