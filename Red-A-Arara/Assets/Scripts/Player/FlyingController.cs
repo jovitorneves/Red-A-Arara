@@ -38,10 +38,6 @@ public class FlyingController : MonoBehaviour
 
     private void Update()
     {
-        //Não habilita o voo antes da fase 5
-        if (SceneManager.GetActiveScene().buildIndex < 5)
-            return;
-
         timer += Time.deltaTime;
         if (GameManager.Instance.status != GameStatus.PLAY || !player.isAlive)
             return;
@@ -63,10 +59,6 @@ public class FlyingController : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        //Não habilita o voo antes da fase 5
-        if (SceneManager.GetActiveScene().buildIndex < 5)
-            return;
-
         if (GameManager.Instance.status != GameStatus.PLAY || !player.isAlive)
             return;
 
