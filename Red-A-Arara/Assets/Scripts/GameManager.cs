@@ -88,6 +88,12 @@ public class GameManager : MonoBehaviour
         CountHeart();
     }
 
+    public void PlayerWin()
+    {
+        LoadScene(buildIndex: SceneManager.GetActiveScene().buildIndex + 1);
+        ActivePhases();
+    }
+
     private void FixedUpdate()
     {
         if (Input.GetKeyDown(KeyCode.Escape) && status == GameStatus.PLAY)

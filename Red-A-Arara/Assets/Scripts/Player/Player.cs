@@ -198,6 +198,6 @@ public class Player : MonoBehaviour
 
     void CelebrateAnimationFinished()
     {
-        GameManager.Instance.SetOverlay(GameStatus.WIN);
+        GameManager.Instance.PlayerWin();
     }
 }
