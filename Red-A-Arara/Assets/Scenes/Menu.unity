@@ -4588,7 +4588,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '- Planar (a partir da 5 fase)'
+  m_Text: '- Planar'
 --- !u!222 &887702796
 CanvasRenderer:
   m_ObjectHideFlags: 0
