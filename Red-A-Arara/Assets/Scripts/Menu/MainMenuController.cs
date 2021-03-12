@@ -1,5 +1,4 @@
-﻿using TMPro;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 
@@ -8,29 +7,29 @@ public class MainMenuController : MonoBehaviour
 
     //Labels
     [SerializeField]
-    private TMP_Text fase1textMeshPro;
+    private Text fase1textMeshPro;
     [SerializeField]
-    private TMP_Text fase2textMeshPro;
+    private Text fase2textMeshPro;
     [SerializeField]
-    private TMP_Text fase3textMeshPro;
+    private Text fase3textMeshPro;
     [SerializeField]
-    private TMP_Text fase4textMeshPro;
+    private Text fase4textMeshPro;
     [SerializeField]
-    private TMP_Text fase5textMeshPro;
+    private Text fase5textMeshPro;
     [SerializeField]
-    private TMP_Text fase6textMeshPro;
+    private Text fase6textMeshPro;
     [SerializeField]
-    private TMP_Text fase7textMeshPro;
+    private Text fase7textMeshPro;
     [SerializeField]
-    private TMP_Text fase8textMeshPro;
+    private Text fase8textMeshPro;
     [SerializeField]
-    private TMP_Text fase9textMeshPro;
+    private Text fase9textMeshPro;
     [SerializeField]
-    private TMP_Text fase10textMeshPro;
+    private Text fase10textMeshPro;
     [SerializeField]
-    private TMP_Text fase11textMeshPro;
+    private Text fase11textMeshPro;
     [SerializeField]
-    private TMP_Text fase12textMeshPro;
+    private Text fase12textMeshPro;
 
     //Botoes
     [SerializeField]
@@ -197,185 +196,185 @@ public class MainMenuController : MonoBehaviour
         ActivePhasesDB loadedData = DataBase.loadData<ActivePhasesDB>("activePhasesDB");
         if (loadedData == null)
         {
-            fase1textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+            fase1textMeshPro.color = Color.white;
             fase1Button.interactable = false;
-            fase2textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+            fase2textMeshPro.color = Color.white;
             fase2Button.interactable = false;
-            fase3textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+            fase3textMeshPro.color = Color.white;
             fase3Button.interactable = false;
-            fase4textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+            fase4textMeshPro.color = Color.white;
             fase4Button.interactable = false;
-            fase5textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+            fase5textMeshPro.color = Color.white;
             fase5Button.interactable = false;
-            fase6textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+            fase6textMeshPro.color = Color.white;
             fase6Button.interactable = false;
-            fase7textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+            fase7textMeshPro.color = Color.white;
             fase7Button.interactable = false;
-            fase8textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+            fase8textMeshPro.color = Color.white;
             fase8Button.interactable = false;
-            fase9textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+            fase9textMeshPro.color = Color.white;
             fase9Button.interactable = false;
-            fase10textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+            fase10textMeshPro.color = Color.white;
             fase10Button.interactable = false;
-            fase11textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+            fase11textMeshPro.color = Color.white;
             fase11Button.interactable = false;
-            fase12textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+            fase12textMeshPro.color = Color.white;
             fase12Button.interactable = false;
         } else
         {
             if (loadedData.activePhases <= 1)
             {
-                fase2textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase2textMeshPro.color = Color.white;
                 fase2Button.interactable = false;
-                fase3textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase3textMeshPro.color = Color.white;
                 fase3Button.interactable = false;
-                fase4textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase4textMeshPro.color = Color.white;
                 fase4Button.interactable = false;
-                fase5textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase5textMeshPro.color = Color.white;
                 fase5Button.interactable = false;
-                fase6textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase6textMeshPro.color = Color.white;
                 fase6Button.interactable = false;
-                fase7textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase7textMeshPro.color = Color.white;
                 fase7Button.interactable = false;
-                fase8textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase8textMeshPro.color = Color.white;
                 fase8Button.interactable = false;
-                fase9textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase9textMeshPro.color = Color.white;
                 fase9Button.interactable = false;
-                fase10textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase10textMeshPro.color = Color.white;
                 fase10Button.interactable = false;
-                fase11textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase11textMeshPro.color = Color.white;
                 fase11Button.interactable = false;
-                fase12textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase12textMeshPro.color = Color.white;
                 fase12Button.interactable = false;
             } else if (loadedData.activePhases <= 2)
             {
-                fase3textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase3textMeshPro.color = Color.white;
                 fase3Button.interactable = false;
-                fase4textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase4textMeshPro.color = Color.white;
                 fase4Button.interactable = false;
-                fase5textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase5textMeshPro.color = Color.white;
                 fase5Button.interactable = false;
-                fase6textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase6textMeshPro.color = Color.white;
                 fase6Button.interactable = false;
-                fase7textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase7textMeshPro.color = Color.white;
                 fase7Button.interactable = false;
-                fase8textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase8textMeshPro.color = Color.white;
                 fase8Button.interactable = false;
-                fase9textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase9textMeshPro.color = Color.white;
                 fase9Button.interactable = false;
-                fase10textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase10textMeshPro.color = Color.white;
                 fase10Button.interactable = false;
-                fase11textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase11textMeshPro.color = Color.white;
                 fase11Button.interactable = false;
-                fase12textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase12textMeshPro.color = Color.white;
                 fase12Button.interactable = false;
             } else if (loadedData.activePhases <= 3)
             {
-                fase4textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase4textMeshPro.color = Color.white;
                 fase4Button.interactable = false;
-                fase5textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase5textMeshPro.color = Color.white;
                 fase5Button.interactable = false;
-                fase6textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase6textMeshPro.color = Color.white;
                 fase6Button.interactable = false;
-                fase7textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase7textMeshPro.color = Color.white;
                 fase7Button.interactable = false;
-                fase8textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase8textMeshPro.color = Color.white;
                 fase8Button.interactable = false;
-                fase9textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase9textMeshPro.color = Color.white;
                 fase9Button.interactable = false;
-                fase10textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase10textMeshPro.color = Color.white;
                 fase10Button.interactable = false;
-                fase11textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase11textMeshPro.color = Color.white;
                 fase11Button.interactable = false;
-                fase12textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase12textMeshPro.color = Color.white;
                 fase12Button.interactable = false;
             } else if (loadedData.activePhases <= 4)
             {
-                fase5textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase5textMeshPro.color = Color.white;
                 fase5Button.interactable = false;
-                fase6textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase6textMeshPro.color = Color.white;
                 fase6Button.interactable = false;
-                fase7textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase7textMeshPro.color = Color.white;
                 fase7Button.interactable = false;
-                fase8textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase8textMeshPro.color = Color.white;
                 fase8Button.interactable = false;
-                fase9textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase9textMeshPro.color = Color.white;
                 fase9Button.interactable = false;
-                fase10textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase10textMeshPro.color = Color.white;
                 fase10Button.interactable = false;
-                fase11textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase11textMeshPro.color = Color.white;
                 fase11Button.interactable = false;
-                fase12textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase12textMeshPro.color = Color.white;
                 fase12Button.interactable = false;
             } else if (loadedData.activePhases <= 5)
             {
-                fase6textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase6textMeshPro.color = Color.white;
                 fase6Button.interactable = false;
-                fase7textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase7textMeshPro.color = Color.white;
                 fase7Button.interactable = false;
-                fase8textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase8textMeshPro.color = Color.white;
                 fase8Button.interactable = false;
-                fase9textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase9textMeshPro.color = Color.white;
                 fase9Button.interactable = false;
-                fase10textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase10textMeshPro.color = Color.white;
                 fase10Button.interactable = false;
-                fase11textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase11textMeshPro.color = Color.white;
                 fase11Button.interactable = false;
-                fase12textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase12textMeshPro.color = Color.white;
                 fase12Button.interactable = false;
             } else if (loadedData.activePhases <= 6)
             {
-                fase7textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase7textMeshPro.color = Color.white;
                 fase7Button.interactable = false;
-                fase8textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase8textMeshPro.color = Color.white;
                 fase8Button.interactable = false;
-                fase9textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase9textMeshPro.color = Color.white;
                 fase9Button.interactable = false;
-                fase10textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase10textMeshPro.color = Color.white;
                 fase10Button.interactable = false;
-                fase11textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase11textMeshPro.color = Color.white;
                 fase11Button.interactable = false;
-                fase12textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase12textMeshPro.color = Color.white;
                 fase12Button.interactable = false;
             } else if (loadedData.activePhases <= 7)
             {
-                fase8textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase8textMeshPro.color = Color.white;
                 fase8Button.interactable = false;
-                fase9textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase9textMeshPro.color = Color.white;
                 fase9Button.interactable = false;
-                fase10textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase10textMeshPro.color = Color.white;
                 fase10Button.interactable = false;
-                fase11textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase11textMeshPro.color = Color.white;
                 fase11Button.interactable = false;
-                fase12textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase12textMeshPro.color = Color.white;
                 fase12Button.interactable = false;
             } else if (loadedData.activePhases <= 8)
             {
-                fase9textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase9textMeshPro.color = Color.white;
                 fase9Button.interactable = false;
-                fase10textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase10textMeshPro.color = Color.white;
                 fase10Button.interactable = false;
-                fase11textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase11textMeshPro.color = Color.white;
                 fase11Button.interactable = false;
-                fase12textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase12textMeshPro.color = Color.white;
                 fase12Button.interactable = false;
             } else if (loadedData.activePhases <= 9)
             {
-                fase10textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase10textMeshPro.color = Color.white;
                 fase10Button.interactable = false;
-                fase11textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase11textMeshPro.color = Color.white;
                 fase11Button.interactable = false;
-                fase12textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase12textMeshPro.color = Color.white;
                 fase12Button.interactable = false;
             } else if (loadedData.activePhases <= 10)
             {
-                fase11textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase11textMeshPro.color = Color.white;
                 fase11Button.interactable = false;
-                fase12textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase12textMeshPro.color = Color.white;
                 fase12Button.interactable = false;
             } else if (loadedData.activePhases <= 11)
             {
-                fase12textMeshPro.colorGradientPreset = new TMP_ColorGradient(colorTop, colorTop, colorBottom, colorBottom);
+                fase12textMeshPro.color = Color.white;
                 fase12Button.interactable = false;
             }
         }
