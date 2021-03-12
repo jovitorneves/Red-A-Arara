@@ -72,7 +72,8 @@ public class GameManager : MonoBehaviour
         { 
             if (status == GameStatus.WIN)
             {
-                LoadScene(buildIndex: SceneManager.GetActiveScene().buildIndex + 1);
+                if (SceneManager.GetActiveScene().buildIndex + 1 >= 12)
+                    LoadScene(buildIndex: 1);
                 ActivePhases();
             }
             else if (status == GameStatus.DIE || status == GameStatus.LOSE)
@@ -86,12 +87,6 @@ public class GameManager : MonoBehaviour
 
         }
         CountHeart();
-    }
-
-    public void PlayerWin()
-    {
-        LoadScene(buildIndex: SceneManager.GetActiveScene().buildIndex + 1);
-        ActivePhases();
     }
 
     private void FixedUpdate()
@@ -206,7 +201,17 @@ public class GameManager : MonoBehaviour
         status = parStatus;
         popUpGO.SetActive(true);
         if (parStatus == GameStatus.WIN)
-            msgPopUp.text = "Você concluiu a fase!";
+        {
+            if (SceneManager.GetActiveScene().buildIndex + 1 >= 12)
+                msgPopUp.text = "Fim de jogo!";
+            else
+            {
+                LoadScene(buildIndex: SceneManager.GetActiveScene().buildIndex + 1);
+                popUpGO.SetActive(false);
+            }
+
+            ActivePhases();
+        }
         else
         {
             msgPopUp.text = isHumano ? "Capturado!" : "Você morreu!";
