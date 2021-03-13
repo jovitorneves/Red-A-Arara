@@ -130,10 +130,15 @@ public class Player : MonoBehaviour
         if (other.gameObject.CompareTag(TagsConstants.Enemy) || other.gameObject.CompareTag(TagsConstants.Humano))
         {
             isHumano = other.gameObject.CompareTag(TagsConstants.Humano);
+
+            var enemyController = other.gameObject.GetComponent(typeof(BaseEnemyController)) as BaseEnemyController;
+
             if (hitted)
                 isAlive = true;
             else
             {
+                if (enemyController.isDead )
+                    return;
                 PlayerDie();
                 TakeLife();
             }

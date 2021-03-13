@@ -48,6 +48,8 @@ public class TucanoController : BaseEnemyController
         if (posicaoA.Equals(null) || posicaoB.Equals(null))
             return;
 
+        if (isDead) return;
+
         float disA = gameObject.transform.position.x - posicaoA.position.x;
         float disB = gameObject.transform.position.x - posicaoB.position.x;
         disA = disA > 0 ? (disA * 1) : disA * -1;
@@ -89,7 +91,13 @@ public class TucanoController : BaseEnemyController
     private void OnCollisionEnter2D(Collision2D collision2D)
     {
         if (collision2D.gameObject.CompareTag(TagsConstants.Player))
+        {
+            if (UtilController.Instance.ReturnDirection(collision2D.contacts) != HitDirection.Top)
+                return;
+
             animator.Play(AnimationTagsConstants.MortoTucano);
+            isDead = true;
+        }
         if (collision2D.gameObject.CompareTag(TagsConstants.CocoPartido))
         {
             animator.Play(AnimationTagsConstants.AtordoadoTucano);

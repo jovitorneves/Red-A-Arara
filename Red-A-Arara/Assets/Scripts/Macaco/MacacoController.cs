@@ -57,6 +57,8 @@ public class MacacoController : BaseEnemyController
         if (posicaoA.Equals(null) || posicaoB.Equals(null))
             return;
 
+        if (isDead) return;
+
         float disA = gameObject.transform.position.x - posicaoA.position.x;
         float disB = gameObject.transform.position.x - posicaoB.position.x;
         disA = disA > 0 ? (disA * 1) : disA * -1;
@@ -90,13 +92,20 @@ public class MacacoController : BaseEnemyController
 
     private void FixedUpdate()
     {
+        if (isDead) return;
         IsJumping();
     }
 
     private void OnCollisionEnter2D(Collision2D collision2D)
     {
         if (collision2D.gameObject.CompareTag(TagsConstants.Player))
-            animator.Play(AnimationTagsConstants.MortoMacaco);
+        {
+            if (UtilController.Instance.ReturnDirection(collision2D.contacts) == HitDirection.Top)
+            {
+                animator.Play(AnimationTagsConstants.MortoMacaco);
+                isDead = true;
+            }
+        }
         if (collision2D.gameObject.CompareTag(TagsConstants.CocoPartido) && !isBoss)
         {
             animator.Play(AnimationTagsConstants.AtordoadoMacaco);

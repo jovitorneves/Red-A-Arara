@@ -45,7 +45,8 @@ public class CobraChefe : BaseEnemyController
     // Update is called once per frame
     void Update()
     {
-        
+        if (isDead) return;
+
         grounded = Physics2D.OverlapCircle(groundCheck.position, radiusCheck, layerGround);
         groundedHorizontal = Physics2D.OverlapCircle(groundCheckHorizontal.position, radiusCheckHorizontal, layerGround);
 
@@ -57,6 +58,7 @@ public class CobraChefe : BaseEnemyController
 
     void FixedUpdate()
     {
+        if (isDead) return;
         if (isVisible)
         {
             rb2D.velocity = new Vector2(-speed, rb2D.velocity.y);
@@ -106,8 +108,8 @@ public class CobraChefe : BaseEnemyController
             {
                 this.isDead = true;
                 SoundManager.Instance.PlayFxCobraDie(fxCobraDie);
-                anim.Play(AnimationTagsConstants.MorteRed);
-                EnemyDie();
+                anim.Play(AnimationTagsConstants.Death);
+                //EnemyDie();
             }
             else
             {
@@ -138,7 +140,7 @@ public class CobraChefe : BaseEnemyController
     {
         gameObject.SetActive(false);
         gameObject.GetComponent<BoxCollider2D>().isTrigger = false;
-        //Destroy(gameObject);
+        Destroy(gameObject);
     }
     
 }

@@ -97,13 +97,20 @@ public class Enemy : BaseEnemyController
         isVisible = false;
     }
 
+    private void OnCollisionEnter2D(Collision2D collision2D)
+    {
+        if (collision2D.gameObject.CompareTag(TagsConstants.Player))
+        {
+            if (UtilController.Instance.ReturnDirection(collision2D.contacts) == HitDirection.Top)
+            {
+                anim.Play(AnimationTagsConstants.Death);
+                isDead = true;
+            }
+        }
+    }
+
     void OnTriggerEnter2D (Collider2D other)
     {
-        if (other.gameObject.CompareTag(TagsConstants.Player))
-        {
-            anim.Play(AnimationTagsConstants.Death);
-            isDead = true;
-        }
         if (other.gameObject.CompareTag(TagsConstants.CocoPartido) && !isBoss)
         {
             anim.Play(AnimationTagsConstants.CobraAtordoada);
