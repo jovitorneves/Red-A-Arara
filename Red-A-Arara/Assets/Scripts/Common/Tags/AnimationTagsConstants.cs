@@ -49,4 +49,5 @@ public static class AnimationTagsConstants
 
     //TRONCO
     public const string CaindoTronco = "Caindo";
+    public const string MovendoTronco = "Movendo";
 }

@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TroncoController : MonoBehaviour
 {
+    [SerializeField]
+    private bool isFalls = true;
     private Animator animator;
     private float delayTime = 3f;
     private bool isCount = false;
@@ -19,7 +21,8 @@ public class TroncoController : MonoBehaviour
     {
         if (isCount) {
             delayTime -= Time.deltaTime;
-        }
+        } else
+            animator.Play(AnimationTagsConstants.MovendoTronco);
 
         if (delayTime <= 0)
         {
@@ -31,6 +34,7 @@ public class TroncoController : MonoBehaviour
     {
         if (collision2D.gameObject.CompareTag(TagsConstants.Player))
         {
+            if (!isFalls) return;
             if (UtilController.Instance.ReturnDirection(collision2D.contacts) == HitDirection.Top)
             {
                 isCount = true;
