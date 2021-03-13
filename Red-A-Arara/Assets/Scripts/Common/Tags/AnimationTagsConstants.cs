@@ -46,4 +46,7 @@ public static class AnimationTagsConstants
     //COBRA
     public const string LevandoDano = "TAKENDAMAGE";
     public const string CobraAtordoada = "CobraAtordoada";
+
+    //TRONCO
+    public const string CaindoTronco = "Caindo";
 }
