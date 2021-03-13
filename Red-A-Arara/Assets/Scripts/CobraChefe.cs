@@ -102,6 +102,8 @@ public class CobraChefe : BaseEnemyController
         
         if (other.gameObject.CompareTag(TagsConstants.Player))
         {
+            var playerController = other.gameObject.GetComponent(typeof(Player)) as Player;
+            if (!playerController.isAlive) return;
             damageTaken += 1;
 
             if (damageTaken >= 3)

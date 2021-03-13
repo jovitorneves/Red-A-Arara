@@ -100,6 +100,8 @@ public class MacacoController : BaseEnemyController
     {
         if (collision2D.gameObject.CompareTag(TagsConstants.Player))
         {
+            var playerController = collision2D.gameObject.GetComponent(typeof(Player)) as Player;
+            if (!playerController.isAlive) return;
             if (UtilController.Instance.ReturnDirection(collision2D.contacts) == HitDirection.Top)
             {
                 animator.Play(AnimationTagsConstants.MortoMacaco);
