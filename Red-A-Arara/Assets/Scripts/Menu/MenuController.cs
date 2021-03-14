@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class MenuController : MonoBehaviour
 {
@@ -22,6 +23,15 @@ public class MenuController : MonoBehaviour
 
     private float timer = 0.0f;
     private readonly float waitTime = 2.0f;
+
+    // Start is called before the first frame update
+    private void Start()
+    {
+        if (SceneManager.GetActiveScene().buildIndex == 1)
+        {
+            GameManager.Instance.heartCount = 3;
+        }
+    }
 
     // Update is called once per frame
     void Update()
