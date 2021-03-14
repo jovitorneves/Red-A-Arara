@@ -2,8 +2,8 @@
 
 public class Player : MonoBehaviour
 {
-    private float speed = 3f;
-    private int jumpForce = 580;
+    private float speed = 4f;
+    private int jumpForce = 480;
 
     public Transform groundCheck;
     public Transform hitEnemy;
@@ -83,7 +83,7 @@ public class Player : MonoBehaviour
             }
             if (jumping)
             {
-                rb2D.AddForce(new Vector2(480f, jumpForce));
+                rb2D.AddForce(new Vector2(0f, jumpForce));
                 jumping = false;
             }
 
