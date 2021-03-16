@@ -115,6 +115,7 @@ public class Enemy : BaseEnemyController
             anim.Play(AnimationTagsConstants.CobraAtordoada);
             isAtordoada = true;
             delayTime = Time.deltaTime * 220f;
+            SoundManager.Instance.PlayFxAtordoado();
         }
     }
     

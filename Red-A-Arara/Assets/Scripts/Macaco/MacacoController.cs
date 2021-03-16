@@ -106,6 +106,7 @@ public class MacacoController : BaseEnemyController
             {
                 animator.Play(AnimationTagsConstants.MortoMacaco);
                 isDead = true;
+                SoundManager.Instance.PlayFxCobraDie();
             }
         }
         if (collision2D.gameObject.CompareTag(TagsConstants.CocoPartido) && !isBoss)
@@ -113,6 +114,7 @@ public class MacacoController : BaseEnemyController
             animator.Play(AnimationTagsConstants.AtordoadoMacaco);
             isAtordoada = true;
             delayAtordoadoTime = Time.deltaTime * 2;
+            SoundManager.Instance.PlayFxAtordoado();
         }
     }
 

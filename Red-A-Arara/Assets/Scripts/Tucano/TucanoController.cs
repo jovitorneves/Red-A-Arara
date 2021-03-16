@@ -99,12 +99,14 @@ public class TucanoController : BaseEnemyController
 
             animator.Play(AnimationTagsConstants.MortoTucano);
             isDead = true;
+            SoundManager.Instance.PlayFxCobraDie();
         }
         if (collision2D.gameObject.CompareTag(TagsConstants.CocoPartido))
         {
             animator.Play(AnimationTagsConstants.AtordoadoTucano);
             isAtordoada = true;
             delayAtordoadoTime = Time.deltaTime * 2;
+            SoundManager.Instance.PlayFxAtordoado();
         }
     }
 

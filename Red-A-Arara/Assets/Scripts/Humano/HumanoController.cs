@@ -87,6 +87,7 @@ public class HumanoController : BaseEnemyController
             animator.Play(AnimationTagsConstants.AtordoadoHumano);
             isAtordoada = true;
             delayTime = Time.deltaTime * 220f;
+            SoundManager.Instance.PlayFxAtordoado();
         }
     }
 
