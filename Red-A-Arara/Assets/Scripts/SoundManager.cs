@@ -4,6 +4,9 @@ public class SoundManager : GenericSingletonClass<SoundManager>
 {
     public AudioSource fxAmbiente;
     public AudioSource fxPlayer;
+    public AudioSource fxArremessoCoco;
+    public AudioSource fxAtordoado;
+    public AudioSource fxJumpEnemy;
     public AudioSource fxBuritiCollector;
     public AudioSource fxCobraAttack;
     public AudioSource fxCobraDie;
@@ -52,9 +55,26 @@ public class SoundManager : GenericSingletonClass<SoundManager>
         fxPlayer.volume = loadedData.player;
     }
 
-    public void PlayFxBuritiCollector (AudioClip clip)
+    public void PlayFxArremessoCoco()
     {
-        fxBuritiCollector.clip = clip;
+        fxArremessoCoco.Play();
+        fxArremessoCoco.volume = loadedData.player;
+    }
+
+    public void PlayFxAtordoado()
+    {
+        fxAtordoado.Play();
+        fxAtordoado.volume = loadedData.cobraAttack;
+    }
+
+    public void PlayFxJumpEnemy()
+    {
+        fxJumpEnemy.Play();
+        fxJumpEnemy.volume = loadedData.cobraAttack;
+    }
+
+    public void PlayFxBuritiCollector()
+    {
         fxBuritiCollector.Play();
         fxBuritiCollector.volume = loadedData.buriti;
     }

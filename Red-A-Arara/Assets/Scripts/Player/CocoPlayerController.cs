@@ -30,6 +30,7 @@ public class CocoPlayerController : MonoBehaviour
         {
             AjustaPosicaoCoco();
             player.isCoco = false;
+            SoundManager.Instance.PlayFxArremessoCoco();
         }
     }
 
