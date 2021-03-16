@@ -28,7 +28,10 @@ public class BotaoController : MonoBehaviour
         IsPlayer = other.gameObject.CompareTag(TagsConstants.Player);
 
         if (IsCoco || IsPlayer)
+        {
             portaAnimator.Play(AnimationTagsConstants.OpenPorta);
+            SoundManager.Instance.PlayFxPorta();
+        }
     }
 
     private void OnCollisionExit2D(Collision2D collision)
@@ -37,12 +40,14 @@ public class BotaoController : MonoBehaviour
         {
             IsCoco = false;
             portaAnimator.Play(AnimationTagsConstants.ClosePorta);
+            SoundManager.Instance.PlayFxPorta();
         }
 
         if (IsPlayer)
         {
             IsPlayer = false;
             portaAnimator.Play(AnimationTagsConstants.ClosePorta);
+            SoundManager.Instance.PlayFxPorta();
         }
     }
 }
