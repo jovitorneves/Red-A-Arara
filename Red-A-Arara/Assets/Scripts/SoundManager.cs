@@ -7,6 +7,7 @@ public class SoundManager : GenericSingletonClass<SoundManager>
     public AudioSource fxArremessoCoco;
     public AudioSource fxAtordoado;
     public AudioSource fxPorta;
+    public AudioSource fxCoco;
     public AudioSource fxJumpEnemy;
     public AudioSource fxBuritiCollector;
     public AudioSource fxCobraAttack;
@@ -73,6 +74,12 @@ public class SoundManager : GenericSingletonClass<SoundManager>
         fxPorta.pitch = 3.5f;
         fxPorta.Play();
         fxPorta.volume = loadedData.player;
+    }
+
+    public void PlayFxCoco()
+    {
+        fxCoco.Play();
+        fxCoco.volume = loadedData.player;
     }
 
     public void PlayFxJumpEnemy()

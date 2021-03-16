@@ -154,6 +154,7 @@ public class Player : MonoBehaviour
         {
             isCoco = true;
             anim.Play(AnimationTagsConstants.PegandoCocoRed);
+            SoundManager.Instance.PlayFxCoco();
         }
     }
 
