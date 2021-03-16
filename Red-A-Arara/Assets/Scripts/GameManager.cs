@@ -72,7 +72,7 @@ public class GameManager : MonoBehaviour
         { 
             if (status == GameStatus.WIN)
             {
-                if (SceneManager.GetActiveScene().buildIndex + 1 >= 12)
+                if (SceneManager.GetActiveScene().buildIndex + 1 > 12)
                     LoadScene(buildIndex: 1);
                 ActivePhases();
             }
@@ -202,7 +202,7 @@ public class GameManager : MonoBehaviour
         popUpGO.SetActive(true);
         if (parStatus == GameStatus.WIN)
         {
-            if (SceneManager.GetActiveScene().buildIndex + 1 >= 12)
+            if (SceneManager.GetActiveScene().buildIndex + 1 > 12)
                 msgPopUp.text = "Fim de jogo!";
             else
             {
