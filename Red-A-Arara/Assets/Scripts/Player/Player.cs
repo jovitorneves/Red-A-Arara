@@ -2,7 +2,7 @@
 
 public class Player : MonoBehaviour
 {
-    private float speed = 4f;
+    private float speed = 3f;
     private int jumpForce = 480;
 
     public Transform groundCheck;
