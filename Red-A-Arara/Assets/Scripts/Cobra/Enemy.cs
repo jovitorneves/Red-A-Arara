@@ -22,9 +22,6 @@ public class Enemy : BaseEnemyController
     private bool isAtordoada = false;
     private float delayTime;
 
-    public AudioClip fxCobraAttack;
-    public AudioClip fxCobraDie;
-
     // Start is called before the first frame update
     void Start()
     {
@@ -123,7 +120,7 @@ public class Enemy : BaseEnemyController
     
     void EnemyDie()
     {
-        SoundManager.Instance.PlayFxCobraDie(fxCobraDie);
+        SoundManager.Instance.PlayFxCobraDie();
         Destroy(gameObject);
     }
     

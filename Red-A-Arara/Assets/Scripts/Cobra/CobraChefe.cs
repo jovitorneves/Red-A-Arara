@@ -21,10 +21,6 @@ public class CobraChefe : BaseEnemyController
     private bool facingRight = false;
     private bool isVisible = false;
 
-    public AudioClip fxCobraAttack;
-    public AudioClip fxCobraDie;
-    public AudioClip fxCobraDamageTaken;
-
     [SerializeField]
     private GameObject iconeGameObject;
     [SerializeField]
@@ -108,15 +104,15 @@ public class CobraChefe : BaseEnemyController
 
             if (damageTaken >= 3)
             {
-                this.isDead = true;
-                SoundManager.Instance.PlayFxCobraDie(fxCobraDie);
+                isDead = true;
+                SoundManager.Instance.PlayFxCobraDie();
                 anim.Play(AnimationTagsConstants.Death);
                 //EnemyDie();
             }
             else
             {
                 anim.Play(AnimationTagsConstants.LevandoDano);
-                SoundManager.Instance.PlayFxCobraChefeDamageTaken(fxCobraDamageTaken);
+                SoundManager.Instance.PlayFxCobraChefeDamageTaken();
                 Invoke(MethodNameTagsConstants.MoveEnemy, 1f);
             }
             Hearts();

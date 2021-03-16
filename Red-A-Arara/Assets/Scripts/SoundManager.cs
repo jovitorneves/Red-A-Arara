@@ -48,7 +48,7 @@ public class SoundManager : GenericSingletonClass<SoundManager>
     }
 
     //Action
-    public void PlayFxPlayer (AudioClip clip)
+    public void PlayFxPlayer(AudioClip clip)
     {
         fxPlayer.clip = clip;
         fxPlayer.Play();
@@ -79,23 +79,20 @@ public class SoundManager : GenericSingletonClass<SoundManager>
         fxBuritiCollector.volume = loadedData.buriti;
     }
 
-    public void PlayFxCobraAttack (AudioClip clip)
+    public void PlayFxCobraAttack()
     {
-        fxCobraAttack.clip = clip;
         fxCobraAttack.Play();
         fxCobraAttack.volume = loadedData.cobraAttack;
     }
 
-    public void PlayFxCobraDie (AudioClip clip)
+    public void PlayFxCobraDie()
     {
-        fxCobraDie.clip = clip;
         fxCobraAttack.Play();
         fxCobraAttack.volume = loadedData.cobraDie;
     }
     
-    public void PlayFxCobraChefeDamageTaken (AudioClip clip)
+    public void PlayFxCobraChefeDamageTaken()
     {
-        fxCobraChefeDamageTaken.clip = clip;
         fxCobraChefeDamageTaken.Play();
         fxCobraChefeDamageTaken.volume = loadedData.cobraChefeDamageTaken;
     }
