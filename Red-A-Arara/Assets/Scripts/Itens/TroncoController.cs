@@ -35,18 +35,18 @@ public class TroncoController : MonoBehaviour
     {
         if (collision2D.gameObject.CompareTag(TagsConstants.Player))
         {
-            if (!isFalls)
-            {
-                if (!isStepped)
-                    SoundManager.Instance.PlayFxTronco();
-
-                isStepped = true;
-
-                return;
-            }
-
             if (UtilController.Instance.ReturnDirection(collision2D.contacts) == HitDirection.Top)
             {
+                if (!isFalls)
+                {
+                    if (!isStepped)
+                        SoundManager.Instance.PlayFxTronco();
+
+                    isStepped = true;
+
+                    return;
+                }
+
                 if (!isCount)
                     SoundManager.Instance.PlayFxTronco();
 
