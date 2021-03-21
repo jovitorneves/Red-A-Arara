@@ -20,6 +20,7 @@ public class Enemy : BaseEnemyController
     private bool facingRight = true;
     private bool isVisible = false;
     private bool isAtordoada = false;
+    private int cocoCount = 0;
     private float delayTime;
 
     // Start is called before the first frame update
@@ -102,8 +103,7 @@ public class Enemy : BaseEnemyController
             if (!playerController.isAlive) return;
             if (UtilController.Instance.ReturnDirection(collision2D.contacts) == HitDirection.Top)
             {
-                anim.Play(AnimationTagsConstants.Death);
-                isDead = true;
+                CobraMorta();
             }
         }
     }
@@ -112,11 +112,27 @@ public class Enemy : BaseEnemyController
     {
         if (other.gameObject.CompareTag(TagsConstants.CocoPartido) && !isBoss)
         {
-            anim.Play(AnimationTagsConstants.CobraAtordoada);
-            isAtordoada = true;
-            delayTime = Time.deltaTime * 220f;
-            SoundManager.Instance.PlayFxAtordoado();
+            if (!isAtordoada)
+                cocoCount++;
+
+            if (cocoCount < 2)
+            {
+                anim.Play(AnimationTagsConstants.CobraAtordoada);
+                isAtordoada = true;
+                delayTime = Time.deltaTime * 220f;
+                SoundManager.Instance.PlayFxAtordoado();
+            }
+            else
+            {
+                CobraMorta();
+            }
         }
+    }
+
+    private void CobraMorta()
+    {
+        anim.Play(AnimationTagsConstants.Death);
+        isDead = true;
     }
     
     void EnemyDie()

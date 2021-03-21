@@ -32,6 +32,7 @@ public class MacacoController : BaseEnemyController
 
     private float delayTime = 2f;
     private bool isAtordoada = false;
+    private int cocoCount = 0;
     private float delayAtordoadoTime = 2f;
 
     // Start is called before the first frame update
@@ -105,18 +106,37 @@ public class MacacoController : BaseEnemyController
             if (!playerController.isAlive) return;
             if (UtilController.Instance.ReturnDirection(collision2D.contacts) == HitDirection.Top)
             {
-                animator.Play(AnimationTagsConstants.MortoMacaco);
-                isDead = true;
-                SoundManager.Instance.PlayFxCobraDie();
+                MacacoMorto();
             }
         }
         if (collision2D.gameObject.CompareTag(TagsConstants.CocoPartido) && !isBoss)
         {
-            animator.Play(AnimationTagsConstants.AtordoadoMacaco);
-            isAtordoada = true;
-            delayAtordoadoTime = Time.deltaTime * 2;
-            SoundManager.Instance.PlayFxAtordoado();
+            if (!isAtordoada)
+                cocoCount++;
+            if (cocoCount < 2)
+            {
+                animator.Play(AnimationTagsConstants.AtordoadoMacaco);
+                isAtordoada = true;
+                delayAtordoadoTime = Time.deltaTime * 2;
+                SoundManager.Instance.PlayFxAtordoado();
+            }
+            else
+            {
+                MacacoMorto();
+            }
         }
+    }
+
+    private void MacacoMorto()
+    {
+        animator.Play(AnimationTagsConstants.MortoMacaco);
+        isDead = true;
+        SoundManager.Instance.PlayFxCobraDie();
+    }
+
+    public void DestroyMacaco()
+    {
+        Destroy(gameObject);
     }
 
     private void DistanciaPlayerIntervalMacaco()
