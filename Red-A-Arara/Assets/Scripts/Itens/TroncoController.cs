@@ -37,6 +37,9 @@ public class TroncoController : MonoBehaviour
             if (!isFalls) return;
             if (UtilController.Instance.ReturnDirection(collision2D.contacts) == HitDirection.Top)
             {
+                if (!isCount)
+                    SoundManager.Instance.PlayFxTronco();
+
                 isCount = true;
             }
         }

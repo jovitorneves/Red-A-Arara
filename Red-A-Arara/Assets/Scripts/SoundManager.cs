@@ -9,6 +9,7 @@ public class SoundManager : GenericSingletonClass<SoundManager>
     public AudioSource fxPorta;
     public AudioSource fxCoco;
     public AudioSource fxJumpEnemy;
+    public AudioSource fxTronco;
     public AudioSource fxBuritiCollector;
     public AudioSource fxCobraAttack;
     public AudioSource fxCobraDie;
@@ -86,6 +87,12 @@ public class SoundManager : GenericSingletonClass<SoundManager>
     {
         fxJumpEnemy.Play();
         fxJumpEnemy.volume = loadedData.cobraAttack;
+    }
+
+    public void PlayFxTronco()
+    {
+        fxTronco.Play();
+        fxTronco.volume = loadedData.cobraAttack;
     }
 
     public void PlayFxBuritiCollector()

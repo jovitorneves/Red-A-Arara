@@ -147,6 +147,7 @@ public class MacacoController : BaseEnemyController
                 macacoRigidbody.AddForce(new Vector2(isLookLeft ? -jumpForce : jumpForce, jumpForce));
                 delayTime = 2f;
                 animator.Play(AnimationTagsConstants.Jump);
+                SoundManager.Instance.PlayFxJumpEnemy();
             } else
                 animator.Play(AnimationTagsConstants.Walk);
 
