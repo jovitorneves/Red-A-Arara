@@ -27,6 +27,7 @@ public class TucanoController : BaseEnemyController
 
     private float delayTime = 3f;
     private bool isAtordoada = false;
+    private int cocoCount = 0;
     private float delayAtordoadoTime = 2f;
 
     // Start is called before the first frame update
@@ -97,17 +98,32 @@ public class TucanoController : BaseEnemyController
             if (UtilController.Instance.ReturnDirection(collision2D.contacts) != HitDirection.Top)
                 return;
 
-            animator.Play(AnimationTagsConstants.MortoTucano);
-            isDead = true;
-            SoundManager.Instance.PlayFxCobraDie();
+            TucanoMorto();
         }
         if (collision2D.gameObject.CompareTag(TagsConstants.CocoPartido))
         {
-            animator.Play(AnimationTagsConstants.AtordoadoTucano);
-            isAtordoada = true;
-            delayAtordoadoTime = Time.deltaTime * 2;
-            SoundManager.Instance.PlayFxAtordoado();
+            if (!isAtordoada)
+                cocoCount++;
+
+            if (cocoCount < 2)
+            {
+                animator.Play(AnimationTagsConstants.AtordoadoTucano);
+                isAtordoada = true;
+                delayAtordoadoTime = Time.deltaTime * 2;
+                SoundManager.Instance.PlayFxAtordoado();
+            }
+            else
+            {
+                TucanoMorto();
+            }
         }
+    }
+
+    private void TucanoMorto()
+    {
+        animator.Play(AnimationTagsConstants.MortoTucano);
+        isDead = true;
+        SoundManager.Instance.PlayFxCobraDie();
     }
 
     private void DistanciaPlayerIntervalTucano()
