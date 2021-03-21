@@ -93,6 +93,7 @@ public class MacacoController : BaseEnemyController
     private void FixedUpdate()
     {
         if (isDead) return;
+        if (isAtordoada) return;
         IsJumping();
     }
 
