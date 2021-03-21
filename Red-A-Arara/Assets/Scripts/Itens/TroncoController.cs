@@ -9,6 +9,7 @@ public class TroncoController : MonoBehaviour
     private Animator animator;
     private float delayTime = 3f;
     private bool isCount = false;
+    private bool isStepped = false;
 
     // Start is called before the first frame update
     void Start()
@@ -34,7 +35,16 @@ public class TroncoController : MonoBehaviour
     {
         if (collision2D.gameObject.CompareTag(TagsConstants.Player))
         {
-            if (!isFalls) return;
+            if (!isFalls)
+            {
+                if (!isStepped)
+                    SoundManager.Instance.PlayFxTronco();
+
+                isStepped = true;
+
+                return;
+            }
+
             if (UtilController.Instance.ReturnDirection(collision2D.contacts) == HitDirection.Top)
             {
                 if (!isCount)
