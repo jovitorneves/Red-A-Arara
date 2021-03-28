@@ -146,8 +146,7 @@ public class Player : MonoBehaviour
         }
         else if (other.gameObject.CompareTag(TagsConstants.Espinhos))
         {
-            DataBase.deleteData("sceneDB");
-            GameManager.Instance.heartCount = 0;
+            //DataBase.deleteData("sceneDB");
             PlayerDie();
             TakeLife();
         } else if (other.gameObject.CompareTag(TagsConstants.CocoPartido))
@@ -176,7 +175,6 @@ public class Player : MonoBehaviour
         else if (other.CompareTag(TagsConstants.Rio))
         {
             DataBase.deleteData("sceneDB");
-            GameManager.Instance.heartCount = 0;
             PlayerDie();
             TakeLife();
         }
