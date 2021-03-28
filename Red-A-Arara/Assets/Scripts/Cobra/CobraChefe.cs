@@ -2,7 +2,7 @@
 
 public class CobraChefe : BaseEnemyController
 {
-    public float speed;
+    private float speed = 4f;
     public Transform groundCheck;
     public Transform groundCheckHorizontal;
 
@@ -111,6 +111,7 @@ public class CobraChefe : BaseEnemyController
             }
             else
             {
+                speed *= 2f;
                 anim.Play(AnimationTagsConstants.LevandoDano);
                 SoundManager.Instance.PlayFxCobraChefeDamageTaken();
                 Invoke(MethodNameTagsConstants.MoveEnemy, 1f);

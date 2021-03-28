@@ -4744,6 +4744,11 @@ PrefabInstance:
       propertyPath: iconeGameObject
       value: 
       objectReference: {fileID: 1248271932}
+    - target: {fileID: 8465051867500366651, guid: ee712a28b6b94b44f963ad74a0e67d94,
+        type: 3}
+      propertyPath: speed
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ee712a28b6b94b44f963ad74a0e67d94, type: 3}
 --- !u!1001 &8721959703333980849
