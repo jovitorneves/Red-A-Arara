@@ -9,17 +9,11 @@ public class FlyingController : MonoBehaviour
     [SerializeField]
     private LayerMask layerGround;
 
-    private int jumpCount = 10;
-    private int jumpValidCount = 9;
-    private readonly int jumpFixedForce = 500;
     private readonly int dragFixed = 8;
-    private readonly int jumpForce = 500;
     private bool isGrounded;
     private readonly float radiusCheck = 0.5f;
-    private readonly int limitJumps = 10;
 
     private float timer = 0.0f;
-    private readonly float waitTime = 0.10f;
 
     public bool isFlying = false;
     private bool isCaindo = false;
@@ -38,55 +32,35 @@ public class FlyingController : MonoBehaviour
 
     private void Update()
     {
-        timer += Time.deltaTime;
         if (GameManager.Instance.status != GameStatus.PLAY || !player.isAlive)
             return;
 
         IsFalling();
-        if (isFlying)
-        {
-            if (Input.GetButtonDown(InputTagsConstants.Jump)) {
-                isFlying = false;
-                playerRigidbody.drag = 0;
-            } else if (isGrounded)
-            {
-                isFlying = false;
-                playerRigidbody.drag = 0;
-            }
-        }
-    }
-
-    // Update is called once per frame
-    void FixedUpdate()
-    {
-        if (GameManager.Instance.status != GameStatus.PLAY || !player.isAlive)
-            return;
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, radiusCheck, layerGround);
 
-        //caso ele aperta a seta pra baixo ele cai mais rapido
         if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
             playerRigidbody.drag = 0;
         else
         {
-            //Input.GetKey(KeyCode.Space)
-            if (jumpCount == limitJumps)
+            if (Input.GetButtonDown(InputTagsConstants.Jump))
+                timer += Time.deltaTime;
+
+            if (Input.GetKey(KeyCode.Space) && !isGrounded)
             {
-                if (Input.GetKey(KeyCode.K))
-                {
-                    Flying();
-                    isJumped = true;
-                    timer = 0f;
-                }
+                timer += Time.deltaTime;
+                if (timer < 0.2f)
+                    return;
+
+                isJumped = true;
+                Flying();
             }
-            else if (jumpCount >= 0 && jumpCount <= jumpValidCount)
+            else
             {
-                if (Input.GetKey(KeyCode.K) && timer > waitTime)
-                {
-                    Flying();
-                    isJumped = true;
-                    timer = 0f;
-                }
+                isJumped = false;
+                isFlying = false;
+                playerRigidbody.drag = 0;
+                timer = 0f;
             }
         }
     }
@@ -96,21 +70,10 @@ public class FlyingController : MonoBehaviour
         if (isJumped)
             playerRigidbody.drag = isGrounded ? 0 : dragFixed;
 
-        if (jumpCount == 0 && isGrounded)
+        if (isGrounded)
         {
             playerRigidbody.drag = 0;
-            jumpCount = limitJumps;
             isJumped = false;
-        }
-
-        if (jumpCount == 0) return;
-
-        if (isGrounded)
-            playerRigidbody.AddForce(new Vector2(0f, isGrounded ? jumpFixedForce : jumpForce));
-        else
-        {
-            playerRigidbody.AddForce(new Vector2(0f, jumpForce/2));
-            playerRigidbody.AddForce(new Vector2(0f, jumpForce/2));
         }
 
         if (player.isCoco)
@@ -119,8 +82,6 @@ public class FlyingController : MonoBehaviour
             animationPlayer.Play(AnimationTagsConstants.Voando);
 
         isFlying = true;
-        jumpCount--;
-        print("jumpCount: "+ jumpCount);
     }
 
     private void IsFalling()

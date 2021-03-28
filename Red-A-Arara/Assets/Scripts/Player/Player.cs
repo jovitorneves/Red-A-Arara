@@ -64,6 +64,8 @@ public class Player : MonoBehaviour
             PlayerDie();
         }
 
+        speed = flyingController.isFlying ? 4f : 3.5f;
+
         PlayAnimations();
 
     }
