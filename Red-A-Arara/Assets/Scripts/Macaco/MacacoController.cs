@@ -82,7 +82,12 @@ public class MacacoController : BaseEnemyController
 
         if (isAtordoada) return;
 
-        if (player.gameObject.transform.position.x >= posicaoA.position.x &&
+        if (Vector2.Distance(posicaoA.gameObject.transform.position, gameObject.transform.position) <= 2f ||
+            Vector2.Distance(posicaoB.gameObject.transform.position, gameObject.transform.position) <= 2f)
+        {
+            MoveMonkey();
+        }
+        else if (player.gameObject.transform.position.x >= posicaoA.position.x &&
             player.gameObject.transform.position.x <= posicaoB.position.x &&
             disA >= distanciaMonkeyAndPointMax &&
             disB >= distanciaMonkeyAndPointMax)
