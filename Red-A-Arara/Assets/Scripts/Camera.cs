@@ -5,6 +5,8 @@ public class Camera : MonoBehaviour
     [SerializeField]
     private Transform player;
     [SerializeField]
+    private Transform background;
+    [SerializeField]
     private Vector2 smoothTime;
     [SerializeField]
     private Vector2 maxLimit;
@@ -19,8 +21,9 @@ public class Camera : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        transform.position = new Vector3(player.position.x, player.position.y, transform.position.z);
         LoadedData();
+        transform.position = new Vector3(player.position.x, player.position.y, transform.position.z);
+        background.position = new Vector3(player.position.x, player.position.y, 0);
     }
 
     // Update is called once per frame
@@ -33,6 +36,12 @@ public class Camera : MonoBehaviour
     {
         if (player.Equals(null)) return;
 
+        CenarioAntigo();
+        CenarioNovo();
+    }
+
+    private void CenarioAntigo()
+    {
         float posX = Mathf.SmoothDamp(transform.position.x, player.position.x, ref velocity.x, smoothTime.x);
         float posY = Mathf.SmoothDamp(transform.position.y, player.position.y, ref velocity.y, smoothTime.y);
 
@@ -42,6 +51,22 @@ public class Camera : MonoBehaviour
         float posNewY = Mathf.Clamp(transform.position.y, minLimit.y, maxLimit.y);
 
         transform.position = new Vector3(posNewX, posNewY, transform.position.z);
+    }
+
+    private void CenarioNovo()
+    {
+        if (background.Equals(null)) return;
+
+        float posX = Mathf.SmoothDamp(transform.position.x, player.position.x, ref velocity.x, smoothTime.x);
+        float posY = Mathf.SmoothDamp(transform.position.y, player.position.y, ref velocity.y, smoothTime.y);
+
+        background.position = new Vector3(posX, posY, 0);
+
+        float posNewX = Mathf.Clamp(transform.position.x, minLimit.x, maxLimit.x);
+        float posNewY = Mathf.Clamp(transform.position.y, minLimit.y, maxLimit.y);
+        //float posNeyModifedY = ((posNewY * -0.35f) < maxLimit.y && (posNewY * -0.35f) > minLimit.y) ? (posNewY * -0.35f) : posNewY;
+
+        background.position = new Vector3(posNewX, (posNewY * -0.35f), 0);
     }
 
     //Desenha um risco que liga o Ponto A e o Ponto B
