@@ -179,8 +179,6 @@ MonoBehaviour:
   radiusCheckHorizontal: 0.3
   grounded: 0
   groundedHorizontal: 0
-  fxCobraAttack: {fileID: 8300000, guid: 6f76ca9b2155b4d41b89ea2821a820c9, type: 3}
-  fxCobraDie: {fileID: 8300000, guid: 550c29c5e1285284ebbd67f93e258c28, type: 3}
 --- !u!61 &540549774
 BoxCollider2D:
   m_ObjectHideFlags: 0
