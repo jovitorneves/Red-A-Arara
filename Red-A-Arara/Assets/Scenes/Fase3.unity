@@ -30369,12 +30369,12 @@ PrefabInstance:
     - target: {fileID: 993163445058259676, guid: 66c457c8f4642c74995e45054f80d0f8,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2186754162546146599, guid: 66c457c8f4642c74995e45054f80d0f8,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3568671442255583689, guid: 66c457c8f4642c74995e45054f80d0f8,
         type: 3}
