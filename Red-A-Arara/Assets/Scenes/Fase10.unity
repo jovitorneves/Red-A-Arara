@@ -1356,7 +1356,7 @@ PrefabInstance:
     - target: {fileID: 7914384856809843563, guid: 4c9781619c5894d60ac76897093b0f30,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.4465574
+      value: 0.87
       objectReference: {fileID: 0}
     - target: {fileID: 7914384856809843563, guid: 4c9781619c5894d60ac76897093b0f30,
         type: 3}
@@ -3681,6 +3681,7 @@ GameObject:
   - component: {fileID: 1262261736}
   - component: {fileID: 1262261735}
   - component: {fileID: 1262261734}
+  - component: {fileID: 1262261739}
   m_Layer: 8
   m_Name: Terreno
   m_TagString: chao
@@ -4038,14 +4039,6 @@ CompositeCollider2D:
         Y: 6000000
       - X: -104954536
         Y: 6000000
-    - - X: -195954528
-        Y: 11999999
-      - X: -203045440
-        Y: 11999999
-      - X: -203045440
-        Y: 6000000
-      - X: -195954528
-        Y: 6000000
     - - X: 42045456
         Y: 5999999
       - X: 20954544
@@ -4062,6 +4055,22 @@ CompositeCollider2D:
         Y: 0
       - X: -104954536
         Y: 0
+    - - X: -195954428
+        Y: -41
+      - X: -195954428
+        Y: 5999959
+      - X: -195954487
+        Y: 5999900
+      - X: -203045481
+        Y: 5999900
+      - X: -203045540
+        Y: 5999959
+      - X: -203045540
+        Y: -41
+      - X: -203045481
+        Y: -100
+      - X: -195954487
+        Y: -100
     - - X: 42045456
         Y: -6000001
       - X: 20954544
@@ -4146,10 +4155,10 @@ CompositeCollider2D:
       - {x: 16.114521, y: 1.20001}
       - {x: 10.505455, y: 1.1999706}
       - {x: 10.505481, y: -0.00001}
-    - - {x: -19.585482, y: 0.6}
-      - {x: -19.585482, y: 1.1999999}
-      - {x: -20.294544, y: 1.1999706}
-      - {x: -20.294516, y: 0.6}
+    - - {x: -19.585478, y: -0.00001}
+      - {x: -19.585478, y: 0.59999}
+      - {x: -20.294554, y: 0.5999666}
+      - {x: -20.294518, y: -0.00001}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
 --- !u!50 &1262261735
@@ -4168,7 +4177,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 5addc6ddc92754187b2d458015185d83, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -18645,6 +18654,15 @@ Tilemap:
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       m_AllTileFlags: 1073741825
+  - first: {x: -29, y: 0, z: 0}
+    second:
+      serializedVersion: 2
+      m_TileIndex: 3
+      m_TileSpriteIndex: 3
+      m_TileMatrixIndex: 0
+      m_TileColorIndex: 0
+      m_TileObjectToInstantiateIndex: 65535
+      m_AllTileFlags: 1073741825
   - first: {x: -21, y: 0, z: 0}
     second:
       serializedVersion: 2
@@ -18983,15 +19001,6 @@ Tilemap:
       serializedVersion: 2
       m_TileIndex: 0
       m_TileSpriteIndex: 0
-      m_TileMatrixIndex: 0
-      m_TileColorIndex: 0
-      m_TileObjectToInstantiateIndex: 65535
-      m_AllTileFlags: 1073741825
-  - first: {x: -29, y: 1, z: 0}
-    second:
-      serializedVersion: 2
-      m_TileIndex: 3
-      m_TileSpriteIndex: 3
       m_TileMatrixIndex: 0
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
@@ -33047,6 +33056,25 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!251 &1262261739
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262261732}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 1
+  m_UseSideBounce: 1
+  m_SideArc: 6
 --- !u!1 &1281118142
 GameObject:
   m_ObjectHideFlags: 0

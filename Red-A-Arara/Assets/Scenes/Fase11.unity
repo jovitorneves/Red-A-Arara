@@ -2110,6 +2110,7 @@ GameObject:
   - component: {fileID: 1262261736}
   - component: {fileID: 1262261735}
   - component: {fileID: 1262261734}
+  - component: {fileID: 1262261739}
   m_Layer: 8
   m_Name: Terreno
   m_TagString: chao
@@ -2869,7 +2870,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 5addc6ddc92754187b2d458015185d83, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
@@ -33845,6 +33846,25 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!251 &1262261739
+PlatformEffector2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1262261732}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 1
+  m_UseSideBounce: 1
+  m_SideArc: 6
 --- !u!1 &1281118142
 GameObject:
   m_ObjectHideFlags: 0
