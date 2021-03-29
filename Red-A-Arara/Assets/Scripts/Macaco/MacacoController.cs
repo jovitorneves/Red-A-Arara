@@ -60,10 +60,8 @@ public class MacacoController : BaseEnemyController
 
         if (isDead) return;
 
-        float disA = gameObject.transform.position.x - posicaoA.position.x;
-        float disB = gameObject.transform.position.x - posicaoB.position.x;
-        disA = disA > 0 ? (disA * 1) : disA * -1;
-        disB = disB > 0 ? (disB * 1) : disB * -1;
+        float disA = Vector2.Distance(posicaoA.gameObject.transform.position, gameObject.transform.position);
+        float disB = Vector2.Distance(posicaoB.gameObject.transform.position, gameObject.transform.position);
 
         DistanciaPlayerIntervalMacaco();
 
@@ -82,8 +80,8 @@ public class MacacoController : BaseEnemyController
 
         if (isAtordoada) return;
 
-        if (Vector2.Distance(posicaoA.gameObject.transform.position, gameObject.transform.position) <= 2f ||
-            Vector2.Distance(posicaoB.gameObject.transform.position, gameObject.transform.position) <= 2f)
+        if (disA <= 2f ||
+            disB <= 2f)
         {
             MoveMonkey();
         }
@@ -146,7 +144,7 @@ public class MacacoController : BaseEnemyController
 
     private void DistanciaPlayerIntervalMacaco()
     {
-        distancia = gameObject.transform.position.x - player.transform.position.x;
+        distancia = Vector2.Distance(gameObject.transform.position, player.transform.position);
     }
 
     private void MoveMonkey()
