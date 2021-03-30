@@ -114,8 +114,10 @@ public class Player : MonoBehaviour
 
     void PlayAnimations()
     {
-        if (isDash)
+        if (isDash && !isCoco)
             anim.Play(AnimationTagsConstants.DashRed);
+        else if (isDash && isCoco)
+            anim.Play(AnimationTagsConstants.DashCocoRed);
         else if (levelCompleted)
             anim.Play(AnimationTagsConstants.WinRed);
         else if (!isAlive)
