@@ -17,6 +17,7 @@ public static class AnimationTagsConstants
     public const string ParadaCocoRed = "RedParadaCoco";
     public const string AndandoCocoRed = "RedAndandoCoco";
     public const string AremessoChaoCocoRed = "RedAremessoChaoCoco";
+    public const string DashRed = "RedDash";
 
     //HUMANO
     public const string IdleHumano = "IdleHumano";
