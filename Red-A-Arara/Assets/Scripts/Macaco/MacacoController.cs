@@ -29,11 +29,12 @@ public class MacacoController : BaseEnemyController
     private float distancia = 0f;
 
     private readonly float distanciaMonkeyAndPointMax = 0.1f;
-
     private float delayTime = 2f;
     private bool isAtordoada = false;
     private int cocoCount = 0;
     private float delayAtordoadoTime = 2f;
+    private float disA;
+    private float disB;
 
     // Start is called before the first frame update
     void Start()
@@ -60,8 +61,8 @@ public class MacacoController : BaseEnemyController
 
         if (isDead) return;
 
-        float disA = Vector2.Distance(posicaoA.gameObject.transform.position, gameObject.transform.position);
-        float disB = Vector2.Distance(posicaoB.gameObject.transform.position, gameObject.transform.position);
+        disA = Vector2.Distance(posicaoA.gameObject.transform.position, gameObject.transform.position);
+        disB = Vector2.Distance(posicaoB.gameObject.transform.position, gameObject.transform.position);
 
         DistanciaPlayerIntervalMacaco();
 
@@ -153,7 +154,6 @@ public class MacacoController : BaseEnemyController
 
         isLookLeft = !moverMacacoController.isLookLeft;
         gameObject.transform.position = moverMacacoController.MoverMacaco(gameObject.transform.position);
-        gameObject.transform.localScale = moverMacacoController.macacoGameObject.transform.localScale;
         animator.Play(AnimationTagsConstants.Walk);
     }
 
