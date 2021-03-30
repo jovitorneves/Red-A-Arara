@@ -12,6 +12,8 @@ public class Camera : MonoBehaviour
     private Vector2 maxLimit;
     [SerializeField]
     private Vector2 minLimit;
+    [SerializeField]
+    private float eixoY = -0.35f;
 
     [SerializeField]
     private Transform posicaoA, posicaoB;
@@ -66,7 +68,7 @@ public class Camera : MonoBehaviour
         float posNewY = Mathf.Clamp(transform.position.y, minLimit.y, maxLimit.y);
         //float posNeyModifedY = ((posNewY * -0.35f) < maxLimit.y && (posNewY * -0.35f) > minLimit.y) ? (posNewY * -0.35f) : posNewY;
 
-        background.position = new Vector3(posNewX, (posNewY * -0.35f), 0);
+        background.position = new Vector3(posNewX, (posNewY * eixoY), 0);
     }
 
     //Desenha um risco que liga o Ponto A e o Ponto B
