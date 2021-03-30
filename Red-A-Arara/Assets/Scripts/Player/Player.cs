@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
 
     //DASH
     private bool isDash = false;
-    private float speedDash = 6.5f;
+    private readonly float speedDash = 6.5f;
     private const float DOUBLE_PRESS_TIME = .2f;
     private float lastPressTime;
 
