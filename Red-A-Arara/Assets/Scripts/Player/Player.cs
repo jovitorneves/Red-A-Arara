@@ -182,6 +182,7 @@ public class Player : MonoBehaviour
         float move = Input.GetAxis(InputTagsConstants.Horizontal);
         isDash = true;
 
+        SoundManager.Instance.PlayFxDash();
         if (move > 0)
             rb2D.velocity = Vector2.right * speedDash;
         else
