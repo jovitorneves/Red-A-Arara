@@ -129,6 +129,16 @@ public class MacacoController : BaseEnemyController
                 MacacoMorto();
             }
         }
+        if (collision2D.gameObject.CompareTag(TagsConstants.Rio) ||
+            collision2D.gameObject.CompareTag(TagsConstants.Espinhos))
+            MacacoMorto();
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.CompareTag(TagsConstants.Rio) ||
+            other.CompareTag(TagsConstants.Espinhos))
+            MacacoMorto();
     }
 
     private void MacacoMorto()
