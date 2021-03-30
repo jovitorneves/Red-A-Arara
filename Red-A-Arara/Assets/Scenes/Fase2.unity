@@ -33560,6 +33560,11 @@ PrefabInstance:
       propertyPath: m_Material
       value: 
       objectReference: {fileID: 6200000, guid: 087dd828403a8401f869e3b2b00fc59c, type: 2}
+    - target: {fileID: 993163444905955677, guid: 66c457c8f4642c74995e45054f80d0f8,
+        type: 3}
+      propertyPath: speedDash
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 993163444905955678, guid: 66c457c8f4642c74995e45054f80d0f8,
         type: 3}
       propertyPath: m_LocalPosition.x

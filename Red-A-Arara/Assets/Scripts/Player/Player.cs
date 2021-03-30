@@ -28,6 +28,12 @@ public class Player : MonoBehaviour
     private bool timeIsOver = false;
     private bool isHumano = false;
 
+    //DASH
+    private bool isDash = false;
+    private float speedDash = 6.5f;
+    private const float DOUBLE_PRESS_TIME = .2f;
+    private float lastPressTime;
+
     public bool isCoco = false;
 
     public AudioClip fxWin;
@@ -48,6 +54,22 @@ public class Player : MonoBehaviour
         hitted = Physics2D.OverlapCircle(hitEnemy.position, radiusCheckHit, layerHit);
         grounded = Physics2D.OverlapCircle(groundCheck.position, radiusCheck, layerGround);
 
+        PlayAnimations();
+
+        if ((Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow) ||
+             Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D)) && !isDash && grounded)
+        {
+            float timeLastPress = Time.time - lastPressTime;
+
+            if (timeLastPress <= DOUBLE_PRESS_TIME)
+                StartDash();
+
+            lastPressTime = Time.time;
+        }
+
+        if (isDash)
+            return;
+
         if (Input.GetButtonDown(InputTagsConstants.Jump) && grounded)
         {
             jumping = true;
@@ -57,7 +79,7 @@ public class Player : MonoBehaviour
                 SoundManager.Instance.PlayFxPlayer(fxJump);
             }
         }
-
+            
         if (((int)GameManager.Instance.time <= 0) && !timeIsOver)
         {
             timeIsOver = true;
@@ -65,14 +87,13 @@ public class Player : MonoBehaviour
         }
 
         speed = flyingController.isFlying ? 4f : 3.5f;
-
-        PlayAnimations();
-
     }
 
     void FixedUpdate()
     {
-        
+        if (isDash)
+            return;
+
         if (isAlive && !levelCompleted) { 
 
             float move = Input.GetAxis(InputTagsConstants.Horizontal);
@@ -80,25 +101,22 @@ public class Player : MonoBehaviour
             rb2D.velocity = new Vector2(move * speed, rb2D.velocity.y);
 
             if ((move < 0 && facingRight) || (move > 0 && !facingRight))
-            {
                 Flip();
-            }
             if (jumping)
             {
                 rb2D.AddForce(new Vector2(0f, jumpForce));
                 jumping = false;
             }
-
         }
         else
-        {
             rb2D.velocity = new Vector2(0, rb2D.velocity.y);
-        }
     }
 
     void PlayAnimations()
     {
-        if (levelCompleted)
+        if (isDash)
+            anim.Play(AnimationTagsConstants.DashRed);
+        else if (levelCompleted)
             anim.Play(AnimationTagsConstants.WinRed);
         else if (!isAlive)
             anim.Play(AnimationTagsConstants.MorteRed);
@@ -157,6 +175,26 @@ public class Player : MonoBehaviour
             anim.Play(AnimationTagsConstants.PegandoCocoRed);
             SoundManager.Instance.PlayFxCoco();
         }
+    }
+
+    private void StartDash()
+    {
+        float move = Input.GetAxis(InputTagsConstants.Horizontal);
+        isDash = true;
+
+        if (move > 0)
+            rb2D.velocity = Vector2.right * speedDash;
+        else
+            rb2D.velocity = Vector2.left * speedDash;
+
+        if ((move < 0 && facingRight) || (move > 0 && !facingRight))
+            Flip();
+    }
+
+    public void StopDash()
+    {
+        rb2D.velocity = Vector2.zero;
+        isDash = false;
     }
 
     public void PlayerDie ()
