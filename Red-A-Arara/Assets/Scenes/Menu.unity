@@ -7351,7 +7351,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "A B / \u2190 \u2192"
+  m_Text: "A D / \u2190 \u2192"
 --- !u!222 &1469610605
 CanvasRenderer:
   m_ObjectHideFlags: 0
