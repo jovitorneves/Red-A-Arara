@@ -68,7 +68,7 @@ public class SoundManager : GenericSingletonClass<SoundManager>
     public void PlayFxAtordoado()
     {
         fxAtordoado.Play();
-        fxAtordoado.volume = loadedData.cobraAttack;
+        fxAtordoado.volume = loadedData.cobraDie;
     }
 
     public void PlayFxDash()
@@ -81,13 +81,13 @@ public class SoundManager : GenericSingletonClass<SoundManager>
     {
         fxPorta.pitch = 3.5f;
         fxPorta.Play();
-        fxPorta.volume = loadedData.player;
+        fxPorta.volume = loadedData.ambiente;
     }
 
     public void PlayFxCoco()
     {
         fxCoco.Play();
-        fxCoco.volume = loadedData.player;
+        fxCoco.volume = loadedData.buriti;
     }
 
     public void PlayFxJumpEnemy()
@@ -99,7 +99,7 @@ public class SoundManager : GenericSingletonClass<SoundManager>
     public void PlayFxTronco()
     {
         fxTronco.Play();
-        fxTronco.volume = loadedData.cobraAttack;
+        fxTronco.volume = loadedData.ambiente;
     }
 
     public void PlayFxBuritiCollector()
