@@ -33806,7 +33806,7 @@ PrefabInstance:
     - target: {fileID: 4060887002493018197, guid: d3ee570c7b178524199a1eb62abcdaa1,
         type: 3}
       propertyPath: maxLimit.x
-      value: 46.7
+      value: 23.65
       objectReference: {fileID: 0}
     - target: {fileID: 4060887002493018197, guid: d3ee570c7b178524199a1eb62abcdaa1,
         type: 3}
