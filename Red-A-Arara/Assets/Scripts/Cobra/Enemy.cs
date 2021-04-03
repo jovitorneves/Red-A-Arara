@@ -102,10 +102,20 @@ public class Enemy : BaseEnemyController
             var playerController = collision2D.gameObject.GetComponent(typeof(Player)) as Player;
             if (!playerController.isAlive) return;
             if (UtilController.Instance.ReturnDirection(collision2D.contacts) == HitDirection.Top)
-            {
                 CobraMorta();
-            }
         }
+    }
+
+    private void OnCollisionExit2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag(TagsConstants.Player))
+        {
+            var playerController = collision.gameObject.GetComponent(typeof(Player)) as Player;
+            if (!playerController.isAlive) return;
+            if (UtilController.Instance.ReturnDirection(collision.contacts) == HitDirection.Top)
+                CobraMorta();
+        }
+
     }
 
     void OnTriggerEnter2D (Collider2D other)
@@ -127,6 +137,14 @@ public class Enemy : BaseEnemyController
                 CobraMorta();
             }
         }
+
+        //if (other.gameObject.CompareTag(TagsConstants.Player))
+        //{
+        //    var playerController = other.gameObject.GetComponent(typeof(Player)) as Player;
+        //    if (!playerController.isAlive) return;
+        //    if (UtilController.Instance.ReturnDirection(other.contacts) == HitDirection.Top)
+        //        CobraMorta();
+        //}
     }
 
     private void CobraMorta()
