@@ -81,18 +81,21 @@ public class MacacoController : BaseEnemyController
 
         if (isAtordoada) return;
 
-        if (disA <= 2f ||
-            disB <= 2f)
-        {
-            MoveMonkey();
-        }
-        else if (player.gameObject.transform.position.x >= posicaoA.position.x &&
-            player.gameObject.transform.position.x <= posicaoB.position.x &&
-            disA >= distanciaMonkeyAndPointMax &&
-            disB >= distanciaMonkeyAndPointMax)
-            PuloRule();
-        else
-            MoveMonkey();
+        MoveMonkey();
+
+        //Mecanica do pulo desativada
+        //if (disA <= 2f ||
+        //    disB <= 2f)
+        //{
+        //    MoveMonkey();
+        //}
+        //else if (player.gameObject.transform.position.x >= posicaoA.position.x &&
+        //    player.gameObject.transform.position.x <= posicaoB.position.x &&
+        //    disA >= distanciaMonkeyAndPointMax &&
+        //    disB >= distanciaMonkeyAndPointMax)
+        //    PuloRule();
+        //else
+        //    MoveMonkey();
     }
 
     private void FixedUpdate()
