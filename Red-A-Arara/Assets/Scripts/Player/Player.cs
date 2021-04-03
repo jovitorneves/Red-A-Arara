@@ -56,6 +56,9 @@ public class Player : MonoBehaviour
 
         PlayAnimations();
 
+        if (!isAlive)
+            return;
+
         if ((Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow) ||
              Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D)) && !isDash && grounded)
         {
@@ -110,6 +113,9 @@ public class Player : MonoBehaviour
         }
         else
             rb2D.velocity = new Vector2(0, rb2D.velocity.y);
+
+        if (!isAlive)
+            return;
     }
 
     void PlayAnimations()
