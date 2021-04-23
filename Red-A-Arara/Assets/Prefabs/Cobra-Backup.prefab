@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 2933489679207320522}
   - component: {fileID: 2933489679207320565}
   - component: {fileID: 2933489679207320523}
+  - component: {fileID: 540549774}
   m_Layer: 10
   m_Name: Cobra
   m_TagString: Enemy
@@ -178,6 +179,32 @@ MonoBehaviour:
   radiusCheckHorizontal: 0.3
   grounded: 0
   groundedHorizontal: 0
+--- !u!61 &540549774
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2933489679207320561}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.12600899, y: 0.072873354}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.7333333, y: 1.0333333}
+    newSize: {x: 2.2857144, y: 1.8285714}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.5054379, y: 0.57625103}
+  m_EdgeRadius: 0.02
 --- !u!1 &2933489679854360118
 GameObject:
   m_ObjectHideFlags: 0
