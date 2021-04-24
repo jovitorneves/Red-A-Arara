@@ -156,6 +156,8 @@ public class Player : MonoBehaviour
 
     void OnCollisionEnter2D (Collision2D other)
     {
+        if (!isAlive) return;
+
         if (other.gameObject.CompareTag(TagsConstants.Enemy) || other.gameObject.CompareTag(TagsConstants.Humano))
         {
             isHumano = other.gameObject.CompareTag(TagsConstants.Humano);
