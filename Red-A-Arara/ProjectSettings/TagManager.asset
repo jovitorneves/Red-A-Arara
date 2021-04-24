@@ -17,6 +17,8 @@ TagManager:
   - MoreOne
   - RochaPara
   - Rocha
+  - AtivaRocha
+  - RochaSpawn
   layers:
   - Default
   - TransparentFX

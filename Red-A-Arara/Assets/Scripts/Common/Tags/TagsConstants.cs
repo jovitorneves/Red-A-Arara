@@ -15,4 +15,6 @@ public static class TagsConstants
     public const string Botao = "Botao";
     public const string Rocha = "Rocha";
     public const string RochaPara = "RochaPara";
+    public const string RochaSpawn = "RochaSpawn";
+    public const string AtivaRocha = "AtivaRocha";
 }
