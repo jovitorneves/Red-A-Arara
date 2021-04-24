@@ -13,4 +13,6 @@ public static class TagsConstants
     public const string CocoPartido = "CocoPartido";
     public const string Humano = "Humano";
     public const string Botao = "Botao";
+    public const string Rocha = "Rocha";
+    public const string RochaPara = "RochaPara";
 }

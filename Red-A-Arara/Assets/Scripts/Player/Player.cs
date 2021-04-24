@@ -158,7 +158,8 @@ public class Player : MonoBehaviour
     {
         if (!isAlive) return;
 
-        if (other.gameObject.CompareTag(TagsConstants.Enemy) || other.gameObject.CompareTag(TagsConstants.Humano))
+        if (other.gameObject.CompareTag(TagsConstants.Enemy) ||
+            other.gameObject.CompareTag(TagsConstants.Humano))
         {
             isHumano = other.gameObject.CompareTag(TagsConstants.Humano);
 
@@ -175,7 +176,8 @@ public class Player : MonoBehaviour
             }
 
         }
-        else if (other.gameObject.CompareTag(TagsConstants.Espinhos))
+        else if (other.gameObject.CompareTag(TagsConstants.Espinhos) ||
+                 other.gameObject.CompareTag(TagsConstants.Rocha))
         {
             //DataBase.deleteData("sceneDB");
             PlayerDie();
