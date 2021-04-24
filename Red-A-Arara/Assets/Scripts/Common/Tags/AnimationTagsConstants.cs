@@ -54,5 +54,6 @@ public static class AnimationTagsConstants
     public const string MovendoTronco = "Movendo";
 
     //ROCHA
+    public const string ParadoRocha = "Parado";
     public const string GirandoRocha = "RochaGirando";
 }
