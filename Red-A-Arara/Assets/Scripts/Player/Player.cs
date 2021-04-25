@@ -30,9 +30,8 @@ public class Player : MonoBehaviour
 
     //DASH
     private bool isDash = false;
-    [SerializeField]
-    private float speedDash = 4.5f;
-    private const float DOUBLE_PRESS_TIME = .3f;
+    private float speedDash = 5.0f;
+    private const float DOUBLE_PRESS_TIME = .2f;
     private float lastPressTime;
 
     public bool isCoco = false;
