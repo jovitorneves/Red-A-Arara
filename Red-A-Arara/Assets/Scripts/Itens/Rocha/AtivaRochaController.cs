@@ -23,16 +23,16 @@ public class AtivaRochaController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (isPassou)
-        {
-            SPAWN_ROCHA_TIME -= Time.deltaTime;
-            if (SPAWN_ROCHA_TIME <= 0)
-            {
-                rochaParedeScript.ChamaRocha();
-                isPassou = false;
-                SPAWN_ROCHA_TIME = SPAWN_ROCHA_TIME_DEFAULT;
-            }
-        }
+        //if (isPassou)//retirar caso queira q a rocha aparece toda vez q passar
+        //{
+        //    SPAWN_ROCHA_TIME -= Time.deltaTime;
+        //    if (SPAWN_ROCHA_TIME <= 0)
+        //    {
+        //        rochaParedeScript.ChamaRocha();
+        //        isPassou = false;
+        //        SPAWN_ROCHA_TIME = SPAWN_ROCHA_TIME_DEFAULT;
+        //    }
+        //}
     }
 
     private void OnTriggerExit2D(Collider2D collision)
@@ -41,6 +41,7 @@ public class AtivaRochaController : MonoBehaviour
         if (collision.gameObject.CompareTag(TagsConstants.Player))
         {
             isPassou = true;
+            rochaParedeScript.ChamaRocha();//remover
         }
     }
 }

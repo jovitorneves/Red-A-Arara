@@ -28,8 +28,8 @@ public class RochaController : MonoBehaviour
         {
             DESTROY_GAMEOBJECT_TIME -= Time.deltaTime;
 
-            if (DESTROY_GAMEOBJECT_TIME <= 0)
-                Destroy(gameObject);
+            //if (DESTROY_GAMEOBJECT_TIME <= 0)//retirar caso queira q a rocha suma dps de um tempo
+                //Destroy(gameObject);
         }
         else
         {
