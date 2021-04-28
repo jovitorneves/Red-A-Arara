@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 5078640712770325738}
   - component: {fileID: 5078640712770325739}
   - component: {fileID: 5078640712770325749}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Interruptor
   m_TagString: Botao
   m_Icon: {fileID: 0}
