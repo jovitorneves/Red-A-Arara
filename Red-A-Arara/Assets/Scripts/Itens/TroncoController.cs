@@ -7,7 +7,7 @@ public class TroncoController : MonoBehaviour
     [SerializeField]
     private bool isFalls = true;
     private Animator animator;
-    private float delayTime = 3f;
+    private float delayTime = 1.5f;
     private bool isCount = false;
     private bool isStepped = false;
 
