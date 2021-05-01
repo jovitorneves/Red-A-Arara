@@ -14,7 +14,7 @@ public class CocoController : MonoBehaviour
         cocoBoxCollider = GetComponent<BoxCollider2D>();
 
         cocoBoxCollider.sharedMaterial.friction = 0f;
-        cocoBoxCollider.sharedMaterial.bounciness = 0.4f;
+        //cocoBoxCollider.sharedMaterial.bounciness = 0.4f;
     }
 
     // Update is called once per frame
