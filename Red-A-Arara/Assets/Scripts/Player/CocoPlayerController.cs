@@ -5,8 +5,8 @@ public class CocoPlayerController : MonoBehaviour
     [SerializeField]
     private GameObject cocoGameObject;
 
-    private float force = 250f;
-    private readonly float forceFixed = 250f;
+    private float force = 200f;
+    private readonly float forceFixed = 200f;
     private Player player;
 
     // Start is called before the first frame update
@@ -19,9 +19,9 @@ public class CocoPlayerController : MonoBehaviour
     void Update()
     {
         if (transform.localScale.x == 1)
-            force = 250f;
+            force = 200f;
         else
-            force = -250f;
+            force = -200f;
     }
 
     private void FixedUpdate()
