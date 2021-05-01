@@ -93,6 +93,24 @@ public class CobraChefe : BaseEnemyController
         isVisible = false;
     }
 
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        if (collision.gameObject.CompareTag(TagsConstants.Player))
+        {
+            var playerController = collision.gameObject.GetComponent(typeof(Player)) as Player;
+            if (!playerController.isAlive) return;
+            //damageTaken += 1;
+
+            if (damageTaken >= 3)
+            {
+                isDead = true;
+                SoundManager.Instance.PlayFxCobraDie();
+                anim.Play(AnimationTagsConstants.Death);
+                //EnemyDie();
+            }
+        }
+    }
+
     void OnTriggerEnter2D (Collider2D other)
     {
         
