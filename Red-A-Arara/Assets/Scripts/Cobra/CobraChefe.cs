@@ -111,7 +111,7 @@ public class CobraChefe : BaseEnemyController
             }
             else
             {
-                speed *= 2f;
+                speed *= 1.5f;
                 anim.Play(AnimationTagsConstants.LevandoDano);
                 SoundManager.Instance.PlayFxCobraChefeDamageTaken();
                 Invoke(MethodNameTagsConstants.MoveEnemy, 1f);
