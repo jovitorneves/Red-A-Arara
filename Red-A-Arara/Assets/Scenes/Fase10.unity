@@ -32241,6 +32241,41 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3424615992041865107, guid: d3ee570c7b178524199a1eb62abcdaa1,
+        type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1751028104}
+    - target: {fileID: 3424615992041865107, guid: d3ee570c7b178524199a1eb62abcdaa1,
+        type: 3}
+      propertyPath: background
+      value: 
+      objectReference: {fileID: 619842529}
+    - target: {fileID: 3424615992041865107, guid: d3ee570c7b178524199a1eb62abcdaa1,
+        type: 3}
+      propertyPath: eixoY
+      value: -0.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 3424615992041865107, guid: d3ee570c7b178524199a1eb62abcdaa1,
+        type: 3}
+      propertyPath: minLimit.x
+      value: -15.91
+      objectReference: {fileID: 0}
+    - target: {fileID: 3424615992041865107, guid: d3ee570c7b178524199a1eb62abcdaa1,
+        type: 3}
+      propertyPath: minLimit.y
+      value: -0.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 3424615992041865107, guid: d3ee570c7b178524199a1eb62abcdaa1,
+        type: 3}
+      propertyPath: maxLimit.y
+      value: 4.65
+      objectReference: {fileID: 0}
+    - target: {fileID: 3424615992041865107, guid: d3ee570c7b178524199a1eb62abcdaa1,
+        type: 3}
+      propertyPath: maxLimit.x
+      value: 28.7
+      objectReference: {fileID: 0}
     - target: {fileID: 4060887002493018196, guid: d3ee570c7b178524199a1eb62abcdaa1,
         type: 3}
       propertyPath: orthographic size
