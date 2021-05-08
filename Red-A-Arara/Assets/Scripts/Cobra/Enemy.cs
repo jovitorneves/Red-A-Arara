@@ -6,6 +6,13 @@ public class Enemy : BaseEnemyController
     public Transform groundCheck;
     public Transform groundCheckHorizontal;
 
+    [SerializeField]
+    private float hitPoints;
+    [SerializeField]
+    private float maxHitPoints = 5;
+    [SerializeField]
+    private HealthbarController healthbar;
+
     public LayerMask layerGround;
     
     public float radiusCheck;
@@ -28,6 +35,8 @@ public class Enemy : BaseEnemyController
     {
         rb2D = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
+        hitPoints = maxHitPoints;
+        healthbar.SetHealth(hitPoints, maxHitPoints);
         delayTime = Time.deltaTime * 220f;
         if (!isBoss)
             anim.Play(AnimationTagsConstants.Walk);
@@ -102,7 +111,12 @@ public class Enemy : BaseEnemyController
             var playerController = collision2D.gameObject.GetComponent(typeof(Player)) as Player;
             if (!playerController.isAlive) return;
             if (UtilController.Instance.ReturnDirection(collision2D.contacts) == HitDirection.Top)
-                CobraMorta();
+            {
+                hitPoints -= 1;
+                healthbar.SetHealth(hitPoints, maxHitPoints);
+                if (hitPoints <= 0)
+                    CobraMorta();
+            }
         }
     }
 
@@ -113,7 +127,13 @@ public class Enemy : BaseEnemyController
             var playerController = collision.gameObject.GetComponent(typeof(Player)) as Player;
             if (!playerController.isAlive) return;
             if (UtilController.Instance.ReturnDirection(collision.contacts) == HitDirection.Top)
-                CobraMorta();
+            {
+                hitPoints -= 1;
+                healthbar.SetHealth(hitPoints, maxHitPoints);
+                if (hitPoints <= 0)
+                    CobraMorta();
+            }
+                //CobraMorta();
         }
 
     }
@@ -125,6 +145,12 @@ public class Enemy : BaseEnemyController
             if (!isAtordoada)
                 cocoCount++;
 
+
+            hitPoints -= 2;
+            healthbar.SetHealth(hitPoints, maxHitPoints);
+            if (hitPoints <= 0)
+                CobraMorta();
+
             if (cocoCount < 2)
             {
                 anim.Play(AnimationTagsConstants.CobraAtordoada);
@@ -132,10 +158,10 @@ public class Enemy : BaseEnemyController
                 delayTime = Time.deltaTime * 220f;
                 SoundManager.Instance.PlayFxAtordoado();
             }
-            else
-            {
-                CobraMorta();
-            }
+            //else
+            //{
+            //    CobraMorta();
+            //}
         }
 
         //if (other.gameObject.CompareTag(TagsConstants.Player))
