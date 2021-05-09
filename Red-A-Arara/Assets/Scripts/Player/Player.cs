@@ -31,8 +31,9 @@ public class Player : MonoBehaviour
     //DASH
     private bool isDash = false;
     private readonly float speedDash = 5.0f;
-    private const float DOUBLE_PRESS_TIME = .2f;
+    private float DOUBLE_PRESS_TIME = .2f;
     private float lastPressTime;
+    private KeyCode lastKeyCode;
 
     public bool isCoco = false;
 
@@ -60,15 +61,23 @@ public class Player : MonoBehaviour
             return;
 
         //DASH
-        if ((Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow) ||
-             Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D)) && !isDash && grounded)
+        //if ((Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow) ||
+        //     Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D)) && !isDash && grounded)
+        //{
+        //    float timeLastPress = Time.time - lastPressTime;
+
+        //    if (timeLastPress <= DOUBLE_PRESS_TIME)
+        //        StartDash();
+
+        //    lastPressTime = Time.time;
+        //}
+
+        if (!isDash && grounded)
         {
-            float timeLastPress = Time.time - lastPressTime;
-
-            if (timeLastPress <= DOUBLE_PRESS_TIME)
-                StartDash();
-
-            lastPressTime = Time.time;
+            SideDash(key: KeyCode.LeftArrow);
+            SideDash(key: KeyCode.RightArrow);
+            SideDash(key: KeyCode.A);
+            SideDash(key: KeyCode.D);
         }
 
         // if (isDash)
@@ -201,6 +210,21 @@ public class Player : MonoBehaviour
             isCoco = true;
             anim.Play(AnimationTagsConstants.PegandoCocoRed);
             SoundManager.Instance.PlayFxCoco();
+        }
+    }
+
+    private void SideDash(KeyCode key)
+    {
+        if (Input.GetKeyDown(key))
+        {
+            if(DOUBLE_PRESS_TIME > Time.time && lastKeyCode == key)
+            {
+                StartDash();
+            } else
+            {
+                DOUBLE_PRESS_TIME = Time.time + 0.2f;
+            }
+            lastKeyCode = key;
         }
     }
 
