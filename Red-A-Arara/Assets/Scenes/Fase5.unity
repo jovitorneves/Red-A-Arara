@@ -20428,7 +20428,7 @@ MonoBehaviour:
   smoothTime: {x: 0, y: 0}
   maxLimit: {x: 3.91, y: 7.54}
   minLimit: {x: -16.7, y: -2.2}
-  eixoY: -0.46
+  eixoY: 0.38
   posicaoA: {fileID: 0}
   posicaoB: {fileID: 0}
 --- !u!1001 &4367136638999588919
