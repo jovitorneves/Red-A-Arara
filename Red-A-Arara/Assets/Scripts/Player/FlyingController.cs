@@ -40,7 +40,10 @@ public class FlyingController : MonoBehaviour
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, radiusCheck, layerGround);
 
         if (Input.GetKey(KeyCode.DownArrow) || Input.GetKey(KeyCode.S))
+        {
             playerRigidbody.drag = 0;
+            player.StopDash();
+        }
         else
         {
             if (Input.GetButtonDown(InputTagsConstants.Jump))
@@ -53,7 +56,9 @@ public class FlyingController : MonoBehaviour
                     return;
 
                 isJumped = true;
+
                 Flying();
+                player.StopDash();
             }
             else
             {
@@ -82,6 +87,7 @@ public class FlyingController : MonoBehaviour
             animationPlayer.Play(AnimationTagsConstants.Voando);
 
         isFlying = true;
+        player.StopDash();
     }
 
     private void IsFalling()

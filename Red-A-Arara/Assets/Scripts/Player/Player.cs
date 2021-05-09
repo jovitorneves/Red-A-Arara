@@ -30,7 +30,7 @@ public class Player : MonoBehaviour
 
     //DASH
     private bool isDash = false;
-    private float speedDash = 5.0f;
+    private readonly float speedDash = 5.0f;
     private const float DOUBLE_PRESS_TIME = .2f;
     private float lastPressTime;
 
@@ -59,6 +59,7 @@ public class Player : MonoBehaviour
         if (!isAlive)
             return;
 
+        //DASH
         if ((Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow) ||
              Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D)) && !isDash && grounded)
         {
@@ -70,12 +71,13 @@ public class Player : MonoBehaviour
             lastPressTime = Time.time;
         }
 
-        if (isDash)
-            return;
+        // if (isDash)
+        //     return;
 
         if (Input.GetButtonDown(InputTagsConstants.Jump) && grounded)
         {
             jumping = true;
+            isDash = false;
 
             if (isAlive && !levelCompleted)
             {
@@ -94,6 +96,19 @@ public class Player : MonoBehaviour
 
     void FixedUpdate()
     {
+        // print("TEMPO: "+ Time.time);
+        //DASH
+        //if ((Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow) ||
+        //     Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D)) && !isDash && grounded)
+        //{
+        //    float timeLastPress = Time.time - lastPressTime;
+
+        //    if (timeLastPress <= DOUBLE_PRESS_TIME)
+        //        StartDash();
+
+        //    lastPressTime = Time.time;
+        //}
+
         if (isDash)
             return;
 
@@ -206,13 +221,14 @@ public class Player : MonoBehaviour
 
     public void StopDash()
     {
-        rb2D.velocity = Vector2.zero;
+        //rb2D.velocity = Vector2.zero;
         isDash = false;
     }
 
     public void PlayerDie ()
     {
         isAlive = false;
+        isDash = false;
         Physics2D.IgnoreLayerCollision(9, 10);
         SoundManager.Instance.PlayFxPlayer(fxDie);
     }
