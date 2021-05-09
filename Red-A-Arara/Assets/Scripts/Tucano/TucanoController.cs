@@ -4,6 +4,15 @@ using UnityEngine;
 
 public class TucanoController : BaseEnemyController
 {
+
+    [SerializeField]
+    private float hitPoints;
+    [SerializeField]
+    private float maxHitPoints = 5;
+    [SerializeField]
+    private HealthbarController healthbar;
+
+
     [SerializeField]
     private GameObject player;
 
@@ -35,6 +44,8 @@ public class TucanoController : BaseEnemyController
     {
         playerScript = player.GetComponent<Player>();
         animator = GetComponent<Animator>();
+        hitPoints = maxHitPoints;
+        healthbar.SetHealth(hitPoints, maxHitPoints);
 
         if (posicaoA.Equals(null) || posicaoB.Equals(null))
             return;
@@ -98,12 +109,20 @@ public class TucanoController : BaseEnemyController
             if (UtilController.Instance.ReturnDirection(collision2D.contacts) != HitDirection.Top)
                 return;
 
-            TucanoMorto();
+            hitPoints -= 1;
+            healthbar.SetHealth(hitPoints, maxHitPoints);
+            if (hitPoints <= 0)
+                TucanoMorto();
         }
         if (collision2D.gameObject.CompareTag(TagsConstants.CocoPartido))
         {
             if (!isAtordoada)
                 cocoCount++;
+
+            hitPoints -= 2;
+            healthbar.SetHealth(hitPoints, maxHitPoints);
+            if (hitPoints <= 0)
+                TucanoMorto();
 
             if (cocoCount < 2)
             {
@@ -111,10 +130,6 @@ public class TucanoController : BaseEnemyController
                 isAtordoada = true;
                 delayAtordoadoTime = Time.deltaTime * 2;
                 SoundManager.Instance.PlayFxAtordoado();
-            }
-            else
-            {
-                TucanoMorto();
             }
         }
     }
