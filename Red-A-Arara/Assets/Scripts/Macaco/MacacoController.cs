@@ -14,6 +14,13 @@ public class MacacoController : BaseEnemyController
 
     private Animator animator;
 
+    [SerializeField]
+    private float hitPoints;
+    [SerializeField]
+    private float maxHitPoints = 5;
+    [SerializeField]
+    private HealthbarController healthbar;
+
     public Player playerScript;
 
     [SerializeField]
@@ -32,7 +39,7 @@ public class MacacoController : BaseEnemyController
     private float delayTime = 2f;
     private bool isAtordoada = false;
     private int cocoCount = 0;
-    private float delayAtordoadoTime = 2f;
+    private float delayAtordoadoTime = 5f;
     private float disA;
     private float disB;
 
@@ -42,7 +49,9 @@ public class MacacoController : BaseEnemyController
         macacoRigidbody = GetComponent<Rigidbody2D>();
         playerScript = player.GetComponent<Player>();
         animator = GetComponent<Animator>();
-        delayAtordoadoTime = Time.deltaTime * 2;
+        hitPoints = maxHitPoints;
+        healthbar.SetHealth(hitPoints, maxHitPoints);
+        delayAtordoadoTime = Time.deltaTime * 5;
 
         if (posicaoA.Equals(null) || posicaoB.Equals(null))
             return;
@@ -113,24 +122,26 @@ public class MacacoController : BaseEnemyController
             if (!playerController.isAlive) return;
             if (UtilController.Instance.ReturnDirection(collision2D.contacts) == HitDirection.Top)
             {
-                MacacoMorto();
+                hitPoints -= 1;
+                healthbar.SetHealth(hitPoints, maxHitPoints);
+                if (hitPoints <= 0)
+                    MacacoMorto();
             }
         }
         if (collision2D.gameObject.CompareTag(TagsConstants.CocoPartido) && !isBoss)
         {
             if (!isAtordoada)
                 cocoCount++;
-            if (cocoCount < 2)
-            {
-                animator.Play(AnimationTagsConstants.AtordoadoMacaco);
-                isAtordoada = true;
-                delayAtordoadoTime = Time.deltaTime * 2;
-                SoundManager.Instance.PlayFxAtordoado();
-            }
-            else
-            {
+
+            animator.Play(AnimationTagsConstants.AtordoadoMacaco);
+            isAtordoada = true;
+            delayAtordoadoTime = Time.deltaTime * 5;
+            SoundManager.Instance.PlayFxAtordoado();
+
+            hitPoints -= 2;
+            healthbar.SetHealth(hitPoints, maxHitPoints);
+            if (hitPoints <= 0)
                 MacacoMorto();
-            }
         }
         if (collision2D.gameObject.CompareTag(TagsConstants.Rio) ||
             collision2D.gameObject.CompareTag(TagsConstants.Espinhos))
