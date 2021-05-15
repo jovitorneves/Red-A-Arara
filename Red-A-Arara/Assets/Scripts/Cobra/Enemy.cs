@@ -6,10 +6,10 @@ public class Enemy : BaseEnemyController
     public Transform groundCheck;
     public Transform groundCheckHorizontal;
 
-    [SerializeField]
+    //[SerializeField]
     private float hitPoints;
-    [SerializeField]
-    private float maxHitPoints = 5;
+    //[SerializeField]
+    private float maxHitPoints = 3;
     [SerializeField]
     private HealthbarController healthbar;
 

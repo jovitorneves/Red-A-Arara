@@ -5,10 +5,10 @@ using UnityEngine;
 public class TucanoController : BaseEnemyController
 {
 
-    [SerializeField]
+    //[SerializeField]
     private float hitPoints;
-    [SerializeField]
-    private float maxHitPoints = 5;
+    //[SerializeField]
+    private float maxHitPoints = 3;
     [SerializeField]
     private HealthbarController healthbar;
 
