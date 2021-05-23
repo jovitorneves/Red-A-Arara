@@ -7,6 +7,7 @@ public class SoundManager : GenericSingletonClass<SoundManager>
     public AudioSource fxArremessoCoco;
     public AudioSource fxAtordoado;
     public AudioSource fxDash;
+    public AudioSource fxDanoInimigo;
     public AudioSource fxPorta;
     public AudioSource fxMoreOne;
     public AudioSource fxCoco;
@@ -76,6 +77,12 @@ public class SoundManager : GenericSingletonClass<SoundManager>
     {
         fxDash.Play();
         fxDash.volume = loadedData.player;
+    }
+
+    public void PlayDanoInimigo()
+    {
+        fxDanoInimigo.Play();
+        fxDanoInimigo.volume = loadedData.cobraDie;
     }
 
     public void PlayFxPorta()

@@ -116,6 +116,8 @@ public class Enemy : BaseEnemyController
                 healthbar.SetHealth(hitPoints, maxHitPoints);
                 if (hitPoints <= 0)
                     CobraMorta();
+                else
+                    SoundManager.Instance.PlayDanoInimigo();
             }
         }
     }

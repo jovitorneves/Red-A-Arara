@@ -126,6 +126,8 @@ public class MacacoController : BaseEnemyController
                 healthbar.SetHealth(hitPoints, maxHitPoints);
                 if (hitPoints <= 0)
                     MacacoMorto();
+                else
+                    SoundManager.Instance.PlayDanoInimigo();
             }
         }
         if (collision2D.gameObject.CompareTag(TagsConstants.CocoPartido) && !isBoss)

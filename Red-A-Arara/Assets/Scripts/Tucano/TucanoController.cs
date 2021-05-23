@@ -113,6 +113,8 @@ public class TucanoController : BaseEnemyController
             healthbar.SetHealth(hitPoints, maxHitPoints);
             if (hitPoints <= 0)
                 TucanoMorto();
+            else
+                SoundManager.Instance.PlayDanoInimigo();
         }
         if (collision2D.gameObject.CompareTag(TagsConstants.CocoPartido))
         {
