@@ -111,8 +111,16 @@ public class GameManager : MonoBehaviour
             activePhases = SceneManager.GetActiveScene().buildIndex
         };
 
-        //Save data from PlayerInfo to a file named players
-        DataBase.saveData(model, "activePhasesDB");
+        ActivePhasesDB loadedData = DataBase.loadData<ActivePhasesDB>("activePhasesDB");
+        if (loadedData == null)
+        {
+            //Save data from PlayerInfo to a file named players
+            DataBase.saveData(model, "activePhasesDB");
+        } else if (SceneManager.GetActiveScene().buildIndex > loadedData.activePhases)
+        {
+            //Save data from PlayerInfo to a file named players
+            DataBase.saveData(model, "activePhasesDB");
+        }
     }
 
     //verifica se o usuario tinha mais de uma vida e se pedeu todas
@@ -242,7 +250,7 @@ public class GameManager : MonoBehaviour
     {
         if (Instance.loadedLevels.Count > 0)
         {
-            DataBase.deleteData("sceneDB");
+            //DataBase.deleteData("sceneDB");
             SceneManager.LoadScene(Instance.loadedLevels.Pop());
         }
         else
