@@ -60,6 +60,8 @@ public class Player : MonoBehaviour
         if (!isAlive)
             return;
 
+        if (GameManager.Instance.isPause) return;
+
         //DASH
         //if ((Input.GetKeyDown(KeyCode.LeftArrow) || Input.GetKeyDown(KeyCode.RightArrow) ||
         //     Input.GetKeyDown(KeyCode.A) || Input.GetKeyDown(KeyCode.D)) && !isDash && grounded)
@@ -117,6 +119,8 @@ public class Player : MonoBehaviour
 
         //    lastPressTime = Time.time;
         //}
+
+        if (GameManager.Instance.isPause) return;
 
         if (isDash)
             return;

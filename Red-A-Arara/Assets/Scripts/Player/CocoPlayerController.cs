@@ -26,6 +26,7 @@ public class CocoPlayerController : MonoBehaviour
 
     private void FixedUpdate()
     {
+        if (GameManager.Instance.isPause) return;
         if (Input.GetKey(KeyCode.J) && player.isCoco && player.isAlive)
         {
             AjustaPosicaoCoco();

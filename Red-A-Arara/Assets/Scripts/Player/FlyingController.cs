@@ -35,6 +35,8 @@ public class FlyingController : MonoBehaviour
         if (GameManager.Instance.status != GameStatus.PLAY || !player.isAlive)
             return;
 
+        if (GameManager.Instance.isPause) return;
+
         IsFalling();
 
         isGrounded = Physics2D.OverlapCircle(groundCheck.position, radiusCheck, layerGround);
