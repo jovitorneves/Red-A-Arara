@@ -78,7 +78,7 @@ public class GameManager : MonoBehaviour
             }
             else if (status == GameStatus.DIE || status == GameStatus.LOSE)
             {
-                DataBase.deleteData("sceneDB");
+                //DataBase.deleteData("sceneDB");
                 if (isBackToFirstStage)
                     LoadScene(buildIndex: 1);
                 else

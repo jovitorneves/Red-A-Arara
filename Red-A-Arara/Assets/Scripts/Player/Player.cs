@@ -267,7 +267,7 @@ public class Player : MonoBehaviour
         }
         else if (other.CompareTag(TagsConstants.Rio))
         {
-            DataBase.deleteData("sceneDB");
+            //DataBase.deleteData("sceneDB");
             PlayerDie();
             TakeLife();
         }
