@@ -77,7 +77,7 @@ public class MainMenuController : MonoBehaviour
 
     public void PlayGame()
     {
-        DataBase.deleteData("sceneDB");
+        // DataBase.deleteData("sceneDB");
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 
         LoadSom();
@@ -85,7 +85,7 @@ public class MainMenuController : MonoBehaviour
 
     public void QuitGame()
     {
-        DataBase.deleteData("sceneDB");
+        //DataBase.deleteData("sceneDB");
         Application.Quit();
     }
 
@@ -126,84 +126,84 @@ public class MainMenuController : MonoBehaviour
     //Fases
     public void Fase1Game()
     {
-        DataBase.deleteData("sceneDB");
+        //DataBase.deleteData("sceneDB");
         SceneManager.LoadScene(1);
         LoadSom();
     }
 
     public void Fase2Game()
     {
-        DataBase.deleteData("sceneDB");
+        //DataBase.deleteData("sceneDB");
         SceneManager.LoadScene(2);
         LoadSom();
     }
 
     public void Fase3Game()
     {
-        DataBase.deleteData("sceneDB");
+        //DataBase.deleteData("sceneDB");
         SceneManager.LoadScene(3);
         LoadSom();
     }
 
     public void Fase4Game()
     {
-        DataBase.deleteData("sceneDB");
+        //DataBase.deleteData("sceneDB");
         SceneManager.LoadScene(4);
         LoadSom();
     }
 
     public void Fase5Game()
     {
-        DataBase.deleteData("sceneDB");
+        //DataBase.deleteData("sceneDB");
         SceneManager.LoadScene(5);
         LoadSom();
     }
 
     public void Fase6Game()
     {
-        DataBase.deleteData("sceneDB");
+        //DataBase.deleteData("sceneDB");
         SceneManager.LoadScene(6);
         LoadSom();
     }
 
     public void Fase7Game()
     {
-        DataBase.deleteData("sceneDB");
+        //DataBase.deleteData("sceneDB");
         SceneManager.LoadScene(7);
         LoadSom();
     }
 
     public void Fase8Game()
     {
-        DataBase.deleteData("sceneDB");
+        //DataBase.deleteData("sceneDB");
         SceneManager.LoadScene(8);
         LoadSom();
     }
 
     public void Fase9Game()
     {
-        DataBase.deleteData("sceneDB");
+        //DataBase.deleteData("sceneDB");
         SceneManager.LoadScene(9);
         LoadSom();
     }
 
     public void Fase10Game()
     {
-        DataBase.deleteData("sceneDB");
+        //DataBase.deleteData("sceneDB");
         SceneManager.LoadScene(10);
         LoadSom();
     }
 
     public void Fase11Game()
     {
-        DataBase.deleteData("sceneDB");
+        //DataBase.deleteData("sceneDB");
         SceneManager.LoadScene(11);
         LoadSom();
     }
 
     public void Fase12Game()
     {
-        DataBase.deleteData("sceneDB");
+        //DataBase.deleteData("sceneDB");
         SceneManager.LoadScene(12);
         LoadSom();
     }
