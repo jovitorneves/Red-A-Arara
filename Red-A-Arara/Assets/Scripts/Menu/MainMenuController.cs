@@ -1,6 +1,11 @@
 ﻿using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.EventSystems;
+using System.Net.Mail;
+using System.Net;
+using System.Security.Cryptography.X509Certificates;
+using System.Net.Security;
 
 public class MainMenuController : MonoBehaviour
 {
@@ -57,6 +62,9 @@ public class MainMenuController : MonoBehaviour
     [SerializeField]
     private Button fase12Button;
 
+    //propriedades
+    private MailMessage mail = new MailMessage();
+
     private void FixedUpdate()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
@@ -79,6 +87,40 @@ public class MainMenuController : MonoBehaviour
     {
         DataBase.deleteData("sceneDB");
         Application.Quit();
+    }
+
+    //Redes sociais
+    public void OpenInstagram()
+    {
+        Application.OpenURL("https://www.instagram.com/infinity.dreams.official/");
+    }
+
+    public void OpenTwitter()
+    {
+        Application.OpenURL("https://twitter.com/infinity_red10");
+    }
+
+    public void OpenFacebook()
+    {
+        Application.OpenURL("https://www.facebook.com/infinitydreamsofficial");
+    }
+
+    public void OpenEmail()
+    {
+        string email = "contato.red.a.arara@gmail.com";
+        string subject = MyEscapeURL("Deixe sua opinião sobre o jogo, Red a arara");
+        string body = MyEscapeURL("");
+        Application.OpenURL("mailto:" + email + "?subject=" + subject + "&body=" + body);
+    }
+
+    string MyEscapeURL(string url)
+    {
+        return WWW.EscapeURL(url).Replace("+", "%20");
+    }
+
+    public void OpenYoutube()
+    {
+        Application.OpenURL("https://www.youtube.com/channel/UCSBOfQhvQXG0sZ9GdKY4Qqw");
     }
 
     //Fases
