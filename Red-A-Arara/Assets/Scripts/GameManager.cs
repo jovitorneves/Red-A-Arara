@@ -51,6 +51,7 @@ public class GameManager : MonoBehaviour
         popUpGO.SetActive(false);
         Physics2D.IgnoreLayerCollision(9, 10, false);
         PauseGameAction();
+        ActivePhases();
     }
 
     // Update is called once per frame
