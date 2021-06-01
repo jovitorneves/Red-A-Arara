@@ -85,7 +85,10 @@ public class Player : MonoBehaviour
         // if (isDash)
         //     return;
 
-        if (Input.GetButtonDown(InputTagsConstants.Jump) && grounded)
+        if ((Input.GetButtonDown(InputTagsConstants.Jump) ||
+            Input.GetKeyDown(KeyCode.W) ||
+            Input.GetKeyDown(KeyCode.UpArrow)) &&
+            grounded)
         {
             jumping = true;
             isDash = false;
