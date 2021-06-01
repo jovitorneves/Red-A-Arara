@@ -13,4 +13,9 @@ public class BuritiCollector : MonoBehaviour
             Destroy(gameObject);
         }
     }
+
+    private void OnDestroy()
+    {
+        GameManager.Instance.CountHeart();
+    }
 }

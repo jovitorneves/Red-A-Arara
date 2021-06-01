@@ -52,6 +52,7 @@ public class GameManager : MonoBehaviour
         Physics2D.IgnoreLayerCollision(9, 10, false);
         PauseGameAction();
         ActivePhases();
+        CountHeart();
     }
 
     // Update is called once per frame
@@ -80,14 +81,14 @@ public class GameManager : MonoBehaviour
             else if (status == GameStatus.DIE || status == GameStatus.LOSE)
             {
                 //DataBase.deleteData("sceneDB");
-                if (isBackToFirstStage)
+                if (isBackToFirstStage || heartCount == 0)
                     LoadScene(buildIndex: 1);
                 else
                     LoadScene(buildIndex: SceneManager.GetActiveScene().buildIndex);
             }
 
         }
-        CountHeart();
+        //CountHeart();
     }
 
     private void FixedUpdate()
@@ -135,7 +136,7 @@ public class GameManager : MonoBehaviour
             isBackToFirstStage = false;
     }
 
-    private void CountHeart()
+    public void CountHeart()
     {
         if (buritiCount == 10)
         {
