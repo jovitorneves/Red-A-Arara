@@ -183,4 +183,10 @@ public class TucanoController : BaseEnemyController
     {
         Destroy(gameObject);
     }
+
+    private void OnDestroy()
+    {
+        GameManager.Instance.heartCount++;
+        GameManager.Instance.CountHeart();
+    }
 }
