@@ -195,5 +195,12 @@ public class Enemy : BaseEnemyController
         SoundManager.Instance.PlayFxCobraDie();
         Destroy(gameObject);
     }
-    
+
+    private void OnDestroy()
+    {
+        GameManager.Instance.score += 5;
+        GameManager.Instance.buritiCount += 5;
+        GameManager.Instance.CountHeart();
+    }
+
 }
