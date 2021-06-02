@@ -29,6 +29,7 @@ public class Enemy : BaseEnemyController
     private bool isAtordoada = false;
     private int cocoCount = 0;
     private float delayTime;
+    private float delayMorteTime = 3f;
 
     // Start is called before the first frame update
     void Start()
@@ -60,11 +61,19 @@ public class Enemy : BaseEnemyController
         if (isAtordoada)
             return;
 
+        if (isDead)
+            EnemyDie();
+
         if (isDead) return;
 
         if ((!grounded) || (groundedHorizontal))
             Flip();
-         
+
+        if (hitPoints <= 0)
+            delayMorteTime -= Time.deltaTime;
+
+        if (delayMorteTime <= 0 || isDead)
+            EnemyDie();
     }
 
     void FixedUpdate()
