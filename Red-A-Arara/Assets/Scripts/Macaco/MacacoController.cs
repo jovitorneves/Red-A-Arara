@@ -223,4 +223,11 @@ public class MacacoController : BaseEnemyController
             isJump = false;
     }
 
+    private void OnDestroy()
+    {
+        GameManager.Instance.score += 8;
+        GameManager.Instance.buritiCount += 8;
+        GameManager.Instance.CountHeart();
+    }
+
 }
