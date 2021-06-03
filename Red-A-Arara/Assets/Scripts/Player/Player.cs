@@ -280,7 +280,7 @@ public class Player : MonoBehaviour
         }
         else if (other.CompareTag(TagsConstants.Rio))
         {
-            TakeLife();
+            //TakeLife();
             isRio = true;
         }
     }
