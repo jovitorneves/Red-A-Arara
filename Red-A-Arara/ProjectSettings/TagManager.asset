@@ -11,6 +11,14 @@ TagManager:
   - chao
   - Limite
   - Dead
+  - CocoPartido
+  - Humano
+  - Botao
+  - MoreOne
+  - RochaPara
+  - Rocha
+  - AtivaRocha
+  - RochaSpawn
   layers:
   - Default
   - TransparentFX

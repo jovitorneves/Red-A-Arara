@@ -1,0 +1,1316 @@
+fileFormatVersion: 2
+guid: ae6ce98646d4a4fdeae476010bd16d79
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -557713767296819608
+    second: cenario-animado-cortado_0
+  - first:
+      213: -2450211526159481034
+    second: cenario-animado-cortado_1
+  - first:
+      213: 1970466869122233981
+    second: cenario-animado-cortado_2
+  - first:
+      213: 770423171188397929
+    second: cenario-animado-cortado_3
+  - first:
+      213: 5897226907085848124
+    second: cenario-animado-cortado_4
+  - first:
+      213: -3531736317412857754
+    second: cenario-animado-cortado_5
+  - first:
+      213: 8185411724499732839
+    second: cenario-animado-cortado_6
+  - first:
+      213: -1663457525521661333
+    second: cenario-animado-cortado_7
+  - first:
+      213: 2403425251894832890
+    second: cenario-animado-cortado_8
+  - first:
+      213: -5685714623290768068
+    second: cenario-animado-cortado_9
+  - first:
+      213: -3294767973136747739
+    second: cenario-animado-cortado_10
+  - first:
+      213: -1254243981360987793
+    second: cenario-animado-cortado_11
+  - first:
+      213: -9148021058291910726
+    second: cenario-animado-cortado_12
+  - first:
+      213: -1223693157450234015
+    second: cenario-animado-cortado_13
+  - first:
+      213: -2104317197605107327
+    second: cenario-animado-cortado_14
+  - first:
+      213: -1416827528146434270
+    second: cenario-animado-cortado_15
+  - first:
+      213: 7393333754669922212
+    second: cenario-animado-cortado_16
+  - first:
+      213: 8816965405614937293
+    second: cenario-animado-cortado_17
+  - first:
+      213: -3080623434775538643
+    second: cenario-animado-cortado_18
+  - first:
+      213: 3842075597171262931
+    second: cenario-animado-cortado_19
+  - first:
+      213: 350536879869343025
+    second: cenario-animado-cortado_20
+  - first:
+      213: -3689928954159232584
+    second: cenario-animado-cortado_21
+  - first:
+      213: 7005146217358427594
+    second: cenario-animado-cortado_22
+  - first:
+      213: -2243861570036910919
+    second: cenario-animado-cortado_23
+  - first:
+      213: -5486495176476076493
+    second: cenario-animado-cortado_24
+  - first:
+      213: 5864424771764741237
+    second: cenario-animado-cortado_25
+  - first:
+      213: 2003751070338646304
+    second: cenario-animado-cortado_26
+  - first:
+      213: 7026256239963149718
+    second: cenario-animado-cortado_27
+  - first:
+      213: 8320980056811436140
+    second: cenario-animado-cortado_28
+  - first:
+      213: 4008627147073533853
+    second: cenario-animado-cortado_29
+  - first:
+      213: 4425195361830723623
+    second: cenario-animado-cortado_30
+  - first:
+      213: 9141331520244548944
+    second: cenario-animado-cortado_31
+  - first:
+      213: -8475703776151009708
+    second: cenario-animado-cortado_32
+  - first:
+      213: -5285184797998140180
+    second: cenario-animado-cortado_33
+  - first:
+      213: 8519877659452730143
+    second: cenario-animado-cortado_34
+  - first:
+      213: 5463861869581109274
+    second: cenario-animado-cortado_35
+  - first:
+      213: -3113994784906454866
+    second: cenario-animado-cortado_36
+  - first:
+      213: 8012780519672454137
+    second: cenario-animado-cortado_37
+  - first:
+      213: 7701116160761269257
+    second: cenario-animado-cortado_38
+  - first:
+      213: -5121988501293821328
+    second: cenario-animado-cortado_39
+  - first:
+      213: -8708597550926690121
+    second: cenario-animado-cortado_40
+  - first:
+      213: 2220495391932806196
+    second: cenario-animado-cortado_41
+  - first:
+      213: 6029582291471294909
+    second: cenario-animado-cortado_42
+  - first:
+      213: -5732267621764878560
+    second: cenario-animado-cortado_43
+  - first:
+      213: -3409967472533063485
+    second: cenario-animado-cortado_44
+  - first:
+      213: -7411204377679682861
+    second: cenario-animado-cortado_45
+  - first:
+      213: -3958172045366981438
+    second: cenario-animado-cortado_46
+  - first:
+      213: 4355757757728502704
+    second: cenario-animado-cortado_47
+  - first:
+      213: 2785285483331912487
+    second: cenario-animado-cortado_48
+  - first:
+      213: -923254924084330947
+    second: cenario-animado-cortado_49
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 20
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: cenario-animado-cortado_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86e9de5984a9248f0800000000000000
+      internalID: -557713767296819608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_1
+      rect:
+        serializedVersion: 2
+        x: 199
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63742b649991ffdd0800000000000000
+      internalID: -2450211526159481034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_2
+      rect:
+        serializedVersion: 2
+        x: 398
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d76f4bf6d21885b10800000000000000
+      internalID: 1970466869122233981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_3
+      rect:
+        serializedVersion: 2
+        x: 597
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9671a65dac711ba00800000000000000
+      internalID: 770423171188397929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_4
+      rect:
+        serializedVersion: 2
+        x: 796
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3e3abc80a827d150800000000000000
+      internalID: 5897226907085848124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_5
+      rect:
+        serializedVersion: 2
+        x: 995
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 668a2400880ccfec0800000000000000
+      internalID: -3531736317412857754
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_6
+      rect:
+        serializedVersion: 2
+        x: 1194
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 769cf13689c689170800000000000000
+      internalID: 8185411724499732839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_7
+      rect:
+        serializedVersion: 2
+        x: 1393
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b62c454a1363ae8e0800000000000000
+      internalID: -1663457525521661333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_8
+      rect:
+        serializedVersion: 2
+        x: 1592
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afe256f588eaa5120800000000000000
+      internalID: 2403425251894832890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_9
+      rect:
+        serializedVersion: 2
+        x: 1791
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c358280aca84811b0800000000000000
+      internalID: -5685714623290768068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_10
+      rect:
+        serializedVersion: 2
+        x: 1990
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 523b9df1cf1a642d0800000000000000
+      internalID: -3294767973136747739
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_11
+      rect:
+        serializedVersion: 2
+        x: 2189
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f618e458eb7089ee0800000000000000
+      internalID: -1254243981360987793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_12
+      rect:
+        serializedVersion: 2
+        x: 2388
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab7b7b6d053bb0180800000000000000
+      internalID: -9148021058291910726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_13
+      rect:
+        serializedVersion: 2
+        x: 2587
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1674a148e81940fe0800000000000000
+      internalID: -1223693157450234015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_14
+      rect:
+        serializedVersion: 2
+        x: 2786
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 189800e68a6fbc2e0800000000000000
+      internalID: -2104317197605107327
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_15
+      rect:
+        serializedVersion: 2
+        x: 2985
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22746dcaeda665ce0800000000000000
+      internalID: -1416827528146434270
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_16
+      rect:
+        serializedVersion: 2
+        x: 3184
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a77109d0e56a9660800000000000000
+      internalID: 7393333754669922212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_17
+      rect:
+        serializedVersion: 2
+        x: 3383
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc4169672572c5a70800000000000000
+      internalID: 8816965405614937293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_18
+      rect:
+        serializedVersion: 2
+        x: 3582
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d24d573de4d6f35d0800000000000000
+      internalID: -3080623434775538643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_19
+      rect:
+        serializedVersion: 2
+        x: 3781
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d50791466bc15530800000000000000
+      internalID: 3842075597171262931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_20
+      rect:
+        serializedVersion: 2
+        x: 3980
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 135394d5f6b5dd400800000000000000
+      internalID: 350536879869343025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_21
+      rect:
+        serializedVersion: 2
+        x: 4179
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8b909e09a2dbaccc0800000000000000
+      internalID: -3689928954159232584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_22
+      rect:
+        serializedVersion: 2
+        x: 4378
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ac5025dae57473160800000000000000
+      internalID: 7005146217358427594
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_23
+      rect:
+        serializedVersion: 2
+        x: 4577
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b4bcc06ac33cd0e0800000000000000
+      internalID: -2243861570036910919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_24
+      rect:
+        serializedVersion: 2
+        x: 4776
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 336df38a4bd0cd3b0800000000000000
+      internalID: -5486495176476076493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_25
+      rect:
+        serializedVersion: 2
+        x: 4975
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 574e905424f926150800000000000000
+      internalID: 5864424771764741237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_26
+      rect:
+        serializedVersion: 2
+        x: 5174
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02108dd6bf0cecb10800000000000000
+      internalID: 2003751070338646304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_27
+      rect:
+        serializedVersion: 2
+        x: 5373
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69510e3d2d6428160800000000000000
+      internalID: 7026256239963149718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_28
+      rect:
+        serializedVersion: 2
+        x: 5572
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c68fa55764f0a7370800000000000000
+      internalID: 8320980056811436140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_29
+      rect:
+        serializedVersion: 2
+        x: 5771
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d973e42d62181a730800000000000000
+      internalID: 4008627147073533853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_30
+      rect:
+        serializedVersion: 2
+        x: 5970
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72060a36cb3796d30800000000000000
+      internalID: 4425195361830723623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_31
+      rect:
+        serializedVersion: 2
+        x: 6169
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0550246b5988cde70800000000000000
+      internalID: 9141331520244548944
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_32
+      rect:
+        serializedVersion: 2
+        x: 6368
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45605116250406a80800000000000000
+      internalID: -8475703776151009708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_33
+      rect:
+        serializedVersion: 2
+        x: 6567
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce4b607ad6047a6b0800000000000000
+      internalID: -5285184797998140180
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_34
+      rect:
+        serializedVersion: 2
+        x: 6766
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1b677d479fac3670800000000000000
+      internalID: 8519877659452730143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_35
+      rect:
+        serializedVersion: 2
+        x: 6965
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a180f2eeb6983db40800000000000000
+      internalID: 5463861869581109274
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_36
+      rect:
+        serializedVersion: 2
+        x: 7164
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea85b35ed3ed8c4d0800000000000000
+      internalID: -3113994784906454866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_37
+      rect:
+        serializedVersion: 2
+        x: 7363
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fb1f3add6d133f60800000000000000
+      internalID: 8012780519672454137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_38
+      rect:
+        serializedVersion: 2
+        x: 7562
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90c0230985cdfda60800000000000000
+      internalID: 7701116160761269257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_39
+      rect:
+        serializedVersion: 2
+        x: 7761
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0721fb4789a0be8b0800000000000000
+      internalID: -5121988501293821328
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_40
+      rect:
+        serializedVersion: 2
+        x: 7960
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b88d25eaa8d42780800000000000000
+      internalID: -8708597550926690121
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_41
+      rect:
+        serializedVersion: 2
+        x: 8159
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 434fb855bc8c0de10800000000000000
+      internalID: 2220495391932806196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_42
+      rect:
+        serializedVersion: 2
+        x: 8358
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db1e123e5216da350800000000000000
+      internalID: 6029582291471294909
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_43
+      rect:
+        serializedVersion: 2
+        x: 8557
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02f2b3708f4e270b0800000000000000
+      internalID: -5732267621764878560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_44
+      rect:
+        serializedVersion: 2
+        x: 8756
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c8b70886ac5da0d0800000000000000
+      internalID: -3409967472533063485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_45
+      rect:
+        serializedVersion: 2
+        x: 8955
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d2259e72ec162990800000000000000
+      internalID: -7411204377679682861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_46
+      rect:
+        serializedVersion: 2
+        x: 9154
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cc050cfe7fb119c0800000000000000
+      internalID: -3958172045366981438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_47
+      rect:
+        serializedVersion: 2
+        x: 9353
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b33f055a92c27c30800000000000000
+      internalID: 4355757757728502704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_48
+      rect:
+        serializedVersion: 2
+        x: 9552
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7230d08d36257a620800000000000000
+      internalID: 2785285483331912487
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: cenario-animado-cortado_49
+      rect:
+        serializedVersion: 2
+        x: 9751
+        y: 0
+        width: 199.98
+        height: 400
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3eb2d4c980ff23f0800000000000000
+      internalID: -923254924084330947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

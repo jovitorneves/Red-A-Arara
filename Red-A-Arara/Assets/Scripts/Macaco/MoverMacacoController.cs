@@ -21,15 +21,10 @@ public class MoverMacacoController : ScriptableObject
         this.journeyLength = Vector3.Distance(posicaoA.transform.position, posicaoB.transform.position);
     }
 
-    public Vector3 MoverMacaco(Vector3 currentMonnkey)
+    public Vector3 MoverMacaco(Vector3 currentMonkey)
     {
         float distCovered = (Time.time - startTime) * speedMacaco;
         float fracJourney = distCovered / journeyLength;
-
-        float disA = currentMonnkey.x - posicaoA.position.x;
-        float disB = currentMonnkey.x - posicaoB.position.x;
-        disA = disA > 0 ? (disA * 1) : disA * -1;
-        disB = disB > 0 ? (disB * 1) : disB * -1;
 
         if (reverseMove)
             macacoGameObject.transform.position = Vector3.Lerp(posicaoB.transform.position, posicaoA.transform.position, fracJourney);

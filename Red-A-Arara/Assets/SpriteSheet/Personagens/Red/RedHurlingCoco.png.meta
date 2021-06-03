@@ -1,0 +1,407 @@
+fileFormatVersion: 2
+guid: 13617ede51db74a4ab2a2fcec2f593c2
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -27164065374758982
+    second: RedHurlingCoco_0
+  - first:
+      213: -2139051269457936979
+    second: RedHurlingCoco_1
+  - first:
+      213: -7242887649647415909
+    second: RedHurlingCoco_2
+  - first:
+      213: -285782026647362012
+    second: RedHurlingCoco_3
+  - first:
+      213: 8597758175694781304
+    second: RedHurlingCoco_4
+  - first:
+      213: -715477075797723079
+    second: RedHurlingCoco_5
+  - first:
+      213: -352363192858821799
+    second: RedHurlingCoco_6
+  - first:
+      213: -1012866466142146448
+    second: RedHurlingCoco_7
+  - first:
+      213: -3872454961005816325
+    second: RedHurlingCoco_8
+  - first:
+      213: -2315137293775565155
+    second: RedHurlingCoco_9
+  - first:
+      213: 6203103498551905534
+    second: RedHurlingCoco_0
+  - first:
+      213: 1322034988848199365
+    second: RedHurlingCoco_1
+  - first:
+      213: 8682713128451444848
+    second: RedHurlingCoco_2
+  - first:
+      213: 7101331225056951660
+    second: RedHurlingCoco_3
+  - first:
+      213: 5927476591843956737
+    second: RedHurlingCoco_4
+  - first:
+      213: -2708804588853751018
+    second: RedHurlingCoco_5
+  - first:
+      213: 1655008590129556587
+    second: RedHurlingCoco_6
+  - first:
+      213: 7160456950338716452
+    second: RedHurlingCoco_7
+  - first:
+      213: -8784169183936017152
+    second: RedHurlingCoco_8
+  - first:
+      213: 3021936766234715869
+    second: RedHurlingCoco_9
+  - first:
+      213: 46003407224525994
+    second: RedHurlingCoco_10
+  - first:
+      213: -4929552609382846194
+    second: RedHurlingCoco_11
+  - first:
+      213: -7626428793418603107
+    second: RedHurlingCoco_12
+  - first:
+      213: -640658099186346613
+    second: RedHurlingCoco_13
+  - first:
+      213: 6379300070339231330
+    second: RedHurlingCoco_14
+  - first:
+      213: 7272475504245038746
+    second: RedHurlingCoco_15
+  - first:
+      213: 4403695129811073326
+    second: RedHurlingCoco_16
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: RedHurlingCoco_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 0
+        width: 104
+        height: 85
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: efc4b2834c9d51650800000000000000
+      internalID: 6203103498551905534
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHurlingCoco_1
+      rect:
+        serializedVersion: 2
+        x: 326
+        y: 0
+        width: 106
+        height: 86
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c63fe261dfc85210800000000000000
+      internalID: 1322034988848199365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHurlingCoco_2
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 25
+        width: 130
+        height: 89
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07018fb56913f7870800000000000000
+      internalID: 8682713128451444848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHurlingCoco_3
+      rect:
+        serializedVersion: 2
+        x: 900
+        y: 39
+        width: 131
+        height: 92
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6db8edef1ffc8260800000000000000
+      internalID: 7101331225056951660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHurlingCoco_4
+      rect:
+        serializedVersion: 2
+        x: 1200
+        y: 40
+        width: 128
+        height: 90
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1085d4f1e80a24250800000000000000
+      internalID: 5927476591843956737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHurlingCoco_5
+      rect:
+        serializedVersion: 2
+        x: 1500
+        y: 37
+        width: 150
+        height: 93
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6139c6b0494686ad0800000000000000
+      internalID: -2708804588853751018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHurlingCoco_6
+      rect:
+        serializedVersion: 2
+        x: 1800
+        y: 30
+        width: 189
+        height: 81
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6c64ea4b85c7f610800000000000000
+      internalID: 1655008590129556587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHurlingCoco_7
+      rect:
+        serializedVersion: 2
+        x: 2108
+        y: 15
+        width: 232
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4238a6a98ad0f5360800000000000000
+      internalID: 7160456950338716452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHurlingCoco_8
+      rect:
+        serializedVersion: 2
+        x: 2409
+        y: 0
+        width: 260
+        height: 87
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00d8f80faac581680800000000000000
+      internalID: -8784169183936017152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedHurlingCoco_9
+      rect:
+        serializedVersion: 2
+        x: 2733
+        y: 0
+        width: 79
+        height: 83
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd6ec1d5a7310f920800000000000000
+      internalID: 3021936766234715869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -12,8 +12,14 @@ public class MacacoController : BaseEnemyController
     [SerializeField]
     private Transform posicaoA, posicaoB;
 
-    private Collision2D collision2DCurrent;
     private Animator animator;
+
+    //[SerializeField]
+    private float hitPoints;
+    //[SerializeField]
+    private float maxHitPoints = 3;
+    [SerializeField]
+    private HealthbarController healthbar;
 
     public Player playerScript;
 
@@ -29,13 +35,13 @@ public class MacacoController : BaseEnemyController
 
     private float distancia = 0f;
 
-    private readonly float distanciaMonkeyAndPointMax = 2f;
-
-    private readonly float distanciaMax = 3f;
-
-    private readonly float distanciaMin = -3f;
-
-    private readonly float delayTime = 0.8f;
+    private readonly float distanciaMonkeyAndPointMax = 0.1f;
+    private float delayTime = 2f;
+    private bool isAtordoada = false;
+    private int cocoCount = 0;
+    private float delayAtordoadoTime = 5f;
+    private float disA;
+    private float disB;
 
     // Start is called before the first frame update
     void Start()
@@ -43,14 +49,17 @@ public class MacacoController : BaseEnemyController
         macacoRigidbody = GetComponent<Rigidbody2D>();
         playerScript = player.GetComponent<Player>();
         animator = GetComponent<Animator>();
+        hitPoints = maxHitPoints;
+        healthbar.SetHealth(hitPoints, maxHitPoints);
+        delayAtordoadoTime = Time.deltaTime * 5;
 
         if (posicaoA.Equals(null) || posicaoB.Equals(null))
             return;
 
-        //moverMacacoController = ScriptableObject.CreateInstance<MoverMacacoController>();//recomendado pela unity, se der error ao mover o macaco substituir pelo de baixo
         moverMacacoController = new MoverMacacoController(gameObject, posicaoA, posicaoB);
         posicaoA.position = new Vector3(posicaoA.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z);
         posicaoB.position = new Vector3(posicaoB.transform.position.x, gameObject.transform.position.y, gameObject.transform.position.z);
+        animator.Play(AnimationTagsConstants.Walk);
     }
 
     // Update is called once per frame
@@ -59,64 +68,110 @@ public class MacacoController : BaseEnemyController
         if (posicaoA.Equals(null) || posicaoB.Equals(null))
             return;
 
-        float disA = gameObject.transform.position.x - posicaoA.position.x;
-        float disB = gameObject.transform.position.x - posicaoB.position.x;
-        disA = disA > 0 ? (disA * 1) : disA * -1;
-        disB = disB > 0 ? (disB * 1) : disB * -1;
+        if (isDead) return;
+
+        disA = Vector2.Distance(posicaoA.gameObject.transform.position, gameObject.transform.position);
+        disB = Vector2.Distance(posicaoB.gameObject.transform.position, gameObject.transform.position);
 
         DistanciaPlayerIntervalMacaco();
 
-        if (playerScript.isAlive)
+        delayTime -= Time.deltaTime;
+
+        if (isAtordoada)
+            delayAtordoadoTime -= Time.deltaTime;
+
+        if (!playerScript.isAlive) return;
+
+        if (delayTime <= 0 && isAtordoada)
         {
-            if (player.gameObject.transform.position.x >= posicaoA.position.x &&
-                player.gameObject.transform.position.x <= posicaoB.position.x)
-            {
-                if (disA >= distanciaMonkeyAndPointMax &&
-                    disB >= distanciaMonkeyAndPointMax)
-                    PuloRule();
-                else
-                    MoveMonkey();
-            }
-            else
-                MoveMonkey();
+            isAtordoada = false;
+            animator.Play(AnimationTagsConstants.Walk);
         }
+
+        if (isAtordoada) return;
+
+        MoveMonkey();
+
+        //Mecanica do pulo desativada
+        //if (disA <= 2f ||
+        //    disB <= 2f)
+        //{
+        //    MoveMonkey();
+        //}
+        //else if (player.gameObject.transform.position.x >= posicaoA.position.x &&
+        //    player.gameObject.transform.position.x <= posicaoB.position.x &&
+        //    disA >= distanciaMonkeyAndPointMax &&
+        //    disB >= distanciaMonkeyAndPointMax)
+        //    PuloRule();
+        //else
+        //    MoveMonkey();
     }
 
     private void FixedUpdate()
     {
-        PlayAnimations();
+        if (isDead) return;
+        if (isAtordoada) return;
+        IsJumping();
     }
 
     private void OnCollisionEnter2D(Collision2D collision2D)
     {
-        collision2DCurrent = collision2D;
-
-        Debug.Log("DIRECAO MACACO: " + UtilController.Instance.ReturnDirection(collision2D.contacts));
-
-        if (collision2D.gameObject.CompareTag(TagsConstants.Chao) && isJump)
+        if (collision2D.gameObject.CompareTag(TagsConstants.Player))
         {
-            isJump = false;
+            var playerController = collision2D.gameObject.GetComponent(typeof(Player)) as Player;
+            if (!playerController.isAlive) return;
+            if (UtilController.Instance.ReturnDirection(collision2D.contacts) == HitDirection.Top)
+            {
+                hitPoints -= 1;
+                healthbar.SetHealth(hitPoints, maxHitPoints);
+                if (hitPoints <= 0)
+                    MacacoMorto();
+                else
+                    SoundManager.Instance.PlayDanoInimigo();
+            }
         }
+        if (collision2D.gameObject.CompareTag(TagsConstants.CocoPartido) && !isBoss)
+        {
+            if (!isAtordoada)
+                cocoCount++;
 
-        if (player.gameObject.transform.position.x >= posicaoA.position.x &&
-            player.gameObject.transform.position.x <= posicaoB.position.x &&
-            playerScript.isAlive &&
-            !isJump)
-            Invoke(MethodNameTagsConstants.Pulo, delayTime);
+            animator.Play(AnimationTagsConstants.AtordoadoMacaco);
+            isAtordoada = true;
+            delayAtordoadoTime = Time.deltaTime * 5;
+            SoundManager.Instance.PlayFxAtordoado();
 
+            hitPoints -= 2;
+            healthbar.SetHealth(hitPoints, maxHitPoints);
+            if (hitPoints <= 0)
+                MacacoMorto();
+        }
+        if (collision2D.gameObject.CompareTag(TagsConstants.Rio) ||
+            collision2D.gameObject.CompareTag(TagsConstants.Espinhos))
+            MacacoMorto();
     }
 
-    private void PlayAnimations()
+    void OnTriggerEnter2D(Collider2D other)
     {
-        if (isJump)
-            animator.Play(AnimationTagsConstants.Jump);
-        else
-            animator.Play(AnimationTagsConstants.Walk);
+        if (other.CompareTag(TagsConstants.Rio) ||
+            other.CompareTag(TagsConstants.Espinhos))
+            MacacoMorto();
+    }
+
+    private void MacacoMorto()
+    {
+        animator.Play(AnimationTagsConstants.MortoMacaco);
+        isDead = true;
+        SoundManager.Instance.PlayFxCobraDie();
+    }
+
+    public void DestroyMacaco()
+    {
+        Destroy(gameObject);
     }
 
     private void DistanciaPlayerIntervalMacaco()
     {
-        distancia = gameObject.transform.position.x - player.transform.position.x;
+        distancia = Vector2.Distance(gameObject.transform.position, player.transform.position);
     }
 
     private void MoveMonkey()
@@ -125,7 +180,7 @@ public class MacacoController : BaseEnemyController
 
         isLookLeft = !moverMacacoController.isLookLeft;
         gameObject.transform.position = moverMacacoController.MoverMacaco(gameObject.transform.position);
-        gameObject.transform.localScale = moverMacacoController.macacoGameObject.transform.localScale;
+        animator.Play(AnimationTagsConstants.Walk);
     }
 
     private void PuloRule()
@@ -137,28 +192,19 @@ public class MacacoController : BaseEnemyController
             return;
 
         if (!isJump)
-            Invoke(MethodNameTagsConstants.Pulo, delayTime);
+            if (delayTime <= 0)
+            {
+                macacoRigidbody.AddForce(new Vector2(isLookLeft ? -jumpForce : jumpForce, jumpForce));
+                delayTime = 2f;
+                animator.Play(AnimationTagsConstants.Jump);
+                SoundManager.Instance.PlayFxJumpEnemy();
+            } else
+                animator.Play(AnimationTagsConstants.Walk);
 
         if (distancia < 0 && isLookLeft)//direita
             Flip();
         else if (distancia > 0 && !isLookLeft)//esquerda
             Flip();
-    }
-
-    private void Pulo()
-    {
-        PuloMacaco(collision2DCurrent);
-    }
-
-    private void PuloMacaco(Collision2D collision2D)
-    {
-        if (collision2D.gameObject.CompareTag(TagsConstants.Chao) &&
-            !isJump &&
-            playerScript.isAlive)
-        {
-            macacoRigidbody.AddForce(new Vector2(isLookLeft ? - jumpForce : jumpForce, jumpForce));
-            isJump = true;
-        }
     }
 
     private void Flip()
@@ -169,9 +215,19 @@ public class MacacoController : BaseEnemyController
         isLookLeft = !isLookLeft;
     }
 
-    IEnumerator Delay()
+    private void IsJumping()
     {
-        yield return new WaitForSeconds(5);
+        if (macacoRigidbody.velocity.y < -0.1)
+            isJump = true;
+        else 
+            isJump = false;
+    }
+
+    private void OnDestroy()
+    {
+        GameManager.Instance.score += 8;
+        GameManager.Instance.buritiCount += 8;
+        GameManager.Instance.CountHeart();
     }
 
 }

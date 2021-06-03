@@ -4,8 +4,7 @@ using UnityEngine;
 
 public static class MethodNameTagsConstants
 {
-
     public const string Pulo = "Pulo";
     public const string MoveEnemy = "MoveEnemy";
-
+    public const string MoveTucano = "MoveTucano";
 }

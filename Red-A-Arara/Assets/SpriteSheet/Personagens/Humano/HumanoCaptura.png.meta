@@ -1,0 +1,494 @@
+fileFormatVersion: 2
+guid: c36586400357646b18b76ffabb85e7aa
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 7548921776182810295
+    second: "HumanoIdle - co\u0301pia_0"
+  - first:
+      213: 4335371788710550757
+    second: "HumanoIdle - co\u0301pia_1"
+  - first:
+      213: -285258224775312836
+    second: "HumanoIdle - co\u0301pia_2"
+  - first:
+      213: -8009814876027076053
+    second: "HumanoIdle - co\u0301pia_3"
+  - first:
+      213: 168796901666758847
+    second: "HumanoIdle - co\u0301pia_4"
+  - first:
+      213: 3377982426822545853
+    second: "HumanoIdle - co\u0301pia_5"
+  - first:
+      213: -4126272846058390633
+    second: "HumanoIdle - co\u0301pia_6"
+  - first:
+      213: 4421592649884860613
+    second: "HumanoIdle - co\u0301pia_7"
+  - first:
+      213: 2217266064959800346
+    second: "HumanoIdle - co\u0301pia_8"
+  - first:
+      213: 2289405848434124693
+    second: "HumanoIdle - co\u0301pia_9"
+  - first:
+      213: 8056238951357037307
+    second: "HumanoIdle - co\u0301pia_10"
+  - first:
+      213: -5277085044602411214
+    second: "HumanoIdle - co\u0301pia_11"
+  - first:
+      213: -9124411697788818437
+    second: "HumanoIdle - co\u0301pia_12"
+  - first:
+      213: 3883395842315985417
+    second: "HumanoIdle - co\u0301pia_13"
+  - first:
+      213: -5777192897540659828
+    second: HumanoCaptura_0
+  - first:
+      213: 1459924573913943368
+    second: HumanoCaptura_1
+  - first:
+      213: 8655959209986775277
+    second: HumanoCaptura_2
+  - first:
+      213: 3164526428368231326
+    second: HumanoCaptura_3
+  - first:
+      213: 2238733882391487268
+    second: HumanoCaptura_4
+  - first:
+      213: -1376980393466609108
+    second: HumanoCaptura_5
+  - first:
+      213: 4092163733980193669
+    second: HumanoCaptura_6
+  - first:
+      213: -7413180557547239856
+    second: HumanoCaptura_7
+  - first:
+      213: 3298734315561802786
+    second: HumanoCaptura_8
+  - first:
+      213: -8468930334414565111
+    second: HumanoCaptura_9
+  - first:
+      213: 3999478545617566861
+    second: HumanoCaptura_10
+  - first:
+      213: 4327504175932003870
+    second: HumanoCaptura_11
+  - first:
+      213: -877533406063581799
+    second: HumanoCaptura_12
+  - first:
+      213: 3837983510006601914
+    second: HumanoCaptura_13
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 100
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 100
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 8192
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 100
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: HumanoCaptura_0
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 16
+        width: 462
+        height: 744
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c85ed272ba943dfa0800000000000000
+      internalID: -5777192897540659828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanoCaptura_1
+      rect:
+        serializedVersion: 2
+        x: 1099
+        y: 16
+        width: 463
+        height: 744
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84d010b3aa1b24410800000000000000
+      internalID: 1459924573913943368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanoCaptura_2
+      rect:
+        serializedVersion: 2
+        x: 2099
+        y: 16
+        width: 463
+        height: 744
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de8588d4a05202870800000000000000
+      internalID: 8655959209986775277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanoCaptura_3
+      rect:
+        serializedVersion: 2
+        x: 3088
+        y: 16
+        width: 444
+        height: 744
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9b593d2508aaeb20800000000000000
+      internalID: 3164526428368231326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanoCaptura_4
+      rect:
+        serializedVersion: 2
+        x: 4088
+        y: 16
+        width: 444
+        height: 744
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 423639eca94911f10800000000000000
+      internalID: 2238733882391487268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanoCaptura_5
+      rect:
+        serializedVersion: 2
+        x: 5088
+        y: 16
+        width: 445
+        height: 744
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c22ceb0b0abf3ece0800000000000000
+      internalID: -1376980393466609108
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanoCaptura_6
+      rect:
+        serializedVersion: 2
+        x: 6108
+        y: 16
+        width: 423
+        height: 744
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58320ae1c394ac830800000000000000
+      internalID: 4092163733980193669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanoCaptura_7
+      rect:
+        serializedVersion: 2
+        x: 7088
+        y: 16
+        width: 443
+        height: 744
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05680934f871f1990800000000000000
+      internalID: -7413180557547239856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanoCaptura_8
+      rect:
+        serializedVersion: 2
+        x: 8069
+        y: 16
+        width: 482
+        height: 744
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22cd37fe16577cd20800000000000000
+      internalID: 3298734315561802786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanoCaptura_9
+      rect:
+        serializedVersion: 2
+        x: 9027
+        y: 16
+        width: 525
+        height: 744
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90190bd2bb0587a80800000000000000
+      internalID: -8468930334414565111
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanoCaptura_10
+      rect:
+        serializedVersion: 2
+        x: 10018
+        y: 16
+        width: 534
+        height: 744
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8cb45e0c80018730800000000000000
+      internalID: 3999478545617566861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanoCaptura_11
+      rect:
+        serializedVersion: 2
+        x: 10978
+        y: 16
+        width: 574
+        height: 744
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e165272be126e0c30800000000000000
+      internalID: 4327504175932003870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanoCaptura_12
+      rect:
+        serializedVersion: 2
+        x: 11968
+        y: 16
+        width: 584
+        height: 744
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 995aa0d340062d3f0800000000000000
+      internalID: -877533406063581799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: HumanoCaptura_13
+      rect:
+        serializedVersion: 2
+        x: 12949
+        y: 16
+        width: 603
+        height: 744
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab810c7faa1434530800000000000000
+      internalID: 3837983510006601914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
