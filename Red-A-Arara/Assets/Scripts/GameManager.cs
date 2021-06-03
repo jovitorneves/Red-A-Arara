@@ -88,7 +88,7 @@ public class GameManager : MonoBehaviour
             }
 
         }
-        //CountHeart();
+        // CountHeart();
     }
 
     private void FixedUpdate()
@@ -138,7 +138,7 @@ public class GameManager : MonoBehaviour
 
     public void CountHeart()
     {
-        if (buritiCount == 10)
+        if (buritiCount >= 10)
         {
             if (heartCount >= 3)
                 heartCount = 3;
