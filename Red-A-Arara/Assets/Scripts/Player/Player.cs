@@ -35,6 +35,10 @@ public class Player : MonoBehaviour
     private float lastPressTime;
     private KeyCode lastKeyCode;
 
+    //Dano
+    private float delayMorteTime = 3f;
+    private bool isRio = false;
+
     public bool isCoco = false;
 
     public AudioClip fxWin;
@@ -84,6 +88,8 @@ public class Player : MonoBehaviour
 
         // if (isDash)
         //     return;
+
+        TiraVidas();
 
         if ((Input.GetButtonDown(InputTagsConstants.Jump) ||
             Input.GetKeyDown(KeyCode.W) ||
@@ -274,10 +280,34 @@ public class Player : MonoBehaviour
         }
         else if (other.CompareTag(TagsConstants.Rio))
         {
-            //DataBase.deleteData("sceneDB");
-            PlayerDie();
-            TakeLife();
+            //TakeLife();
+            isRio = true;
         }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if (collision.CompareTag(TagsConstants.Rio))
+        {
+            isRio = false;
+        }
+    }
+
+    private void TiraVidas()
+    {
+        if (!isRio) return;
+
+        delayMorteTime -= Time.deltaTime;
+
+        if (delayMorteTime <= 0)
+        {
+            TakeLife();
+            delayMorteTime = 3f;
+        }
+
+        if (GameManager.Instance.heartCount <= 0)
+            PlayerDie();
+
     }
 
     //Tira uma vida da arara

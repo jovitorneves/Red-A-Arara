@@ -198,8 +198,14 @@ public class Enemy : BaseEnemyController
 
     private void OnDestroy()
     {
-        GameManager.Instance.score += 5;
-        GameManager.Instance.buritiCount += 5;
+        //GameManager.Instance.score += 3;
+        GameManager.Instance.score++;
+        GameManager.Instance.score++;
+        GameManager.Instance.score++;
+        //GameManager.Instance.buritiCount += 3;
+        GameManager.Instance.buritiCount++;
+        GameManager.Instance.buritiCount++;
+        GameManager.Instance.buritiCount++;
         GameManager.Instance.CountHeart();
     }
 
