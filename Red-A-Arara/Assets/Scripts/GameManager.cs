@@ -105,6 +105,14 @@ public class GameManager : MonoBehaviour
         SetBackToFirstStage();
     }
 
+    public void AcessaMenu()
+    {
+        if (Application.CanStreamedLevelBeLoaded("Menu"))
+        {
+            LoadScene(sceneName: "Menu");
+        }
+    }
+
     private void ActivePhases()
     {
         var model = new ActivePhasesDB
@@ -212,13 +220,17 @@ public class GameManager : MonoBehaviour
         popUpGO.SetActive(true);
         if (parStatus == GameStatus.WIN)
         {
-            if (SceneManager.GetActiveScene().buildIndex + 1 > 12)
-                msgPopUp.text = "Fim de jogo!";
-            else
-            {
-                LoadScene(buildIndex: SceneManager.GetActiveScene().buildIndex + 1);
-                popUpGO.SetActive(false);
-            }
+            LoadScene(buildIndex: SceneManager.GetActiveScene().buildIndex + 1);
+            popUpGO.SetActive(false);
+            //if (SceneManager.GetActiveScene().buildIndex + 1 > 12)
+            //{
+            //    msgPopUp.text = "Fim de jogo!";
+            //}
+            //else
+            //{
+            //    LoadScene(buildIndex: SceneManager.GetActiveScene().buildIndex + 1);
+            //    popUpGO.SetActive(false);
+            //}
 
             ActivePhases();
         }
